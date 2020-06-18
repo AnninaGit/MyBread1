@@ -1,0 +1,73 @@
+﻿<Page
+    x:Class="MyBread1.Seite1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyBread1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Canvas Margin="59,48,71,66">
+            <TextBlock Margin="0,20,0,0" FontSize="50" Canvas.Left="600" Canvas.Top="20" Height="132">Schritt 1</TextBlock>
+            <TextBlock FontSize="40" Margin="20" Canvas.Top="87" Height="81" Width="565"><Run Text="Bitte wähle eine Mehlsorte: " /></TextBlock>
+            <Button Content="weiter" Click="Navigiere_zuSeite2" Height="89" Width="245" Canvas.Left="1086" Canvas.Top="739"/>
+            <TextBlock Margin="753,633,0,0" Text="ListView" TextWrapping="Wrap" Height="223" Canvas.Left="753" Canvas.Top="429"/>
+            <ListView CanReorderItems="False" CanDragItems="True" AllowDrop="True"
+                        Canvas.Left="10" Canvas.Top="165" Width="397" Height="711"
+                        SelectionMode="Multiple" RenderTransformOrigin="0.874,0.556">
+                <ListViewItem>
+                    <StackPanel Orientation="Horizontal" Height="218">
+                        <Image Source="/Bilder/Brot1.jpg" Width="70" Height="70" RenderTransformOrigin="0.628,0.567"/>
+                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="86"><Run Text="Mehl1"/></TextBlock>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem >
+                    <StackPanel Orientation="Horizontal" Height="218">
+                        <Image Source="/Bilder/Brot2.jpg" Width="70" Height="70" />
+                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="93">Mehl2</TextBlock>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Width="1291" Height="214" >
+                    <StackPanel Orientation="Horizontal" Height="218">
+                        <Image Source="/Bilder/Brot3.jpg" Width="70" Height="70" />
+                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="78">Mehl3</TextBlock>
+                    </StackPanel>
+                </ListViewItem>
+            </ListView>
+        </Canvas>
+
+    </Grid>
+    <Page.BottomAppBar>
+        <AppBar Padding="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+
+                <StackPanel Grid.Column="0" HorizontalAlignment="Left" Margin="0,10,0,0">
+                    <AppBarButton Icon="Edit"></AppBarButton>
+                    <AppBarButton Icon="Camera"></AppBarButton>
+                    <AppBarButton Icon="Save"></AppBarButton>
+                    <AppBarButton Icon="Street"></AppBarButton>
+                </StackPanel>
+            </Grid>
+        </AppBar>
+    </Page.BottomAppBar>
+
+    <Page.TopAppBar>
+        <AppBar Padding="10,0,0,0">
+            <StackPanel HorizontalAlignment="Left" Margin="10,0,0,0" Orientation="Horizontal">
+                <AppBarButton Icon="Home"
+                                  Label="Home" Click="Navigiere_zuStart"></AppBarButton>
+                <AppBarButton Icon="back"
+                              Label="Zurück" Click="Navigiere_zuStart"></AppBarButton>
+
+            </StackPanel>
+        </AppBar>
+    </Page.TopAppBar>
+</Page>
