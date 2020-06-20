@@ -36,7 +36,10 @@ namespace MyBread1
         {
             this.Frame.Navigate(typeof(Startseite));
         }
-        
-        
+
+        private void Navigiere_zuWarenkorb(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Warenkorb));
+        }
     }
 }

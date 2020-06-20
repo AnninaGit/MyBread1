@@ -119,6 +119,12 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Ende.xaml.cs">
+      <DependentUpon>Ende.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Infos.xaml.cs">
+      <DependentUpon>Infos.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -138,8 +144,14 @@
     <Compile Include="Seite5.xaml.cs">
       <DependentUpon>Seite5.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Seite6.xaml.cs">
+      <DependentUpon>Seite6.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Startseite.xaml.cs">
       <DependentUpon>Startseite.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Warenkorb.xaml.cs">
+      <DependentUpon>Warenkorb.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -148,9 +160,31 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bilder\Brot1.jpg" />
-    <Content Include="Bilder\Brot2.jpg" />
-    <Content Include="Bilder\Brot3.jpg" />
+    <Content Include="Bilder\Auswahl.jpeg" />
+    <Content Include="Bilder\Basilikum.jpeg" />
+    <Content Include="Bilder\Brotbacken.jpeg" />
+    <Content Include="Bilder\Brotganz_seite.jpeg" />
+    <Content Include="Bilder\Brotganz_seite1.jpeg" />
+    <Content Include="Bilder\Brotgeschn_oben.jpeg" />
+    <Content Include="Bilder\Brotgeschn_seite.jpeg" />
+    <Content Include="Bilder\Brotgeschn_seite1.jpeg" />
+    <Content Include="Bilder\Cranberries.jpeg" />
+    <Content Include="Bilder\getr.Tomaten.jpeg" />
+    <Content Include="Bilder\Kamutmehl.jpeg" />
+    <Content Include="Bilder\Karotten.jpeg" />
+    <Content Include="Bilder\Kokosmehl.jpeg" />
+    <Content Include="Bilder\Körnermix.jpeg" />
+    <Content Include="Bilder\Melonensalbei.jpeg" />
+    <Content Include="Bilder\Nussmix.jpeg" />
+    <Content Include="Bilder\Paranüsse %282%29.jpeg" />
+    <Content Include="Bilder\Roggenmehl.jpeg" />
+    <Content Include="Bilder\Rosinen.jpeg" />
+    <Content Include="Bilder\Röstzwiebeln.jpeg" />
+    <Content Include="Bilder\Sonnenblumenkerne.jpeg" />
+    <Content Include="Bilder\Speck.jpeg" />
+    <Content Include="Bilder\Thymian.jpeg" />
+    <Content Include="Bilder\Walnüsse.jpeg" />
+    <Content Include="Bilder\Weizenmehl.jpeg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -165,6 +199,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Ende.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Infos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -189,7 +231,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Seite6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Startseite.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Warenkorb.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

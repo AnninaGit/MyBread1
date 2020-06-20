@@ -15,29 +15,44 @@
             <TextBlock FontSize="40" Margin="20" Canvas.Top="87" Height="81" Width="565"><Run Text="Bitte wähle eine Mehlsorte: " /></TextBlock>
             <Button Content="weiter" Click="Navigiere_zuSeite2" Height="89" Width="245" Canvas.Left="1086" Canvas.Top="739"/>
             <TextBlock Margin="753,633,0,0" Text="ListView" TextWrapping="Wrap" Height="223" Canvas.Left="753" Canvas.Top="429"/>
-            <ListView CanReorderItems="False" CanDragItems="True" AllowDrop="True"
-                        Canvas.Left="10" Canvas.Top="165" Width="397" Height="711"
+            <ListView CanReorderItems="False" CanDragItems="False" AllowDrop="True"
+                        Canvas.Left="10" Canvas.Top="165" Width="487" Height="476"
                         SelectionMode="Multiple" RenderTransformOrigin="0.874,0.556">
-                <ListViewItem>
+                <ListViewItem Width="483">
                     <StackPanel Orientation="Horizontal" Height="218">
-                        <Image Source="/Bilder/Brot1.jpg" Width="70" Height="70" RenderTransformOrigin="0.628,0.567"/>
-                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="86"><Run Text="Mehl1"/></TextBlock>
+                        <Image Source="/Bilder/Weizenmehl.jpeg" Width="70" Height="70" RenderTransformOrigin="0.628,0.567"/>
+                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="86" Width="310"><Run Text="Weizenmehl"/></TextBlock>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem >
+                <ListViewItem Width="477" >
                     <StackPanel Orientation="Horizontal" Height="218">
-                        <Image Source="/Bilder/Brot2.jpg" Width="70" Height="70" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="93">Mehl2</TextBlock>
+                        <Image Source="/Bilder/Roggenmehl.jpeg" Width="70" Height="70" />
+                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="93" Width="329">Roggenmehl</TextBlock>
                     </StackPanel>
                 </ListViewItem>
+
+            </ListView>
+            <ListView CanReorderItems="False" CanDragItems="False" AllowDrop="True"
+                        Canvas.Left="844" Canvas.Top="165" Width="487" Height="476"
+                        SelectionMode="Multiple" RenderTransformOrigin="0.874,0.556">
                 <ListViewItem Width="1291" Height="214" >
                     <StackPanel Orientation="Horizontal" Height="218">
-                        <Image Source="/Bilder/Brot3.jpg" Width="70" Height="70" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="78">Mehl3</TextBlock>
+                        <Image Source="/Bilder/Kokosmehl.jpeg" Width="70" Height="70" />
+                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="78" Width="363">Kokosmehl</TextBlock>
                     </StackPanel>
                 </ListViewItem>
+                <ListViewItem Width="477" Canvas.Left="883" Canvas.Top="368" >
+                    <StackPanel Orientation="Horizontal" Height="218">
+                        <Image Source="/Bilder/Kamutmehl.jpeg" Width="70" Height="70" />
+                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="93" Width="329">Kamutmehl</TextBlock>
+                    </StackPanel>
+                </ListViewItem>
+
             </ListView>
+
         </Canvas>
+        <ProgressBar HorizontalAlignment="Center" Height="60" Margin="0,848,0,0" VerticalAlignment="Top" Width="204" Maximum="8" Minimum="0" Value="1" Background="DarkOliveGreen"  Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="732,810,0,0" Text="8/8" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="67" FontSize="25"/>
 
     </Grid>
     <Page.BottomAppBar>
@@ -49,12 +64,7 @@
                 </Grid.ColumnDefinitions>
 
 
-                <StackPanel Grid.Column="0" HorizontalAlignment="Left" Margin="0,10,0,0">
-                    <AppBarButton Icon="Edit"></AppBarButton>
-                    <AppBarButton Icon="Camera"></AppBarButton>
-                    <AppBarButton Icon="Save"></AppBarButton>
-                    <AppBarButton Icon="Street"></AppBarButton>
-                </StackPanel>
+
             </Grid>
         </AppBar>
     </Page.BottomAppBar>
@@ -62,10 +72,14 @@
     <Page.TopAppBar>
         <AppBar Padding="10,0,0,0">
             <StackPanel HorizontalAlignment="Left" Margin="10,0,0,0" Orientation="Horizontal">
+                <AppBarButton Icon="Shop"
+                              Label="Warenkorb" Click="Navigiere_zuWarenkorb"></AppBarButton>
                 <AppBarButton Icon="Home"
                                   Label="Home" Click="Navigiere_zuStart"></AppBarButton>
                 <AppBarButton Icon="back"
                               Label="Zurück" Click="Navigiere_zuStart"></AppBarButton>
+                <AppBarButton Icon="Forward"
+                              Label="Weiter" Click="Navigiere_zuSeite2"></AppBarButton>
 
             </StackPanel>
         </AppBar>

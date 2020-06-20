@@ -9,13 +9,60 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <StackPanel  Orientation="Vertical">
-            <TextBlock Margin="0,100,0,0" FontSize="50" HorizontalAlignment="Center">Schritt 3</TextBlock>
-            <TextBlock FontSize="40" Height="89" Margin="20"><Run Text="Bitte wähle deine Toppings:"/></TextBlock>
-            <TextBox FontSize="40" Height="274" Width="517" Background="AntiqueWhite" HorizontalAlignment="Center" Margin="0,30,0,0" x:Name="Eingabefeld"></TextBox>
-            <Button Content="weiter" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,30,20,0" Click="Navigiere_zuSeite4" Height="57" Width="290"></Button>
-        </StackPanel>
+        <Canvas Margin="59,48,71,66">
+            <TextBlock Margin="0,100,0,0" FontSize="50" Height="87" Canvas.Top="-54" RenderTransformOrigin="0.498,0.434" Canvas.Left="594">Schritt 3</TextBlock>
+            <TextBlock FontSize="40" Margin="20" Height="100" Canvas.Left="10" Canvas.Top="107"><Run Text="Bitte wähle deine Toppings: "/></TextBlock>
+            <Button Content="weiter" Click="Navigiere_zuSeite4" Height="89" Width="245" Canvas.Left="1086" Canvas.Top="739"/>
+            <TextBlock Margin="753,633,0,0" Text="ListView" TextWrapping="Wrap" Height="223" Canvas.Left="753" Canvas.Top="429"/>
+            <ListView CanReorderItems="False" CanDragItems="False" AllowDrop="True"
+                        Canvas.Left="10" Canvas.Top="165" Width="581" Height="574"
+                        SelectionMode="Multiple" RenderTransformOrigin="0.874,0.556">
+                <ListViewItem Width="483" Height="215">
+                    <StackPanel Orientation="Horizontal" Height="218">
+                        <Image Source="/Bilder/Körnermix.jpeg"  Width="70" Height="70" RenderTransformOrigin="0.628,0.567"/>
+                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="86" Width="310"><Run Text="Körnermix"/></TextBlock>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Width="477" Height="215" >
+                    <StackPanel Orientation="Horizontal" Height="218">
+                        <Image Source="/Bilder/Nussmix.jpeg" Width="64" Height="70" />
+                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="93" Width="282">Nussmix</TextBlock>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Width="492" Height="215" >
+                    <StackPanel Orientation="Horizontal" Height="218">
+                        <Image Source="/Bilder/Röstzwiebeln.jpeg" Width="64" Height="70" />
+                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="93" Width="502">Röstzwiebeln</TextBlock>
+                    </StackPanel>
+                </ListViewItem>
 
+            </ListView>
+            <ListView CanReorderItems="False" CanDragItems="False" AllowDrop="True"
+                        Canvas.Left="721" Canvas.Top="165" Width="610" Height="574"
+                        SelectionMode="Multiple" RenderTransformOrigin="0.874,0.556">
+                <ListViewItem Width="1291" Height="214" >
+                    <StackPanel Orientation="Horizontal" Height="218">
+                        <Image Source="/Bilder/Walnüsse.jpeg" Width="70" Height="70" />
+                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="78" Width="363">Walnüsse</TextBlock>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Width="1291" Height="214" >
+                    <StackPanel Orientation="Horizontal" Height="218">
+                        <Image Source="/Bilder/Sonnenblumenkerne.jpeg" Width="70" Height="70" />
+                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="78" Width="476">Sonnenblumenkerne</TextBlock>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Width="1291" Height="214" >
+                    <StackPanel Orientation="Horizontal" Height="218">
+                        <Image Source="/Bilder/Basilikum.jpeg" Width="70" Height="70" />
+                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="78" Width="363">Basilikum</TextBlock>
+                    </StackPanel>
+                </ListViewItem>
+            </ListView>
+
+        </Canvas>
+        <ProgressBar HorizontalAlignment="Center" Height="60" Margin="0,848,0,0" VerticalAlignment="Top" Width="204" Maximum="8" Minimum="0" Value="3" Background="DarkOliveGreen"  Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="732,810,0,0" Text="3/8" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="67" FontSize="25"/>
     </Grid>
     <Page.BottomAppBar>
         <AppBar Padding="10">
@@ -25,14 +72,9 @@
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
 
-                
 
-                <StackPanel Grid.Column="0" HorizontalAlignment="Left" Margin="0,10,0,0">
-                    <AppBarButton Icon="Edit"></AppBarButton>
-                    <AppBarButton Icon="Camera"></AppBarButton>
-                    <AppBarButton Icon="Save"></AppBarButton>
-                    <AppBarButton Icon="Street"></AppBarButton>
-                </StackPanel>
+
+
             </Grid>
         </AppBar>
     </Page.BottomAppBar>
@@ -40,10 +82,14 @@
     <Page.TopAppBar>
         <AppBar Padding="10,0,0,0">
             <StackPanel HorizontalAlignment="Left" Margin="10,0,0,0" Orientation="Horizontal">
+                <AppBarButton Icon="Shop"
+                              Label="Warenkorb" Click="Navigiere_zuWarenkorb"></AppBarButton>
                 <AppBarButton Icon="Home"
                                   Label="Home" Click="Navigiere_zuStart"></AppBarButton>
                 <AppBarButton Icon="back"
                               Label="Zurück" Click="Navigiere_zuSeite2"></AppBarButton>
+                <AppBarButton Icon="Forward"
+                              Label="Weiter" Click="Navigiere_zuSeite4"></AppBarButton>
 
             </StackPanel>
         </AppBar>

@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="MyBread1.Ende"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyBread1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock FontSize="40" HorizontalAlignment="Center" Margin="0,72,0,0" Text="Bestellung abgeschlossen!" TextWrapping="Wrap" VerticalAlignment="Top" Height="105" Width="493"/>
+        <Button Content="Zurück zur Startseite" FontSize="25" Margin="1093,791,0,0" VerticalAlignment="Top" Height="87" Width="271" Click="Navigiere_zuStart"/>
+        <TextBlock HorizontalAlignment="Left" Margin="121,175,0,0" Text="Vielen Dank für deine Bestellung bei MyBread. Dein Brot kannst du in dem Laden bei dir ums Eck abholen und vor Ort bezahlen." TextWrapping="Wrap" VerticalAlignment="Top" Height="117" Width="1229" FontSize="30"/>
+        <Button Content="Button" Margin="121,313,0,0" VerticalAlignment="Top" Height="89" Width="233"/>
+        <ProgressBar HorizontalAlignment="Center" Height="60" Margin="0,805,0,0" VerticalAlignment="Top" Width="204" x:Name="Progressbar" Maximum="8" Minimum="0" Value="8" Background="DarkOliveGreen"  Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="732,764,0,0" Text="8/8" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="67" FontSize="25"/>
+
+
+    </Grid>
+    <Page.BottomAppBar>
+        <AppBar Padding="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+
+
+            </Grid>
+        </AppBar>
+    </Page.BottomAppBar>
+
+    <Page.TopAppBar>
+        <AppBar Padding="10,0,0,0">
+            <StackPanel HorizontalAlignment="Left" Margin="10,0,0,0" Orientation="Horizontal">
+                <AppBarButton Icon="Shop"
+                              Label="Warenkorb" Click="Navigiere_zuWarenkorb"></AppBarButton>
+                <AppBarButton Icon="Home"
+                                  Label="Home" Click="Navigiere_zuStart"></AppBarButton>
+                <AppBarButton Icon="back"
+                              Label="Zurück" Click="Navigiere_zuWarenkorb"></AppBarButton>
+                <AppBarButton Icon="Forward"
+                              Label="Weiter" Click="Navigiere_zuStart"></AppBarButton>
+
+            </StackPanel>
+        </AppBar>
+    </Page.TopAppBar>
+</Page>

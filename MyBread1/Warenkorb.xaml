@@ -1,0 +1,67 @@
+﻿<Page
+    x:Class="MyBread1.Warenkorb"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyBread1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Canvas Margin="0,0,10,10">
+            <TextBlock Height="71" Canvas.Left="802" Canvas.Top="626" x:Name="Ausgabetext" Text="Anzahl an Broten: 1"
+            FontSize="30" Width="301"></TextBlock>
+
+            <RepeatButton Canvas.Left="1141" Canvas.Top="598"   Width="111" Height="121" Content="+"
+            Click="Zaehler"  Name="RepButton" Foreground="Black" Delay="500" FontSize="60" 
+                    Background="OldLace" BorderThickness="6" BorderBrush="Black" ></RepeatButton>
+
+            <RepeatButton Canvas.Left="1316" Canvas.Top="598"   Width="111" Height="121" Content="-"
+            Click="Zaehler1"  Name="RepButton1" Foreground="Black" Delay="500" FontSize="60" 
+                    Background="OldLace" BorderThickness="6" BorderBrush="Black" ></RepeatButton>
+
+            <TextBlock Width="376" Height="75" Canvas.Left="122" Canvas.Top="117" x:Name="Überschrift1" Text="Ihre Bestellung:"
+            FontSize="40" ></TextBlock>
+
+            <TextBlock Width="260" Height="75" Canvas.Left="629" Canvas.Top="55" x:Name="Überschrift" Text="Warenkorb"
+            FontSize="50" ></TextBlock>
+            <TextBox FontSize="20" Height="649" Width="567" Background="AntiqueWhite" Margin="50,50" x:Name="AusgabeboxSeite" Canvas.Left="72" Canvas.Top="176"/>
+            <Button Content="Bestellung abschicken" FontSize="30" Canvas.Left="931" Canvas.Top="258" Height="101" Width="406" Click="Navigiere_zuEnde"/>
+        </Canvas>
+        <ProgressBar HorizontalAlignment="Left" Height="60" Margin="1018,837,0,0" VerticalAlignment="Top" Width="204" x:Name="Progressbar" Maximum="8" Minimum="0" Value="7" Background="DarkOliveGreen"  Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="1102,799,0,0" Text="7/8" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="67" FontSize="25" RenderTransformOrigin="0.494,1.195"/>
+
+    </Grid>
+    <Page.BottomAppBar>
+        <AppBar Padding="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+
+                <StackPanel Grid.Column="0" HorizontalAlignment="Left" Margin="0,10,0,0">
+                    <AppBarButton Icon="Edit"></AppBarButton>
+                    <AppBarButton Icon="Camera"></AppBarButton>
+                    <AppBarButton Icon="Save"></AppBarButton>
+                    <AppBarButton Icon="Street"></AppBarButton>
+                </StackPanel>
+            </Grid>
+        </AppBar>
+    </Page.BottomAppBar>
+
+    <Page.TopAppBar>
+        <AppBar Padding="10,0,0,0">
+            <StackPanel HorizontalAlignment="Left" Margin="10,0,0,0" Orientation="Horizontal">
+
+                <AppBarButton Icon="Home"
+                                  Label="Home" Click="Navigiere_zuStart"></AppBarButton>
+                <AppBarButton Icon="back"
+                              Label="Zurück" Click="Navigiere_zuSeite5"></AppBarButton>
+
+            </StackPanel>
+        </AppBar>
+    </Page.TopAppBar>
+</Page>

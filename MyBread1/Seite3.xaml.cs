@@ -29,7 +29,7 @@ namespace MyBread1
         }
         private void Navigiere_zuSeite4(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Seite4), Eingabefeld.Text);
+            this.Frame.Navigate(typeof(Seite4));
         }
         private void Navigiere_zuStart(object sender, RoutedEventArgs e)
         {
@@ -38,6 +38,10 @@ namespace MyBread1
         private void Navigiere_zuSeite2(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Seite2));
+        }
+        private void Navigiere_zuWarenkorb(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Warenkorb));
         }
     }
 }

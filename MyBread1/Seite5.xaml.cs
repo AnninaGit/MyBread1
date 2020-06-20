@@ -25,7 +25,10 @@ namespace MyBread1
         public Seite5()
         {
             this.InitializeComponent();
+            this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
+
         }
+    
         private void Navigiere_zuStart(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Startseite));
@@ -35,5 +38,15 @@ namespace MyBread1
         {
             this.Frame.Navigate(typeof(Seite4));
         }
+        private void Navigiere_zuWarenkorb(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Warenkorb));
+        }
+
+        private void Navigiere_zuSeite6(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Seite6));
+        }
     }
-}
+    }
+

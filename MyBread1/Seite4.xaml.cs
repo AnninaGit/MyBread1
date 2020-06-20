@@ -29,7 +29,7 @@ namespace MyBread1
         }
         private void Navigiere_zuSeite5(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Seite5), Eingabefeld.Text);
+            this.Frame.Navigate(typeof(Seite5));
         }
         private void Navigiere_zuStart(object sender, RoutedEventArgs e)
         {
@@ -39,6 +39,21 @@ namespace MyBread1
         {
             this.Frame.Navigate(typeof(Seite3));
         }
+        private void Navigiere_zuWarenkorb(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Warenkorb));
+        }
+        private void ToggleSwitch(object sender, RoutedEventArgs e)
+        {
+            if ((bool)TogSwitch.IsOn)
+            {
+                  Ausgabetext.Text = "Ihr Brot wird für sie geschnitten";
+            }
+            else
+            {
+                  Ausgabetext.Text = "Ihr Brot bleibt ganz";
+            }
+        }
+
     }
-    
 }

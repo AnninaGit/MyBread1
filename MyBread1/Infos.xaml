@@ -1,0 +1,56 @@
+﻿<Page
+    x:Class="MyBread1.Infos"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyBread1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="0,58,0,0" Text="Mehr über uns" TextWrapping="Wrap" VerticalAlignment="Top" Height="75" Width="272" FontSize="40"/>
+        <Button Content="Zurück zur Startseite" FontSize="25" Margin="1093,791,0,0" VerticalAlignment="Top" Height="87" Width="271" Click="Navigiere_zuStart"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,144,0,0" Text="Wir bei MyBread glauben daran das Brot nicht langweilig sein muss!
+                                        Deswegen kamen wir auf das Konzept von individueller Brotzusammenstellung, sodass jeder ein Brot zugeschnitten auf seine persönlichen individuellen Wünsche bekommt.
+                                                  Wir machen alles mit einer großen Portion Liebe und natürlich alles mit handverlesenen BIO-Zutaten.
+                                                  
+         
+                                                                                                                            VIELFALT AUF ALLEN EBENEN
+Nicht nur unsere Produkte sind vielfältig, sondern genauso auch unsere Mitarbeiter, Kampagnen und natürlich auch Brotfreunde. Wir sind bunt, international, 
+begegnen unserer MyBread-Familie auf Augenhöhe, sind offen gegenüber Neuem und unterstützen die Vielfalt auf allen Ebenen." TextWrapping="Wrap" VerticalAlignment="Top" Height="610" Width="1244" FontSize="30"/>
+
+    </Grid>
+    <Page.BottomAppBar>
+        <AppBar Padding="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+
+                <StackPanel Grid.Column="0" HorizontalAlignment="Left" Margin="0,10,0,0">
+                    <AppBarButton Icon="Edit"></AppBarButton>
+                    <AppBarButton Icon="Camera"></AppBarButton>
+                    <AppBarButton Icon="Save"></AppBarButton>
+                    <AppBarButton Icon="Street"></AppBarButton>
+                </StackPanel>
+            </Grid>
+        </AppBar>
+    </Page.BottomAppBar>
+
+    <Page.TopAppBar>
+        <AppBar Padding="10,0,0,0">
+            <StackPanel HorizontalAlignment="Left" Margin="10,0,0,0" Orientation="Horizontal">
+                <AppBarButton Icon="Shop"
+                              Label="Warenkorb" Click="Navigiere_zuWarenkorb"></AppBarButton>
+                <AppBarButton Icon="Home"
+                                  Label="Home" Click="Navigiere_zuStart"></AppBarButton>
+                <AppBarButton Icon="back"
+                              Label="Zurück" Click="Navigiere_zuStart"></AppBarButton>
+
+            </StackPanel>
+        </AppBar>
+    </Page.TopAppBar>
+</Page>

@@ -10,6 +10,16 @@
 
     <Grid>
 
+        <TextBlock Margin="0,100,0,0" FontSize="50" HorizontalAlignment="Center">Schritt 5</TextBlock>
+        <TextBlock FontSize="40" Height="89" Margin="29,204,11,707"><Run Text="Hier können Sie noch extra Wünsche äußern: "/></TextBlock>
+        <TextBox FontSize="40" Height="274" Width="517" Background="AntiqueWhite" HorizontalAlignment="Center" Margin="0,30,0,0" x:Name="Eingabefeld"></TextBox>
+        <Button Content="weiter" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,851,105,0" Click="Navigiere_zuSeite6"  Height="57" Width="290"></Button>
+        <ProgressBar HorizontalAlignment="Center" Height="60" Margin="0,848,0,0" VerticalAlignment="Top" Width="204" Maximum="8" Minimum="0" Value="5" Background="DarkOliveGreen"  Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="732,810,0,0" Text="5/8" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="67" FontSize="25"/>
+
+
+
+
     </Grid>
     <Page.BottomAppBar>
         <AppBar Padding="10">
@@ -20,12 +30,7 @@
                 </Grid.ColumnDefinitions>
 
 
-                <StackPanel Grid.Column="0" HorizontalAlignment="Left" Margin="0,10,0,0">
-                    <AppBarButton Icon="Edit"></AppBarButton>
-                    <AppBarButton Icon="Camera"></AppBarButton>
-                    <AppBarButton Icon="Save"></AppBarButton>
-                    <AppBarButton Icon="Street"></AppBarButton>
-                </StackPanel>
+
             </Grid>
         </AppBar>
     </Page.BottomAppBar>
@@ -33,10 +38,14 @@
     <Page.TopAppBar>
         <AppBar Padding="10,0,0,0">
             <StackPanel HorizontalAlignment="Left" Margin="10,0,0,0" Orientation="Horizontal">
+                <AppBarButton Icon="Shop"
+                              Label="Warenkorb" Click="Navigiere_zuWarenkorb"></AppBarButton>
                 <AppBarButton Icon="Home"
                                   Label="Home" Click="Navigiere_zuStart"></AppBarButton>
                 <AppBarButton Icon="back"
                               Label="Zurück" Click="Navigiere_zuSeite4"></AppBarButton>
+                <AppBarButton Icon="Forward"
+                              Label="Weiter" Click="Navigiere_zuWarenkorb"></AppBarButton>
 
             </StackPanel>
         </AppBar>
