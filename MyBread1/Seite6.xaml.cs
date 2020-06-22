@@ -43,7 +43,7 @@ namespace MyBread1
             this.Frame.Navigate(typeof(Warenkorb));
         }
         
-        public void CalendarDatePicker(object sender, RoutedEventArgs e)
+        public void DatePicker()
         {
             DatePicker datePickerFor2020 = new DatePicker();
             InitializeComponent();
@@ -53,8 +53,8 @@ namespace MyBread1
             
         }
         public DateTime MinDate {
-            get { return MinDate; }
-            set { MinDate = Today; } 
+            get;
+            set;
         }
         public DateTime MaxDate { set; get; }
 
@@ -63,6 +63,7 @@ namespace MyBread1
             this.MinDate = DateTime.Today;
             this.MaxDate = DateTime.Today.AddYears(1);
         }
+      
         
         
     }

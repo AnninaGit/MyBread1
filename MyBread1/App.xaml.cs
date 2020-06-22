@@ -22,6 +22,7 @@ namespace MyBread1
     /// </summary>
     sealed partial class App : Application
     {
+        public String globalertext { get; set; }
         /// <summary>
         /// Initialisiert das Singletonanwendungsobjekt. Dies ist die erste Zeile von erstelltem Code
         /// und daher das logische Äquivalent von main() bzw. WinMain().

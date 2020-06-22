@@ -85,6 +85,19 @@ namespace MyBread1
         {
             this.Frame.Navigate(typeof(Seite5));
         }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            string uebernahmedaten = e.Parameter as string;
+            if (!string.IsNullOrWhiteSpace(uebernahmedaten))
+            {
+                MehlBox.Text = "Mehl: " + uebernahmedaten;
+            }
+            else
+            {
+                MehlBox.Text = "Bitte auf den Änderungsbutton klicken";
+            }
+            base.OnNavigatedTo(e);
+        }
 
 
     }

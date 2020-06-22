@@ -26,7 +26,7 @@
 
             <TextBlock Width="260" Height="75" Canvas.Left="629" Canvas.Top="55" x:Name="Überschrift" Text="Warenkorb"
             FontSize="50" ></TextBlock>
-            <TextBox Text="Mehl: " FontSize="30" Height="107" Width="497" Background="AntiqueWhite"  x:Name="WarenkorbAusgabe" Canvas.Left="122" Canvas.Top="202"/>
+            <TextBox  Text="Mehl: " FontSize="30" Height="107" Width="497" Background="AntiqueWhite"  x:Name="MehlBox" Canvas.Left="122" Canvas.Top="202"/>
             <TextBox Canvas.Left="122" Canvas.Top="300" Text="Teigzusätze: " FontSize="30" TextWrapping="Wrap" Height="98" Width="497" Background="AntiqueWhite"/>
             <TextBox Canvas.Left="122" Canvas.Top="398" Text="Toppings: " FontSize="30" TextWrapping="Wrap" Height="106" Width="497" Background="AntiqueWhite"/>
             <TextBox Canvas.Left="122" Canvas.Top="504" Text="Spezifikationen: " FontSize="30" TextWrapping="Wrap" Height="113" Width="497" Background="AntiqueWhite"/>

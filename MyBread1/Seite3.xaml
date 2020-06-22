@@ -15,47 +15,47 @@
             <Button Content="weiter" Click="Navigiere_zuSeite4" Height="89" Width="245" Canvas.Left="1086" Canvas.Top="739"/>
             <TextBlock Margin="753,633,0,0" Text="ListView" TextWrapping="Wrap" Height="223" Canvas.Left="753" Canvas.Top="429"/>
             <ListView CanReorderItems="False" CanDragItems="False" AllowDrop="True"
-                        Canvas.Left="10" Canvas.Top="165" Width="581" Height="574"
+                        Canvas.Left="10" Canvas.Top="165" Width="581" Height="417"
                         SelectionMode="Multiple" RenderTransformOrigin="0.874,0.556">
                 <ListViewItem Width="483" Height="215">
                     <StackPanel Orientation="Horizontal" Height="218">
                         <Image Source="/Bilder/Körnermix.jpeg"  Width="142" Height="244" RenderTransformOrigin="0.628,0.567"/>
-                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="86" Width="310"><Run Text="Körnermix"/></TextBlock>
+                        <TextBlock Margin="10 0 0 0 " FontSize="45" Height="86" Width="310"><Run Text="Körnermix"/></TextBlock>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Width="477" Height="215" >
                     <StackPanel Orientation="Horizontal" Height="218">
                         <Image Source="/Bilder/Nussmix.jpeg" Width="115" Height="158" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="93" Width="282">Nussmix</TextBlock>
+                        <TextBlock Margin="10 0 0 0 " FontSize="45" Height="93" Width="282">Nussmix</TextBlock>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Width="486" Height="215" >
                     <StackPanel Orientation="Horizontal" Height="218">
                         <Image Source="/Bilder/Röstzwiebeln.jpeg" Width="126" Height="149" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="93" Width="502"><Run Text="Röstzwiebeln"/></TextBlock>
+                        <TextBlock Margin="10 0 0 0 " FontSize="45" Height="93" Width="502"><Run Text="Röstzwiebeln"/></TextBlock>
                     </StackPanel>
                 </ListViewItem>
 
             </ListView>
             <ListView CanReorderItems="False" CanDragItems="False" AllowDrop="True"
-                        Canvas.Left="721" Canvas.Top="165" Width="610" Height="574"
+                        Canvas.Left="721" Canvas.Top="165" Width="649" Height="417"
                         SelectionMode="Multiple" RenderTransformOrigin="0.874,0.556">
                 <ListViewItem Width="1291" Height="214" >
                     <StackPanel Orientation="Horizontal" Height="218">
                         <Image Source="/Bilder/Walnüsse.jpeg" Width="140" Height="140" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="78" Width="363">Walnüsse</TextBlock>
+                        <TextBlock Margin="10 0 0 0 " FontSize="45" Height="78" Width="363">Walnüsse</TextBlock>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Width="1291" Height="214" >
                     <StackPanel Orientation="Horizontal" Height="218">
                         <Image Source="/Bilder/Sonnenblumenkerne.jpeg" Width="137" Height="161" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="78" Width="476">Sonnenblumenkerne</TextBlock>
+                        <TextBlock Margin="10 0 0 0 " FontSize="45" Height="78" Width="476">Sonnenblumenkerne</TextBlock>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Width="1291" Height="214" >
                     <StackPanel Orientation="Horizontal" Height="218">
                         <Image Source="/Bilder/Basilikum.jpeg" Width="140" Height="191" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="78" Width="363">Basilikum</TextBlock>
+                        <TextBlock Margin="10 0 0 0 " FontSize="45" Height="78" Width="363">Basilikum</TextBlock>
                     </StackPanel>
                 </ListViewItem>
             </ListView>

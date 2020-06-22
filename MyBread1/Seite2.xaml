@@ -16,50 +16,61 @@
             <Button Content="weiter" Click="Navigiere_zuSeite3" Height="89" Width="245" Canvas.Left="1086" Canvas.Top="739"/>
             <TextBlock Margin="753,633,0,0" Text="ListView" TextWrapping="Wrap" Height="223" Canvas.Left="753" Canvas.Top="429"/>
             <ListView CanReorderItems="False" CanDragItems="False" AllowDrop="True"
-                        Canvas.Left="10" Canvas.Top="154" Width="581" Height="580"
+                        Canvas.Left="10" Canvas.Top="154" Width="675" Height="420"
                         SelectionMode="Multiple" RenderTransformOrigin="0.874,0.556">
-                <ListViewItem Width="483" Height="215">
+                <ListViewItem Width="650" Height="215">
                     <StackPanel Orientation="Horizontal" Height="218">
                         <Image Source="/Bilder/Karotten.jpeg" Width="123" Height="145" RenderTransformOrigin="0.628,0.567"/>
-                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="86" Width="310"><Run Text="Karotten"/></TextBlock>
+                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="86" Width="284"><Run Text="Karotten"/></TextBlock>
+                        <Button Content="Mehr Informationen" Height="40" Width="167" Click="Karotten_Click"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Width="477" Height="215" >
+                <ListViewItem Width="667" Height="210" RenderTransformOrigin="0.5,0.5" >
+
                     <StackPanel Orientation="Horizontal" Height="218">
                         <Image Source="/Bilder/Speck.jpeg" Width="120" Height="145" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="93" Width="282">Speck</TextBlock>
+                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="93" Width="291">Speck</TextBlock>
+                        <Button Content="Mehr Informationen" Canvas.Left="492" Canvas.Top="443" Height="40" Width="167" Click="Speck_Click"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Width="492" Height="215" >
+                <ListViewItem Width="669" Height="215" >
                     <StackPanel Orientation="Horizontal" Height="218">
                         <Image Source="/Bilder/getr.Tomaten.jpeg" Width="136" Height="161" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="93" Width="502">getr. Tomaten</TextBlock>
+                        <TextBlock Margin="10 0 0 0 " FontSize="45" Height="93" Width="293">getr. Tomaten</TextBlock>
+                        <Button Content="Mehr Informationen" Canvas.Left="1203" Canvas.Top="244" Height="40" Width="167" Click="Tomaten_Click"/>
                     </StackPanel>
                 </ListViewItem>
 
+
             </ListView>
             <ListView CanReorderItems="False" CanDragItems="False" AllowDrop="True"
-                        Canvas.Left="721" Canvas.Top="165" Width="610" Height="569"
+                        Canvas.Left="721" Canvas.Top="165" Width="610" Height="409"
                         SelectionMode="Multiple" RenderTransformOrigin="0.874,0.556">
-                <ListViewItem Width="1291" Height="214" >
+                <ListViewItem Width="709" Height="214" >
                     <StackPanel Orientation="Horizontal" Height="218">
                         <Image Source="/Bilder/Cranberries.jpeg" Width="137" Height="148" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="78" Width="363">Cranberries</TextBlock>
+                        <TextBlock Margin="10 0 0 0 " FontSize="45" Height="78" Width="268">Cranberries</TextBlock>
+                        <Button Content="Mehr Informationen" Canvas.Left="1203" Canvas.Top="244" Height="40" Width="167" Click="Cranberries_Click"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Width="1291" Height="214" >
+                <ListViewItem Width="693" Height="210" RenderTransformOrigin="0.5,0.5" >
+                    
                     <StackPanel Orientation="Horizontal" Height="218">
-                        <Image Source="/Bilder/Paranüsse (2).jpeg" Width="150" Height="153" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="78" Width="363">Paranüsse</TextBlock>
+                        <Image Source="/Bilder/Paranüsse (2).jpeg" Width="134" Height="139" />
+                        <TextBlock Margin="10 0 0 0 " FontSize="45" Height="78" Width="271">Paranüsse</TextBlock>
+                        <Button Content="Mehr Informationen" Canvas.Left="1209" Canvas.Top="443" Height="40" Width="167" Click="Paranüsse_Click"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Width="1291" Height="214" >
+                <ListViewItem Width="712" Height="214" >
                     <StackPanel Orientation="Horizontal" Height="218">
                         <Image Source="/Bilder/Rosinen.jpeg" Width="148" Height="140" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="78" Width="363">Rosinen</TextBlock>
+                        <TextBlock Margin="10 0 0 0 " FontSize="45" Height="78" Width="258">Rosinen</TextBlock>
+                        <Button Content="Mehr Informationen" Canvas.Left="1209" Canvas.Top="443" Height="40" Width="167" Click="Rosinen_Click"/>
                     </StackPanel>
                 </ListViewItem>
             </ListView>
+
+            <TextBox x:Name="Info2"  TextWrapping="Wrap" Canvas.Left="56" Canvas.Top="617" Width="962" Height="142" FontSize="22"/>
 
         </Canvas>
         <ProgressBar HorizontalAlignment="Left" Height="60" Margin="642,874,0,0" VerticalAlignment="Top" Width="204" Maximum="8" Minimum="0" Value="2" Background="AntiqueWhite"  Foreground="Black"/>

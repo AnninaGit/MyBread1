@@ -14,7 +14,9 @@
             <TextBlock  Text="Bestelloptionen" TextWrapping="Wrap" Height="76" Width="290" FontSize="40" Canvas.Left="548" Canvas.Top="35"/>
 
             <TextBlock HorizontalAlignment="Left" Margin="90,184,0,0" Text="Wann möchten sie ihr Brot abholen?" TextWrapping="Wrap" VerticalAlignment="Top" Height="59" Width="432" FontSize="25"/>
-            <CalendarDatePicker Height="89" Width="401" Canvas.Top="247" Canvas.Left="90" />
+            <CalendarDatePicker Height="89" Width="401" Canvas.Top="247" Canvas.Left="90">
+                
+            </CalendarDatePicker>
             <ProgressBar Height="60"  Width="204" x:Name="Progressbar" Maximum="8" Minimum="0" Value="6" Background="AntiqueWhite"  Foreground="Black" Canvas.Left="583" Canvas.Top="742"/>
             <TextBlock  Text="6/8" TextWrapping="Wrap" Height="36" Width="50" FontSize="25" Canvas.Left="667" Canvas.Top="704"/>
 

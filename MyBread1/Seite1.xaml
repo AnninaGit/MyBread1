@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" d:DesignWidth="1496" d:DesignHeight="984">
 
     <Grid  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
@@ -16,39 +16,48 @@
             <Button Content="weiter" Click="Navigiere_zuSeite2" Height="89" Width="245" Canvas.Left="1086" Canvas.Top="739"/>
             <TextBlock Margin="753,633,0,0" Text="ListView" TextWrapping="Wrap" Height="223" Canvas.Left="753" Canvas.Top="429"/>
             <ListView CanReorderItems="False" CanDragItems="False" AllowDrop="True"
-                        Canvas.Left="10" Canvas.Top="165" Width="487" Height="476"
-                        SelectionMode="Multiple" RenderTransformOrigin="0.874,0.556">
-                <ListViewItem Width="483">
-                    <StackPanel Orientation="Horizontal" Height="218">
+                        Canvas.Left="10" Canvas.Top="165" Width="675" Height="476"
+                        SelectionMode="Multiple" RenderTransformOrigin="0.874,0.556" ItemClick="ListView1_ItemClick" >
+                <ListViewItem Width="675">
+                    <StackPanel Orientation="Horizontal" Height="218" >
                         <Image Source="/Bilder/Weizenmehl.jpeg" Width="127" Height="113" RenderTransformOrigin="0.628,0.567"/>
-                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="86" Width="310"><Run Text="Weizenmehl"/></TextBlock>
+                        <TextBlock Margin="10 0 0 0 " FontSize="45" Height="86" Width="314"><Run Text="Dinkelmehl"/></TextBlock>
+                        <Button Content="Mehr Informationen" RenderTransformOrigin="0.5,0.5" Height="40" Width="180" Click="Dinkel_Click"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Width="477" >
+                <ListViewItem Width="717" >
                     <StackPanel Orientation="Horizontal" Height="218">
                         <Image Source="/Bilder/Roggenmehl.jpeg" Width="108" Height="136" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="93" Width="329">Roggenmehl</TextBlock>
+                        <TextBlock Margin="10 0 0 0 " FontSize="45" Height="93" Width="321">Roggenmehl</TextBlock>
+                        <Button Content="Mehr Informationen" Canvas.Left="502" Canvas.Top="458" Height="40" Width="180" Click="Roggen_Click"/>
                     </StackPanel>
                 </ListViewItem>
 
             </ListView>
             <ListView CanReorderItems="False" CanDragItems="False" AllowDrop="True"
-                        Canvas.Left="844" Canvas.Top="165" Width="487" Height="476"
+                        Canvas.Left="727" Canvas.Top="160" Width="639" Height="476"
                         SelectionMode="Multiple" RenderTransformOrigin="0.874,0.556">
-                <ListViewItem Width="1291" Height="214" >
+                <ListViewItem Width="695" Height="214" >
                     <StackPanel Orientation="Horizontal" Height="218">
                         <Image Source="/Bilder/Kokosmehl.jpeg" Width="136" Height="122" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="78" Width="363">Kokosmehl</TextBlock>
+                        <TextBlock Margin="10 0 0 0 " FontSize="45" Height="78" Width="279">Kokosmehl</TextBlock>
+                        <Button Content="Mehr Informationen" Canvas.Left="1209" Canvas.Top="251" Height="40" Width="180" Click="Kokos_Click"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Width="477" Canvas.Left="883" Canvas.Top="368" >
+                <ListViewItem Width="697" Canvas.Left="883" Canvas.Top="368" >
                     <StackPanel Orientation="Horizontal" Height="218">
                         <Image Source="/Bilder/Kamutmehl.jpeg" Width="122" Height="108" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="93" Width="329">Kamutmehl</TextBlock>
+                        <TextBlock Margin="10 0 0 0 " FontSize="45" Height="93" Width="293">Kamutmehl</TextBlock>
+                        <Button Content="Mehr Informationen" Canvas.Left="1214" Canvas.Top="462" Height="40" Width="180" Click="Kamut_Click"/>
                     </StackPanel>
                 </ListViewItem>
 
             </ListView>
+            
+            
+            
+            
+            <TextBox x:Name="Info"  TextWrapping="Wrap" Canvas.Left="56" Canvas.Top="617" Width="962" Height="142" FontSize="22"/>
 
         </Canvas>
         <ProgressBar HorizontalAlignment="Center" Height="60" Margin="0,874,0,0" VerticalAlignment="Top" Width="204" Maximum="8" Minimum="0" Value="1" Background="AntiqueWhite"  Foreground="Black"/>
