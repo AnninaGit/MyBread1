@@ -9,14 +9,37 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button Content="weiter" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,875,63,0" Click="Navigiere_zuWarenkorb"  Height="57" Width="290"></Button>
-        <TextBlock HorizontalAlignment="Left" Margin="570,76,0,0" Text="Bestellungsoptionen" TextWrapping="Wrap" VerticalAlignment="Top" Height="76" Width="381" FontSize="40"/>
+        <Canvas Margin="73,39,57,104">
+            <Button Content="weiter"  Click="Navigiere_zuWarenkorb"  Height="57" Width="290" Canvas.Left="989" Canvas.Top="745"/>
+            <TextBlock  Text="Bestelloptionen" TextWrapping="Wrap" Height="76" Width="290" FontSize="40" Canvas.Left="548" Canvas.Top="35"/>
 
-        <TextBlock HorizontalAlignment="Left" Margin="90,184,0,0" Text="Wann möchten sie ihr Brot abholen?" TextWrapping="Wrap" VerticalAlignment="Top" Height="59" Width="432" FontSize="25"/>
-        <RadioButton Content="RadioButton" Margin="206,552,0,0" VerticalAlignment="Top" Height="48" Width="445"/>
-        <CalendarDatePicker Margin="90,255,0,0" VerticalAlignment="Top" Height="75" Width="171" />
-        <ProgressBar HorizontalAlignment="Left" Height="60" Margin="651,742,0,0" VerticalAlignment="Top" Width="204" x:Name="Progressbar" Maximum="8" Minimum="0" Value="6" Background="DarkOliveGreen"  Foreground="Black"/>
-        <TextBlock HorizontalAlignment="Left" Margin="732,709,0,0" Text="6/8" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="67" FontSize="25"/>
+            <TextBlock HorizontalAlignment="Left" Margin="90,184,0,0" Text="Wann möchten sie ihr Brot abholen?" TextWrapping="Wrap" VerticalAlignment="Top" Height="59" Width="432" FontSize="25"/>
+            <CalendarDatePicker Height="89" Width="401" Canvas.Top="247" Canvas.Left="90" />
+            <ProgressBar Height="60"  Width="204" x:Name="Progressbar" Maximum="8" Minimum="0" Value="6" Background="AntiqueWhite"  Foreground="Black" Canvas.Left="583" Canvas.Top="742"/>
+            <TextBlock  Text="6/8" TextWrapping="Wrap" Height="36" Width="50" FontSize="25" Canvas.Left="667" Canvas.Top="704"/>
+
+            <ListView CanReorderItems="False" CanDragItems="False" AllowDrop="True"
+                        Canvas.Left="-166" Canvas.Top="-78"
+                        SelectionMode="Multiple" RenderTransformOrigin="0.874,0.556" Margin="883,201,10,274">
+                <ListViewItem Width="580" Height="171" >
+                    <StackPanel Orientation="Horizontal" Height="218">
+                        <TextBlock FontSize="30" Height="90" Width="520">Ansbach, Residenzstraße 2-6, 91522</TextBlock>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Width="591" Canvas.Left="883" Canvas.Top="368" Height="168" >
+                    <StackPanel Orientation="Horizontal" Height="218">
+                        <TextBlock Margin="10 0 0 0 " FontSize="30" Height="94" Width="477">Fürth, Würzburgerstraße 446, 90768</TextBlock>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Width="595" Canvas.Left="883" Canvas.Top="368" Height="168" >
+                    <StackPanel Orientation="Horizontal" Height="218">
+                        <TextBlock Margin="10 0 0 0 " FontSize="30" Height="94" Width="759">Nürnberg, Lichtenfelserstraße 2a, 90427
+                        </TextBlock>
+                    </StackPanel>
+                </ListViewItem>
+
+            </ListView>
+        </Canvas>
 
     </Grid>
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -35,10 +36,21 @@ namespace MyBread1
         {
             this.Frame.Navigate(typeof(Warenkorb));
         }
-        private void Counter(object sender, RoutedEventArgs e)
-        {
-            int counter = 0;
-            counter++;
+        
+        bool button1 = false;
+
+        private void BestellNummer(object sender, RoutedEventArgs e)
+        { 
+            if(button1 == false) { 
+                button1 = true;
+                Random rnd = new Random();
+                Text_BNummer.Text = "Ihre Bestellnummer: " + rnd.Next(100, 999);
+              
+                
+            }
+            
         }
+       
+        
     }
 }

@@ -9,19 +9,19 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <StackPanel  Orientation="Vertical">
-            <TextBlock Margin="0,100,0,0" FontSize="50" HorizontalAlignment="Center">Schritt 4</TextBlock>
-        </StackPanel>
+        <Canvas Width="1000" Height="1000">
+            <StackPanel  Orientation="Vertical"/>
 
 
-        <ToggleSwitch Canvas.Left="125" Canvas.Top="309"   Width="393" Height="88" 
+            <ToggleSwitch Canvas.Left="234" Canvas.Top="-113"   Width="393" Height="88" 
               Name="TogSwitch" FontSize="30" Toggled="ToggleSwitch" OnContent="geschnitten" OffContent="nicht geschnitten"
-             BorderThickness="6" Margin="71,371,0,0" VerticalAlignment="Top" ></ToggleSwitch>
-        <TextBox x:Name="Ausgabetext" Canvas.Left="125" Canvas.Top="206" Text="Möchten sie ihr Brot geschnitten?" TextWrapping="Wrap" Height="103" Width="307" FontSize="30" Margin="71,235,1122,662"/>
-        <Button Content="weiter" Margin="1066,840,0,0" Click="Navigiere_zuSeite5" Height="57" Width="290" Canvas.Left="1119" Canvas.Top="809" VerticalAlignment="Top"/>
-        <ProgressBar Height="60" Margin="648,840,648,0" Width="204" Maximum="8" Minimum="0" Value="4" VerticalAlignment="Top"  Background="DarkOliveGreen"  Foreground="Black"/>
-        <TextBlock HorizontalAlignment="Left" Margin="732,802,0,0" Text="4/8" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="67" FontSize="25"/>
-
+             BorderThickness="6" Margin="71,371,0,0" />
+            <TextBox x:Name="Ausgabetext" Canvas.Top="148" Text="Möchten sie ihr Brot geschnitten?" TextWrapping="Wrap" FontSize="30" Height="85" Width="500" Canvas.Left="234" />
+            <Button Content="weiter" Click="Navigiere_zuSeite5" Height="57" Width="290" Canvas.Left="710" Canvas.Top="829"/>
+            <ProgressBar Height="60"  Width="204" Maximum="8" Minimum="0" Value="4"  Background="AntiqueWhite"  Foreground="Black" Canvas.Left="398" Canvas.Top="826"/>
+            <TextBlock  Text="4/8" TextWrapping="Wrap" Height="31" Width="51" FontSize="25" Canvas.Left="482" Canvas.Top="793"/>
+            <TextBlock  FontSize="50" Canvas.Left="305" Canvas.Top="33"><Run Text="Spezifikationen"/></TextBlock>
+        </Canvas>
 
     </Grid>
     <Page.BottomAppBar>

@@ -11,7 +11,7 @@
     <Grid  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <Canvas Margin="59,48,71,66">
-            <Button Content="Bestellvorgang starten" Click="Navigiere_zuSeite1" Height="100" Width="300" Canvas.Left="980" Canvas.Top="661" FontSize="25"/>
+            <Button Content="Bestellvorgang starten" Click="Navigiere_zuSeite1" Height="100" Width="300" Canvas.Left="830" Canvas.Top="560" FontSize="25"/>
 
             <TextBlock Canvas.Left="600" Canvas.Top="40" Text="MyBread " FontSize="50" Width="300"/>
             <Button Content="Foto hinzufügen" Margin="510,270,0,0" Height="100" Width="300" Click="Button_Click" Canvas.Left="470" Canvas.Top="-23" FontSize="25"/>
@@ -26,7 +26,7 @@
                     <Image  x:Name="Bild" Margin="2,1,0,0" HorizontalAlignment="Left" Width="405" />
                 </FlipViewItem>
             </FlipView>
-            <Button Content="Mehr über MyBread" Canvas.Left="103" Canvas.Top="661" Height="100" Width="300" FontSize="25" Click="Navigiere_zuInfos"/>
+            <Button Content="Mehr über MyBread" Canvas.Left="251" Canvas.Top="560" Height="100" Width="300" FontSize="25" Click="Navigiere_zuInfos"/>
         </Canvas>
 
 

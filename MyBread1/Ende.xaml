@@ -9,13 +9,15 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock FontSize="40" HorizontalAlignment="Center" Margin="0,72,0,0" Text="Bestellung abgeschlossen!" TextWrapping="Wrap" VerticalAlignment="Top" Height="105" Width="493"/>
-        <Button Content="Zurück zur Startseite" FontSize="25" Margin="1093,791,0,0" VerticalAlignment="Top" Height="87" Width="271" Click="Navigiere_zuStart"/>
-        <TextBlock HorizontalAlignment="Left" Margin="121,175,0,0" Text="Vielen Dank für deine Bestellung bei MyBread. Dein Brot kannst du in dem Laden bei dir ums Eck abholen und vor Ort bezahlen." TextWrapping="Wrap" VerticalAlignment="Top" Height="117" Width="1229" FontSize="30"/>
-        <Button Content="Button" Margin="121,313,0,0" VerticalAlignment="Top" Height="89" Width="233"/>
-        <ProgressBar HorizontalAlignment="Center" Height="60" Margin="0,805,0,0" VerticalAlignment="Top" Width="204" x:Name="Progressbar" Maximum="8" Minimum="0" Value="8" Background="DarkOliveGreen"  Foreground="Black"/>
-        <TextBlock HorizontalAlignment="Left" Margin="732,764,0,0" Text="8/8" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="67" FontSize="25"/>
-
+        <Canvas Width="1000" Height="1000">
+            <TextBlock FontSize="40" Margin="0,72,0,0" Text="Bestellung abgeschlossen!" TextWrapping="Wrap" Height="105" Width="475" Canvas.Left="269" Canvas.Top="-43"/>
+            <Button Content="Zurück zur Startseite" FontSize="25" Height="87" Width="271" Click="Navigiere_zuStart" Canvas.Left="719" Canvas.Top="797"/>
+            <TextBlock Text="Dein Brot kannst du in dem von dir ausgewählten Standort abholen und vor Ort bezahlen." TextWrapping="Wrap" Height="82" Width="877" FontSize="30" Canvas.Left="61" Canvas.Top="129"/>
+            <Button  Height="89" Width="233" Content="Hier Klicken!" FontSize="25" Click="BestellNummer" Canvas.Left="536" Canvas.Top="321"/>
+            <ProgressBar Height="60"  Width="204" x:Name="Progressbar" Maximum="8" Minimum="0" Value="8" Background="AntiqueWhite"  Foreground="Black" Canvas.Left="398" Canvas.Top="818"/>
+            <TextBlock  Text="8/8" TextWrapping="Wrap" Height="52" Width="65" FontSize="25" Canvas.Left="482" Canvas.Top="780"/>
+            <TextBlock x:Name="Text_BNummer" Text="Ihre Bestellnummer:" FontSize="30" TextWrapping="Wrap" Height="88" Width="288" Canvas.Left="140" Canvas.Top="321"/>
+        </Canvas>
 
     </Grid>
     <Page.BottomAppBar>

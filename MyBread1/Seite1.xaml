@@ -11,7 +11,7 @@
     <Grid  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <Canvas Margin="59,48,71,66">
-            <TextBlock Margin="0,20,0,0" FontSize="50" Canvas.Left="600" Canvas.Top="20" Height="132">Schritt 1</TextBlock>
+            <TextBlock Margin="0,20,0,0" FontSize="50" Canvas.Left="531" Canvas.Top="10" Height="132">Mehl Auswahl</TextBlock>
             <TextBlock FontSize="40" Margin="20" Canvas.Top="87" Height="81" Width="565"><Run Text="Bitte wähle eine Mehlsorte: " /></TextBlock>
             <Button Content="weiter" Click="Navigiere_zuSeite2" Height="89" Width="245" Canvas.Left="1086" Canvas.Top="739"/>
             <TextBlock Margin="753,633,0,0" Text="ListView" TextWrapping="Wrap" Height="223" Canvas.Left="753" Canvas.Top="429"/>
@@ -20,13 +20,13 @@
                         SelectionMode="Multiple" RenderTransformOrigin="0.874,0.556">
                 <ListViewItem Width="483">
                     <StackPanel Orientation="Horizontal" Height="218">
-                        <Image Source="/Bilder/Weizenmehl.jpeg" Width="70" Height="70" RenderTransformOrigin="0.628,0.567"/>
+                        <Image Source="/Bilder/Weizenmehl.jpeg" Width="127" Height="113" RenderTransformOrigin="0.628,0.567"/>
                         <TextBlock Margin="10 0 0 0 " FontSize="50" Height="86" Width="310"><Run Text="Weizenmehl"/></TextBlock>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Width="477" >
                     <StackPanel Orientation="Horizontal" Height="218">
-                        <Image Source="/Bilder/Roggenmehl.jpeg" Width="70" Height="70" />
+                        <Image Source="/Bilder/Roggenmehl.jpeg" Width="108" Height="136" />
                         <TextBlock Margin="10 0 0 0 " FontSize="50" Height="93" Width="329">Roggenmehl</TextBlock>
                     </StackPanel>
                 </ListViewItem>
@@ -37,13 +37,13 @@
                         SelectionMode="Multiple" RenderTransformOrigin="0.874,0.556">
                 <ListViewItem Width="1291" Height="214" >
                     <StackPanel Orientation="Horizontal" Height="218">
-                        <Image Source="/Bilder/Kokosmehl.jpeg" Width="70" Height="70" />
+                        <Image Source="/Bilder/Kokosmehl.jpeg" Width="136" Height="122" />
                         <TextBlock Margin="10 0 0 0 " FontSize="50" Height="78" Width="363">Kokosmehl</TextBlock>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Width="477" Canvas.Left="883" Canvas.Top="368" >
                     <StackPanel Orientation="Horizontal" Height="218">
-                        <Image Source="/Bilder/Kamutmehl.jpeg" Width="70" Height="70" />
+                        <Image Source="/Bilder/Kamutmehl.jpeg" Width="122" Height="108" />
                         <TextBlock Margin="10 0 0 0 " FontSize="50" Height="93" Width="329">Kamutmehl</TextBlock>
                     </StackPanel>
                 </ListViewItem>
@@ -51,8 +51,8 @@
             </ListView>
 
         </Canvas>
-        <ProgressBar HorizontalAlignment="Center" Height="60" Margin="0,848,0,0" VerticalAlignment="Top" Width="204" Maximum="8" Minimum="0" Value="1" Background="DarkOliveGreen"  Foreground="Black"/>
-        <TextBlock HorizontalAlignment="Left" Margin="732,810,0,0" Text="8/8" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="67" FontSize="25"/>
+        <ProgressBar HorizontalAlignment="Center" Height="60" Margin="0,874,0,0" VerticalAlignment="Top" Width="204" Maximum="8" Minimum="0" Value="1" Background="AntiqueWhite"  Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="725,836,0,0" Text="1/8" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="95" FontSize="25"/>
 
     </Grid>
     <Page.BottomAppBar>

@@ -11,7 +11,7 @@
     <Grid  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <Canvas Margin="59,48,71,66">
-            <TextBlock Margin="0,100,0,0" FontSize="50" Height="87" Canvas.Top="-54" RenderTransformOrigin="0.498,0.434" Canvas.Left="594">Schritt 2</TextBlock>
+            <TextBlock Margin="0,100,0,0" FontSize="50" Height="87" Canvas.Top="-54" RenderTransformOrigin="0.498,0.434" Canvas.Left="559">Teigzusätze</TextBlock>
             <TextBlock FontSize="40" Margin="20" Height="100" Canvas.Left="10" Canvas.Top="107"><Run Text="Bitte wähle deine Teigzusätze: "/></TextBlock>
             <Button Content="weiter" Click="Navigiere_zuSeite3" Height="89" Width="245" Canvas.Left="1086" Canvas.Top="739"/>
             <TextBlock Margin="753,633,0,0" Text="ListView" TextWrapping="Wrap" Height="223" Canvas.Left="753" Canvas.Top="429"/>
@@ -20,19 +20,19 @@
                         SelectionMode="Multiple" RenderTransformOrigin="0.874,0.556">
                 <ListViewItem Width="483" Height="215">
                     <StackPanel Orientation="Horizontal" Height="218">
-                        <Image Source="/Bilder/Karotten.jpeg" Width="70" Height="70" RenderTransformOrigin="0.628,0.567"/>
+                        <Image Source="/Bilder/Karotten.jpeg" Width="123" Height="145" RenderTransformOrigin="0.628,0.567"/>
                         <TextBlock Margin="10 0 0 0 " FontSize="50" Height="86" Width="310"><Run Text="Karotten"/></TextBlock>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Width="477" Height="215" >
                     <StackPanel Orientation="Horizontal" Height="218">
-                        <Image Source="/Bilder/Speck.jpeg" Width="64" Height="70" />
+                        <Image Source="/Bilder/Speck.jpeg" Width="120" Height="145" />
                         <TextBlock Margin="10 0 0 0 " FontSize="50" Height="93" Width="282">Speck</TextBlock>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Width="492" Height="215" >
                     <StackPanel Orientation="Horizontal" Height="218">
-                        <Image Source="/Bilder/getr.Tomaten.jpeg" Width="64" Height="70" />
+                        <Image Source="/Bilder/getr.Tomaten.jpeg" Width="136" Height="161" />
                         <TextBlock Margin="10 0 0 0 " FontSize="50" Height="93" Width="502">getr. Tomaten</TextBlock>
                     </StackPanel>
                 </ListViewItem>
@@ -43,27 +43,27 @@
                         SelectionMode="Multiple" RenderTransformOrigin="0.874,0.556">
                 <ListViewItem Width="1291" Height="214" >
                     <StackPanel Orientation="Horizontal" Height="218">
-                        <Image Source="/Bilder/Cranberries.jpeg" Width="70" Height="70" />
+                        <Image Source="/Bilder/Cranberries.jpeg" Width="137" Height="148" />
                         <TextBlock Margin="10 0 0 0 " FontSize="50" Height="78" Width="363">Cranberries</TextBlock>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Width="1291" Height="214" >
                     <StackPanel Orientation="Horizontal" Height="218">
-                        <Image Source="/Bilder/Paranüsse (2).jpeg" Width="70" Height="70" />
+                        <Image Source="/Bilder/Paranüsse (2).jpeg" Width="150" Height="153" />
                         <TextBlock Margin="10 0 0 0 " FontSize="50" Height="78" Width="363">Paranüsse</TextBlock>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Width="1291" Height="214" >
                     <StackPanel Orientation="Horizontal" Height="218">
-                        <Image Source="/Bilder/Rosinen.jpeg" Width="70" Height="70" />
+                        <Image Source="/Bilder/Rosinen.jpeg" Width="148" Height="140" />
                         <TextBlock Margin="10 0 0 0 " FontSize="50" Height="78" Width="363">Rosinen</TextBlock>
                     </StackPanel>
                 </ListViewItem>
             </ListView>
 
         </Canvas>
-        <ProgressBar HorizontalAlignment="Center" Height="60" Margin="0,848,0,0" VerticalAlignment="Top" Width="204" Maximum="8" Minimum="0" Value="2" Background="DarkOliveGreen"  Foreground="Black"/>
-        <TextBlock HorizontalAlignment="Left" Margin="732,810,0,0" Text="2/8" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="67" FontSize="25"/>
+        <ProgressBar HorizontalAlignment="Left" Height="60" Margin="642,874,0,0" VerticalAlignment="Top" Width="204" Maximum="8" Minimum="0" Value="2" Background="AntiqueWhite"  Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="726,836,0,0" Text="2/8" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="56" FontSize="25"/>
 
     </Grid>
     <Page.BottomAppBar>
