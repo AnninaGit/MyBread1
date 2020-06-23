@@ -32,6 +32,11 @@ namespace MyBread1
             this.InitializeComponent();
             this.Suspending += OnSuspending;
         }
+        public String allgemeinertext { get; set; }
+        public String Standort { get; set; }
+        
+        public String Mehl { get; set; }
+
 
         /// <summary>
         /// Wird aufgerufen, wenn die Anwendung durch den Endbenutzer normal gestartet wird. Weitere Einstiegspunkte

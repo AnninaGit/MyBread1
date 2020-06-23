@@ -30,7 +30,7 @@
                 </ListViewItem>
                 <ListViewItem Width="591" Canvas.Left="883" Canvas.Top="368" Height="168" >
                     <StackPanel Orientation="Horizontal" Height="218">
-                        <TextBlock Margin="10 0 0 0 " FontSize="30" Height="94" Width="477">Fürth, Würzburgerstraße 446, 90768</TextBlock>
+                        <TextBlock x:Name="Fürth" Margin="10 0 0 0 " FontSize="30" Height="94" Width="477">Fürth, Würzburgerstraße 446, 90768</TextBlock>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Width="595" Canvas.Left="883" Canvas.Top="368" Height="168" >

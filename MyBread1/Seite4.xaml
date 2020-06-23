@@ -16,10 +16,10 @@
             <ToggleSwitch Canvas.Left="234" Canvas.Top="-113"   Width="393" Height="88" 
               Name="TogSwitch" FontSize="30" Toggled="ToggleSwitch" OnContent="geschnitten" OffContent="nicht geschnitten"
              BorderThickness="6" Margin="71,371,0,0" />
-            <TextBox x:Name="Ausgabetext" Canvas.Top="148" Text="Möchten sie ihr Brot geschnitten?" TextWrapping="Wrap" FontSize="30" Height="85" Width="500" Canvas.Left="234" />
+            <TextBox x:Name="Ausgabetext" Canvas.Top="148" Text="Möchten sie ihr Brot geschnitten haben?" TextWrapping="Wrap" FontSize="30" Height="105" Width="500" Canvas.Left="234" />
             <Button Content="weiter" Click="Navigiere_zuSeite5" Height="57" Width="290" Canvas.Left="710" Canvas.Top="829"/>
-            <ProgressBar Height="60"  Width="204" Maximum="8" Minimum="0" Value="4"  Background="AntiqueWhite"  Foreground="Black" Canvas.Left="398" Canvas.Top="826"/>
-            <TextBlock  Text="4/8" TextWrapping="Wrap" Height="31" Width="51" FontSize="25" Canvas.Left="482" Canvas.Top="793"/>
+            <ProgressBar Height="60"  Width="204" Maximum="8" Minimum="0" Value="4"  Background="AntiqueWhite"  Foreground="Black" Canvas.Left="400" Canvas.Top="733"/>
+            <TextBlock  Text="4/8" TextWrapping="Wrap" Height="31" Width="51" FontSize="25" Canvas.Left="482" Canvas.Top="695"/>
             <TextBlock  FontSize="50" Canvas.Left="305" Canvas.Top="33"><Run Text="Spezifikationen"/></TextBlock>
         </Canvas>
 

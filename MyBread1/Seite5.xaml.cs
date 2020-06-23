@@ -46,7 +46,11 @@ namespace MyBread1
         private void Navigiere_zuSeite6(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Seite6));
+            App app = (App)App.Current;
+            app.globalertext ="Extrawünsche: " + Eingabefeld.Text;
+
         }
+      
     }
     }
 

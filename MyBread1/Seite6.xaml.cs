@@ -28,10 +28,12 @@ namespace MyBread1
         public Seite6()
         {
             this.InitializeComponent();
+            this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
         }
         private void Navigiere_zuStart(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Startseite));
+            
         }
 
         private void Navigiere_zuSeite5(object sender, RoutedEventArgs e)
@@ -41,6 +43,8 @@ namespace MyBread1
         private void Navigiere_zuWarenkorb(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Warenkorb));
+            App app = (App)App.Current;
+            app.Standort = Fürth.Text;
         }
         
         public void DatePicker()
@@ -50,7 +54,9 @@ namespace MyBread1
             datePickerFor2020.SelectedDate = DateTime.Today;
             CalendarEditingControl();
             
-            
+
+
+
         }
         public DateTime MinDate {
             get;

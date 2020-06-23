@@ -16,7 +16,7 @@
             <Button Content="weiter" Click="Navigiere_zuSeite3" Height="89" Width="245" Canvas.Left="1086" Canvas.Top="739"/>
             <TextBlock Margin="753,633,0,0" Text="ListView" TextWrapping="Wrap" Height="223" Canvas.Left="753" Canvas.Top="429"/>
             <ListView CanReorderItems="False" CanDragItems="False" AllowDrop="True"
-                        Canvas.Left="10" Canvas.Top="154" Width="675" Height="420"
+                        Canvas.Left="10" Canvas.Top="154" Width="645" Height="420"
                         SelectionMode="Multiple" RenderTransformOrigin="0.874,0.556">
                 <ListViewItem Width="650" Height="215">
                     <StackPanel Orientation="Horizontal" Height="218">
@@ -44,7 +44,7 @@
 
             </ListView>
             <ListView CanReorderItems="False" CanDragItems="False" AllowDrop="True"
-                        Canvas.Left="721" Canvas.Top="165" Width="610" Height="409"
+                        Canvas.Left="655" Canvas.Top="165" Width="655" Height="409"
                         SelectionMode="Multiple" RenderTransformOrigin="0.874,0.556">
                 <ListViewItem Width="709" Height="214" >
                     <StackPanel Orientation="Horizontal" Height="218">
@@ -54,7 +54,7 @@
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Width="693" Height="210" RenderTransformOrigin="0.5,0.5" >
-                    
+
                     <StackPanel Orientation="Horizontal" Height="218">
                         <Image Source="/Bilder/Paranüsse (2).jpeg" Width="134" Height="139" />
                         <TextBlock Margin="10 0 0 0 " FontSize="45" Height="78" Width="271">Paranüsse</TextBlock>

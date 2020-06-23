@@ -30,6 +30,8 @@ namespace MyBread1
         private void Navigiere_zuSeite5(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Seite5));
+            App app = (App)App.Current;
+            app.allgemeinertext = "Spezifikationen: " + Ausgabetext.Text;
         }
         private void Navigiere_zuStart(object sender, RoutedEventArgs e)
         {
@@ -54,6 +56,7 @@ namespace MyBread1
                   Ausgabetext.Text = "Ihr Brot bleibt ganz";
             }
         }
+        
 
     }
 }

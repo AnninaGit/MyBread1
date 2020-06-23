@@ -10,7 +10,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Canvas Margin="0,0,10,10">
-            <TextBlock Height="71" Canvas.Left="1068" Canvas.Top="421" x:Name="Ausgabetext" Text="Anzahl an Broten: 1"
+            <TextBlock Height="71" Canvas.Left="1068" Canvas.Top="443" x:Name="Ausgabetext" Text="Anzahl an Broten: 1"
             FontSize="30" Width="301"></TextBlock>
 
             <RepeatButton Canvas.Left="1068" Canvas.Top="504"   Width="111" Height="121" Content="+"
@@ -26,20 +26,21 @@
 
             <TextBlock Width="260" Height="75" Canvas.Left="629" Canvas.Top="55" x:Name="Überschrift" Text="Warenkorb"
             FontSize="50" ></TextBlock>
-            <TextBox  Text="Mehl: " FontSize="30" Height="107" Width="497" Background="AntiqueWhite"  x:Name="MehlBox" Canvas.Left="122" Canvas.Top="202"/>
-            <TextBox Canvas.Left="122" Canvas.Top="300" Text="Teigzusätze: " FontSize="30" TextWrapping="Wrap" Height="98" Width="497" Background="AntiqueWhite"/>
-            <TextBox Canvas.Left="122" Canvas.Top="398" Text="Toppings: " FontSize="30" TextWrapping="Wrap" Height="106" Width="497" Background="AntiqueWhite"/>
-            <TextBox Canvas.Left="122" Canvas.Top="504" Text="Spezifikationen: " FontSize="30" TextWrapping="Wrap" Height="113" Width="497" Background="AntiqueWhite"/>
-            <TextBox Canvas.Left="122" Canvas.Top="617" Text="Extrawünsche: " FontSize="30" TextWrapping="Wrap" Height="118" Width="497" Background="AntiqueWhite"/>
-            <TextBox Canvas.Left="122" Canvas.Top="735" Text="Bestelldetails: " FontSize="30" TextWrapping="Wrap" Height="113" Width="497" Background="AntiqueWhite"/>
+            <TextBox  Text="Mehl: " FontSize="30" x:Name="Ausgabebox1" Height="107" Width="497" Background="AntiqueWhite"  Canvas.Left="122" Canvas.Top="202"/>
+            <TextBox Canvas.Left="122" x:Name="Ausgabebox2" Canvas.Top="300" Text="Teigzusätze: " FontSize="30" TextWrapping="Wrap" Height="98" Width="497" Background="AntiqueWhite"/>
+            <TextBox Canvas.Left="122" x:Name="Ausgabebox3" Canvas.Top="398" Text="Toppings: " FontSize="30" TextWrapping="Wrap" Height="106" Width="497" Background="AntiqueWhite"/>
+            <TextBox Canvas.Left="122" x:Name="Ausgabebox4" Canvas.Top="504" Text="Spezifikationen: " FontSize="30" TextWrapping="Wrap" Height="113" Width="497" Background="AntiqueWhite"/>
+            <TextBox Canvas.Left="122" x:Name="Ausgabebox5" Canvas.Top="617" Text="Extrawünsche: " FontSize="30" TextWrapping="Wrap" Height="118" Width="497" Background="AntiqueWhite"/>
+            <TextBox Canvas.Left="122" x:Name="Ausgabebox6" Canvas.Top="735" Text="Bestelldetails: " FontSize="30" TextWrapping="Wrap" Height="113" Width="497" Background="AntiqueWhite"/>
 
-            <Button Content="Bestellung abschicken" FontSize="30" Canvas.Left="1021" Canvas.Top="202" Height="101" Width="406" Click="Bestellung_Ende"/>
+            <Button Content="Bestellung über 5€ abschicken" FontSize="30" Canvas.Left="929" Canvas.Top="152" Height="101" Width="435" Click="Bestellung_Ende"/>
             <AppBarButton Icon="Edit" Click="Navigiere_zuSeite1" Canvas.Left="708" Canvas.Top="227" Background="AntiqueWhite" Height="51" Width="74"></AppBarButton>
             <AppBarButton Icon="Edit" Click="Navigiere_zuSeite2" Canvas.Left="708" Canvas.Top="324" Background="AntiqueWhite" Height="51" Width="74"></AppBarButton>
             <AppBarButton Icon="Edit" Click="Navigiere_zuSeite3" Canvas.Left="708" Canvas.Top="428" Background="AntiqueWhite" Height="51" Width="74"></AppBarButton>
             <AppBarButton Icon="Edit" Click="Navigiere_zuSeite4" Canvas.Left="708" Canvas.Top="535" Background="AntiqueWhite" Height="51" Width="74"></AppBarButton>
             <AppBarButton Icon="Edit" Click="Navigiere_zuSeite5" Canvas.Left="708" Canvas.Top="648" Background="AntiqueWhite" Height="51" Width="74"></AppBarButton>
             <AppBarButton Icon="Edit" Click="Navigiere_zuSeite6" Canvas.Left="708" Canvas.Top="766" Background="AntiqueWhite" Height="51" Width="74"></AppBarButton>
+            
 
 
         </Canvas>

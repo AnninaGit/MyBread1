@@ -30,11 +30,37 @@ namespace MyBread1
         private void Navigiere_zuSeite2(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Seite2));
+            App app = (App)App.Current;
+
+          app.Mehl = (string) Flip2.SelectedValue.ToString();
+
+           
+            ListBox.
+
+
+
+            /*   this.Frame.Navigate(typeof(Seite2));
+               List<string> l1 = new List<string>();
+               foreach(var item in Flip1.Items)
+               {
+             //      if (item.selected)
+                   {
+             //          l1.Add(item.Text);
+                   };
+               }
+             recordinserted();
+    */
         }
 
+        public void Flip1_SelectedIndexChanged(object sender, EventArgs e) { 
+        }
+
+            
+    
         private void Navigiere_zuStart(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Startseite));
+          
         }
 
         private void Navigiere_zuWarenkorb(object sender, RoutedEventArgs e)
@@ -47,13 +73,16 @@ namespace MyBread1
          //   Mehlbox.Text = app.globalertext;
         }
 
-        private void ListView1_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            App app = (App)App.Current;
-         //   ItemClickEventArgs = app.globalertext;
+        private void Flipview1_ItemClick(object sender, ItemClickEventArgs e)
+        { 
+           //     var selectedItem = Flip1.SelectedItems[1];
+           //     if (selectedItem != null){
+                
+           //         App app = (App)App.Current;
+           //         app.Mehl = "Mehl: " + Textblock1.Text;}
+                          
         }
-
-        private void Dinkel_Click(object sender, RoutedEventArgs e)
+    private void Dinkel_Click(object sender, RoutedEventArgs e)
         {
             Info.Text = "Dinkelnmehl: In keinem anderen Getreide stecken so viele gesunde Nährwerte wie im Dinkel."+
                 " Dinkel ist das Urkorn des Weizens. Dinkelmehl ist das gemahlene Produkt des Dinkelkorns, entweder wird es als ganzes Korn gemahlen oder Teile davon. ";
@@ -69,7 +98,7 @@ namespace MyBread1
         {
             Info.Text = "Kokosnmehl: Kokosmehl – fettarm, cholesterinfrei, geschmackvoll und ballaststoffreich" +
             "Das Mehl der Kokosnuss ist bestens bekömmlich für Menschen mit einem empfindlichen Verdauungssystem." + 
-            "Kokosmehl enthält kein Gluten und ist daher für das Verdauungssystem eine erholsame Wohltat. Darüber hinaus ist Kokosmehl frei von Phytinsäure.";
+            "Kokosmehl enthält kein Gluten und ist daher für das Verdauungssystem eine erholsame Wohltat. Darüber hinaus ist Kokosmehl frei von Phytinsäure. GLUTENFREI";
         }
 
         private void Kamut_Click(object sender, RoutedEventArgs e)

@@ -87,17 +87,30 @@ namespace MyBread1
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            string uebernahmedaten = e.Parameter as string;
-            if (!string.IsNullOrWhiteSpace(uebernahmedaten))
-            {
-                MehlBox.Text = "Mehl: " + uebernahmedaten;
+        //    string uebernahmedaten = e.Parameter as string;
+         //   if (!string.IsNullOrWhiteSpace(uebernahmedaten))
+         //   {
+         /*       Ausgabebox5.Text = "Extrawünsche: " + uebernahmedaten;
+                Ausgabebox4.Text = "Spezifikationen: " + uebernahmedaten;
+
             }
             else
             {
-                MehlBox.Text = "Bitte auf den Änderungsbutton klicken";
+                Ausgabebox5.Text = "Bitte auf den Änderungsbutton klicken";
+                Ausgabebox4.Text = "Bitte auf den Änderungsbutton klicken";
             }
-            base.OnNavigatedTo(e);
+          base.OnNavigatedTo(e);
+ */ 
+            App app = (App)App.Current;
+            Ausgabebox5.Text = app.globalertext;
+            Ausgabebox4.Text = app.allgemeinertext;
+            Ausgabebox1.Text = app.Mehl;
+          
+          
+           
         }
+       
+
 
 
     }

@@ -43,5 +43,39 @@ namespace MyBread1
         {
             this.Frame.Navigate(typeof(Warenkorb));
         }
+
+        private void Körner_Click(object sender, RoutedEventArgs e)
+        {
+            Info3.Text = "Körner: Unser Körnermix setzt sich aus Sonnenblumenkernen und Kürbiskernen zusammen. "
+                + "Kürbiskerne haben viele positive Wirkungen. Sie verbessern unter anderem die Cholesterinwerte und reduzieren Hautprobleme. " +
+                "Und Sonnenblumenkerne liefern dem Körper Energie, sind reich an Proteinen und besitzen viele wichtige Vitamine und Nährstoffe.";
+        }
+
+        private void Nuss_Click(object sender, RoutedEventArgs e)
+        {
+            Info3.Text = "Nüsse: Unser Nussmix setzt sich aus Cashewnüssen, Walnüssen, Mandeln und Walnüssen zusammen"+
+                "Neben den gesunden Fetten enthalten Nüsse auch hochwertiges Eiweiß, Ballaststoffe, sekundäre Pflanzenstoffe und sind eine gute Quelle für Vitamine und Mineralstoffe.";
+        }
+
+        private void RöstZ_Click(object sender, RoutedEventArgs e)
+        {
+            Info3.Text = "Röstwiebeln: Sie verleihen dem Brot eine pikante Note und machen das Brot von innen heraus knusprig.";
+        }
+
+        private void Walnuss_Click(object sender, RoutedEventArgs e)
+        {
+            Info3.Text = "Walnüsse: Sie sind Reich an Antioxidantien, Unterstützen die Gewichtskontrolle und helfen den Blutdruck zu senken.";
+        }
+
+        private void SonnenK_Click(object sender, RoutedEventArgs e)
+        {
+            Info3.Text = "Sonnenblumenkerne: Sie liefern dem Körper Energie, sind reich an Proteinen und besitzen viele wichtige Vitamine und Nährstoffe.";
+        }
+
+        private void Basilikum_Click(object sender, RoutedEventArgs e)
+        {
+            Info3.Text = "Basilikum: Der frische Basilikum verleiht dem Brot eine gewisse Frische und verleiht ihm einen dezenten Kräutergeschmack, ohne sich dabei zu sehr in den Vordergrund zu drängen. " +
+                "Außerdem wirkt Basilikum entzündungshemmend und antioxidativ.";
+        }
     }
 }
