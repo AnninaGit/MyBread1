@@ -31,32 +31,14 @@ namespace MyBread1
         {
             this.Frame.Navigate(typeof(Seite2));
             App app = (App)App.Current;
-
-          app.Mehl = (string) Flip2.SelectedValue.ToString();
-
-           
-            ListBox.
-
-
-
-            /*   this.Frame.Navigate(typeof(Seite2));
-               List<string> l1 = new List<string>();
-               foreach(var item in Flip1.Items)
-               {
-             //      if (item.selected)
-                   {
-             //          l1.Add(item.Text);
-                   };
-               }
-             recordinserted();
-    */
-        }
-
-        public void Flip1_SelectedIndexChanged(object sender, EventArgs e) { 
-        }
-
+            app.Mehl = Bestellung.Text;
+            app.Roggen = Bestellung.Text;
+            app.Kokos = Bestellung.Text;
+            app.Kamut = Bestellung.Text;
             
-    
+           
+        }
+  
         private void Navigiere_zuStart(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Startseite));
@@ -67,21 +49,7 @@ namespace MyBread1
         {
             this.Frame.Navigate(typeof(Warenkorb));
         }
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            App app = (App)App.Current;
-         //   Mehlbox.Text = app.globalertext;
-        }
-
-        private void Flipview1_ItemClick(object sender, ItemClickEventArgs e)
-        { 
-           //     var selectedItem = Flip1.SelectedItems[1];
-           //     if (selectedItem != null){
-                
-           //         App app = (App)App.Current;
-           //         app.Mehl = "Mehl: " + Textblock1.Text;}
-                          
-        }
+       
     private void Dinkel_Click(object sender, RoutedEventArgs e)
         {
             Info.Text = "Dinkelnmehl: In keinem anderen Getreide stecken so viele gesunde Nährwerte wie im Dinkel."+
@@ -107,6 +75,25 @@ namespace MyBread1
          " Das Kamutmehl hat einen leicht süßlichen bis herzhaft-nussigen Geschmack und hat in der Ernährung eine besondere Qualität, weil es einen viel höheren Nährstoffgehalt als die bekannten Getreidearten aufweist. " ; 
         }
 
-      
+        private void Dinkel2_Click(object sender, RoutedEventArgs e)
+        {
+            Bestellung.Text = "Mehl: " + " Dinkelmehl";
+           
+        }
+
+        private void Roggen2_Click(object sender, RoutedEventArgs e)
+        {
+            Bestellung.Text = "Mehl: " + " Roggenmehl";
+        }
+
+        private void Kokos2_Click(object sender, RoutedEventArgs e)
+        {
+            Bestellung.Text = "Mehl: " + " Kokosmehl";
+        }
+
+        private void Kamut2_Click(object sender, RoutedEventArgs e)
+        {
+            Bestellung.Text ="Mehl: " + " Kamutmehl";
+        }
     }
 }

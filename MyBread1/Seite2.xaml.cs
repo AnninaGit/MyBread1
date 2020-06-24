@@ -30,6 +30,14 @@ namespace MyBread1
         private void Navigiere_zuSeite3(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Seite3));
+            App app = (App)App.Current;
+            app.Karotten = Bestellung2.Text;
+            app.Speck = Bestellung2.Text;
+            app.Tomaten = Bestellung2.Text;
+            app.Cranberries = Bestellung2.Text;
+            app.Paranüsse = Bestellung2.Text;
+            app.Rosinen = Bestellung2.Text;
+            app.SonnenK = Bestellung2.Text;
         }
         private void Navigiere_zuStart(object sender, RoutedEventArgs e)
         {
@@ -79,5 +87,37 @@ namespace MyBread1
             Info2.Text = "Eine Paranuss deckt bereits ihren Selen Bedarf für diesen Tag, Selen braucht ihr Körper um Schwermetalle zu binden und schützt somit vor Herz-Kreislauf-Erkrankungen."
                 + "Im Brot verleiht die Paranuss diesen typisch intensiven nussigen Geschmack. ";
         }
+
+        private void Karotten2_Click(object sender, RoutedEventArgs e)
+        {
+            Bestellung2.Text = "Teigzusatz: " + "Karotten";
+        }
+
+        private void Speck2_Click(object sender, RoutedEventArgs e)
+        {
+            Bestellung2.Text = "Teigzusatz: " + "Speck";
+        }
+
+        private void Tomaten2_Click(object sender, RoutedEventArgs e)
+        {
+            Bestellung2.Text = "Teigzusatz: " + "getrocknete Tomaten";
+        }
+
+        private void Cranberries2_Click(object sender, RoutedEventArgs e)
+        {
+            Bestellung2.Text = "Teigzusatz: " + "Cranberries";
+        }
+
+        private void Paranüsse2_Click(object sender, RoutedEventArgs e)
+        {
+            Bestellung2.Text = "Teigzusatz: " + "Paranüsse";
+        }
+
+        private void Rosinen2_Click(object sender, RoutedEventArgs e)
+        {
+            Bestellung2.Text = "Teigzusatz: " + "Rosinen";
+        }
+       
+
     }
 }

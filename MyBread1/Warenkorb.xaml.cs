@@ -105,11 +105,28 @@ namespace MyBread1
             Ausgabebox5.Text = app.globalertext;
             Ausgabebox4.Text = app.allgemeinertext;
             Ausgabebox1.Text = app.Mehl;
-          
-          
-           
+            Ausgabebox1.Text = app.Roggen;
+            Ausgabebox1.Text = app.Kokos;
+            Ausgabebox1.Text = app.Kamut;
+            Ausgabebox2.Text = app.Karotten;
+            Ausgabebox2.Text = app.Speck;
+            Ausgabebox2.Text = app.Tomaten;
+            Ausgabebox2.Text = app.Cranberries;
+            Ausgabebox2.Text = app.Paranüsse;
+            Ausgabebox2.Text = app.Rosinen;
+            Ausgabebox3.Text = app.Körner;
+            Ausgabebox3.Text = app.Nuss;
+            Ausgabebox3.Text = app.Röst;
+            Ausgabebox3.Text = app.Walnuss;
+            Ausgabebox3.Text = app.SonnenK;
+            Ausgabebox3.Text = app.Basilikum;
+
+
+
+
+
         }
-       
+
 
 
 

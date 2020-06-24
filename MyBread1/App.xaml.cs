@@ -37,6 +37,22 @@ namespace MyBread1
         
         public String Mehl { get; set; }
 
+        public String Roggen { get; set; }
+        public String Kokos { get; set; }
+        public String Kamut { get; set; }
+        public String  Karotten { get; set; }
+        public String Speck { get; set; }
+        public String Tomaten { get; set; }
+        public String Cranberries { get; set; }
+        public String Paranüsse { get; set; }
+        public String  Rosinen{ get; set; }
+        public String Körner { get; set; }
+        public String Nuss { get; set; }
+        public String Röst { get; set; }
+        public String Walnuss { get; set; }
+        public String SonnenK { get; set; }
+        public String Basilikum { get; set; }
+
 
         /// <summary>
         /// Wird aufgerufen, wenn die Anwendung durch den Endbenutzer normal gestartet wird. Weitere Einstiegspunkte

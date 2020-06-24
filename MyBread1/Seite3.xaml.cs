@@ -30,6 +30,13 @@ namespace MyBread1
         private void Navigiere_zuSeite4(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Seite4));
+            App app = (App)App.Current;
+            app.Körner = Bestellung3.Text;
+            app.Nuss = Bestellung3.Text;
+            app.Röst = Bestellung3.Text;
+            app.Walnuss = Bestellung3.Text;
+            app.SonnenK = Bestellung3.Text;
+            app.Basilikum = Bestellung3.Text;
         }
         private void Navigiere_zuStart(object sender, RoutedEventArgs e)
         {
@@ -76,6 +83,35 @@ namespace MyBread1
         {
             Info3.Text = "Basilikum: Der frische Basilikum verleiht dem Brot eine gewisse Frische und verleiht ihm einen dezenten Kräutergeschmack, ohne sich dabei zu sehr in den Vordergrund zu drängen. " +
                 "Außerdem wirkt Basilikum entzündungshemmend und antioxidativ.";
+        }
+
+        private void Körner2_Click(object sender, RoutedEventArgs e)
+        {
+            Bestellung3.Text = "Topping: " + "Körnermix";
+        }
+
+        private void Nuss2_Click(object sender, RoutedEventArgs e)
+        {
+            Bestellung3.Text = "Topping: " + "Nussmix";
+        }
+
+        private void RöstZ2_Click(object sender, RoutedEventArgs e)
+        {
+            Bestellung3.Text = "Topping: " + "Röstzwiebeln";
+        }
+
+        private void Walnuss2_Click(object sender, RoutedEventArgs e)
+        {
+            Bestellung3.Text = "Topping: " + "Walnuss";
+        }
+
+        private void SonnenK2_Click(object sender, RoutedEventArgs e)
+        {
+            Bestellung3.Text = "Topping: " + "Sonnenblumenkerne";
+        }
+        private void Basilikum2_Click(object sender, RoutedEventArgs e)
+        {
+            Bestellung3.Text = "Topping: " + "Basilikum";
         }
     }
 }

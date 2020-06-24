@@ -14,59 +14,62 @@
             <TextBlock FontSize="40" Margin="20" Height="100" Canvas.Left="10" Canvas.Top="107"><Run Text="Bitte wähle deine Toppings: "/></TextBlock>
             <Button Content="weiter" Click="Navigiere_zuSeite4" Height="89" Width="245" Canvas.Left="1086" Canvas.Top="739"/>
             <TextBlock Margin="753,633,0,0" Text="ListView" TextWrapping="Wrap" Height="223" Canvas.Left="753" Canvas.Top="429"/>
-            <ListView CanReorderItems="False" CanDragItems="False" AllowDrop="True"
-                        Canvas.Left="10" Canvas.Top="165" Width="645" Height="417"
-                        SelectionMode="Multiple" RenderTransformOrigin="0.874,0.556">
-                <ListViewItem Width="649" Height="215">
-                    <StackPanel Orientation="Horizontal" Height="218">
+            <ListView CanReorderItems="False" CanDragItems="False" AllowDrop="True" Canvas.Top="165" Width="785" Height="417"
+                        SelectionMode="None" RenderTransformOrigin="0.874,0.556">
+                <ListViewItem Width="781" Height="201">
+                    <StackPanel Orientation="Horizontal" Height="218" Margin="-12,0,-110,-3">
+                        <CheckBox Click="Körner2_Click" Width="45" Height="60"></CheckBox>
                         <Image Source="/Bilder/Körnermix.jpeg"  Width="142" Height="244" RenderTransformOrigin="0.628,0.567"/>
-                        <TextBlock Margin="10 0 0 0 " FontSize="40" Height="86" Width="232"><Run Text="Körnermix"/></TextBlock>
+                        <TextBlock Margin="10 0 0 0 " FontSize="40" Height="60" Width="261"><Run Text="Körnermix"/></TextBlock>
                         <Button Content="Mehr Informationen" Canvas.Left="160" Canvas.Top="717" Height="40" Width="180" Click="Körner_Click"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Width="651" Height="204" RenderTransformOrigin="0.5,0.5" >
+                <ListViewItem Width="783" Height="204" RenderTransformOrigin="0.5,0.5" >
 
-                    <StackPanel Orientation="Horizontal" Height="218">
+                    <StackPanel Orientation="Horizontal" Margin="-12,0,-108,-27">
+                        <CheckBox Click="Nuss2_Click" Width="45" Height="60"></CheckBox>
                         <Image Source="/Bilder/Nussmix.jpeg" Width="115" Height="158" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="40" Height="93" Width="263">Nussmix</TextBlock>
+                        <TextBlock Margin="10 0 0 0 " FontSize="40" Height="64" Width="297">Nussmix</TextBlock>
                         <Button Content="Mehr Informationen" Canvas.Left="160" Canvas.Top="717" Height="40" Width="180" Click="Nuss_Click"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Width="669" Height="231" >
-                    <StackPanel Orientation="Horizontal" Height="218">
+                <ListViewItem Width="783" Height="225" >
+                    <StackPanel Orientation="Horizontal" Height="218" Margin="-12,0,-49,0" >
+                        <CheckBox Click="RöstZ2_Click" Width="91" Height="60"></CheckBox>
                         <Image Source="/Bilder/Röstzwiebeln.jpeg" Width="126" Height="149" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="40" Height="93" Width="296"><Run Text="Röstzwiebeln"/></TextBlock>
+                        <TextBlock Margin="10 0 0 0 " FontSize="40" Height="93" Width="291"><Run Text="Röstzwiebeln"/></TextBlock>
                         <Button Content="Mehr Informationen" Canvas.Left="160" Canvas.Top="717" Height="40" Width="180" Click="RöstZ_Click"/>
                     </StackPanel>
                 </ListViewItem>
-
-            </ListView>
-            <ListView CanReorderItems="False" CanDragItems="False" AllowDrop="True"
-                        Canvas.Left="660" Canvas.Top="165" Width="640" Height="417"
-                        SelectionMode="Multiple" RenderTransformOrigin="0.874,0.556">
-                <ListViewItem Width="653" Height="214" >
+                <ListViewItem Width="788" Height="232" >
                     <StackPanel Orientation="Horizontal" Height="218">
+                        <CheckBox Click="Walnuss2_Click" Width="91" Height="60"></CheckBox>
                         <Image Source="/Bilder/Walnüsse.jpeg" Width="140" Height="140" />
                         <TextBlock Margin="10 0 0 0 " FontSize="40" Height="78" Width="271">Walnüsse</TextBlock>
                         <Button Content="Mehr Informationen" Canvas.Left="160" Canvas.Top="717" Height="40" Width="180" Click="Walnuss_Click"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Width="656" Height="210" >
+                <ListViewItem Width="799" Height="217" RenderTransformOrigin="0.5,0.5" >
+                    
                     <StackPanel Orientation="Horizontal" Height="218">
+                        <CheckBox Click="SonnenK2_Click" Width="91" Height="60"></CheckBox>
                         <Image Source="/Bilder/Sonnenblumenkerne.jpeg" Width="137" Height="161" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="30" Height="55" Width="282" >Sonnenblumenkerne</TextBlock>
+                        <TextBlock Margin="10 0 0 0 " FontSize="25" Height="44" Width="269" >Sonnenblumenkerne</TextBlock>
                         <Button Content="Mehr Informationen" Canvas.Left="160" Canvas.Top="717" Height="40" Width="180" Click="SonnenK_Click"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Width="647" Height="207" >
+                <ListViewItem Width="782" Height="207" >
                     <StackPanel Orientation="Horizontal" Height="218">
+                        <CheckBox Click="Basilikum2_Click" Width="91" Height="60"></CheckBox>
                         <Image Source="/Bilder/Basilikum.jpeg" Width="140" Height="191" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="40" Height="78" Width="278">Basilikum</TextBlock>
+                        <TextBlock Margin="10 0 0 0 " FontSize="40" Height="78" Width="267">Basilikum</TextBlock>
                         <Button Content="Mehr Informationen" Canvas.Left="160" Canvas.Top="717" Height="40" Width="180" Click="Basilikum_Click"/>
                     </StackPanel>
                 </ListViewItem>
             </ListView>
 
+            <TextBlock Canvas.Left="907" Canvas.Top="217" FontSize="20" TextWrapping="Wrap" Height="361" Width="341" x:Name="Bestellung3"/>
+            <TextBox Canvas.Left="907" BorderBrush="Gray" Canvas.Top="164" Text="Bestellübersicht: " FontSize="25" TextWrapping="Wrap" Height="53" Width="229"/>
             <TextBox x:Name="Info3"  TextWrapping="Wrap" Canvas.Left="30" Canvas.Top="587" Width="962" Height="142" FontSize="22"/>
 
         </Canvas>
