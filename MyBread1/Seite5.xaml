@@ -13,7 +13,7 @@
             <TextBlock FontFamily="Times New Roman" FontSize="50" Canvas.Left="505" Canvas.Top="10">Extrawünsche</TextBlock>
             <TextBlock FontSize="40" Height="89" Canvas.Top="112" Width="916" Canvas.Left="175"><Run Text="Hier können Sie noch Extrawünsche äußern: "/></TextBlock>
             <TextBox FontSize="40" Width="960" Background="FloralWhite"  x:Name="Eingabefeld" Height="319" RenderTransformOrigin="0.5,0.5" Canvas.Top="170" Canvas.Left="175"/>
-            <Button FontSize="25" BorderBrush="Black" Foreground="Black" Background="LightGray" BorderThickness="4"  Height="80" Width="220" Content="weiter"  Click="Navigiere_zuSeite6"  Canvas.Left="1090" Canvas.Top="764"/>
+            <Button FontSize="25" BorderBrush="Black" Foreground="Black" Background="LightGray" BorderThickness="4"  Height="80" Width="220" Content="weiter"  Click="Navigiere_zuSeite6"  Canvas.Left="1080" Canvas.Top="755"/>
             <ProgressBar Height="40" Width="150" Maximum="8" Minimum="0" Value="5" Background="FloralWhite"  Foreground="Black" Canvas.Left="580" Canvas.Top="785"/>
             <TextBlock  Text="5/8" TextWrapping="Wrap" Height="36" Width="51" FontSize="25" Canvas.Left="637" Canvas.Top="747" RenderTransformOrigin="1.267,0.212"/>
         </Canvas>

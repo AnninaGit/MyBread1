@@ -13,58 +13,60 @@
         <Canvas Margin="60,50,70,65" >
             <TextBlock FontFamily="Times New Roman"  Margin="0,100,0,0" FontSize="50" Height="87" Canvas.Top="-80" RenderTransformOrigin="0.498,0.434" Canvas.Left="30">Teigzusätze</TextBlock>
             <TextBlock FontSize="40" Margin="20" Height="80" Canvas.Left="10" Canvas.Top="69"><Run Text="Bitte wähle deine Teigzusätze: "/></TextBlock>
-            <Button FontSize="25" BorderBrush="Black" Foreground="Black" Background="LightGray" BorderThickness="4"  Height="80" Width="220" Content="weiter" Click="Navigiere_zuSeite3"  Canvas.Left="1090" Canvas.Top="765"/>
+            <Button FontSize="25" BorderBrush="Black" Foreground="Black" Background="LightGray" BorderThickness="4"  Height="80" Width="220" Content="weiter" Click="Navigiere_zuSeite3"  Canvas.Left="1080" Canvas.Top="755"/>
             <TextBlock Margin="753,633,0,0" Text="ListView" TextWrapping="Wrap" Height="223" Canvas.Left="753" Canvas.Top="429"/>
             <ListView CanReorderItems="False" CanDragItems="False" AllowDrop="True"
                         Canvas.Left="10" Canvas.Top="154" Width="803" Height="428"
                         SelectionMode="None" RenderTransformOrigin="0.874,0.556">
-                <ListViewItem Width="836" Height="216" Background="FloralWhite">
+                <ListViewItem Width="841" Height="228" Background="FloralWhite" RenderTransformOrigin="0.5,0.5">
+                    
                     <StackPanel Orientation="Horizontal" Height="218">
-                        <CheckBox  Checked="Karotten2_Click" Height="59" Width="44" Unchecked="Karotten2_Clickuncheck"/>
+                        <CheckBox  Checked="Karotten2_Click" Height="20" Width="44" Unchecked="Karotten2_Clickuncheck"/>
                         <Image Source="/Bilder/Karotten.jpeg" Width="137" Height="187" RenderTransformOrigin="0.628,0.567"/>
-                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="86" Width="286"><Run Text="Karotten"/></TextBlock>
-                        <Button Content="Mehr Informationen" Height="40" Width="167" Click="Karotten_Click"/>
+                        <TextBlock Margin="10 0 0 0 " FontSize="40" Height="57" Width="312"><Run Text="Karotten"/></TextBlock>
+                        <Button Foreground="DimGray" Background="Gainsboro" Content="Mehr Informationen" Height="40" Width="167" Click="Karotten_Click"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Width="802" Height="206" RenderTransformOrigin="0.5,0.5" Background="FloralWhite" >
+                <ListViewItem Width="816" Height="214" RenderTransformOrigin="0.5,0.5" Background="FloralWhite" >
+                    
 
                     <StackPanel Orientation="Horizontal" Height="218">
-                        <CheckBox  Checked="Speck2_Click" Height="59" Width="44" Unchecked="Speck2_Clickuncheck"/>
+                        <CheckBox  Checked="Speck2_Click" Height="30" Width="44" Unchecked="Speck2_Clickuncheck"/>
                         <Image Source="/Bilder/Speck.jpeg" Width="152" Height="157" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="50" Height="93" Width="275">Speck</TextBlock>
-                        <Button Content="Mehr Informationen" Canvas.Left="492" Canvas.Top="443" Height="40" Width="167" Click="Speck_Click"/>
+                        <TextBlock Margin="10 0 0 0 " FontSize="40" Height="64" Width="299">Speck</TextBlock>
+                        <Button Foreground="DimGray" Background="Gainsboro" Content="Mehr Informationen" Canvas.Left="492" Canvas.Top="443" Height="40" Width="167" Click="Speck_Click"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Width="804" Height="210" Background="FloralWhite" >
+                <ListViewItem Width="804" Height="216" Background="FloralWhite" >
                     <StackPanel Orientation="Horizontal" Height="218">
-                        <CheckBox  Checked="Tomaten2_Click" Height="59" Width="44" Unchecked="Tomaten2_Clickuncheck"/>
+                        <CheckBox  Checked="Tomaten2_Click" Height="20" Width="44" Unchecked="Tomaten2_Clickuncheck"/>
                         <Image Source="/Bilder/getr.Tomaten.jpeg" Width="158" Height="169" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="45" Height="93" Width="293">getr. Tomaten</TextBlock>
-                        <Button Content="Mehr Informationen" Canvas.Left="1203" Canvas.Top="244" Height="40" Width="167" Click="Tomaten_Click"/>
+                        <TextBlock Margin="10 0 0 0 " FontSize="40" Height="63" Width="293">getr. Tomaten</TextBlock>
+                        <Button Foreground="DimGray" Background="Gainsboro" Content="Mehr Informationen" Canvas.Left="1203" Canvas.Top="244" Height="40" Width="167" Click="Tomaten_Click"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Width="805" Height="218" Background="FloralWhite">
+                <ListViewItem Width="805" Height="212" Background="FloralWhite">
                     <StackPanel Orientation="Horizontal" Height="218"   >
-                        <CheckBox Checked="Cranberries2_Click" Height="59" Width="44" Unchecked="Cranberries2_Clickuncheck"/>
+                        <CheckBox Checked="Cranberries2_Click" Height="30" Width="44" Unchecked="Cranberries2_Clickuncheck"/>
                         <Image Source="/Bilder/Cranberries.jpeg" Width="147" Height="186" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="45" Height="78" Width="300">Cranberries</TextBlock>
-                        <Button Content="Mehr Informationen" Canvas.Left="1203" Canvas.Top="244" Height="40" Width="167" Click="Cranberries_Click"/>
+                        <TextBlock Margin="10 0 0 0 " FontSize="40" Height="66" Width="300">Cranberries</TextBlock>
+                        <Button Foreground="DimGray" Background="Gainsboro" Content="Mehr Informationen" Canvas.Left="1203" Canvas.Top="244" Height="40" Width="167" Click="Cranberries_Click"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Width="797" Height="208" RenderTransformOrigin="0.5,0.5" Background="FloralWhite">
+                <ListViewItem Width="807" Height="224" RenderTransformOrigin="0.5,0.5" Background="FloralWhite">
                     <StackPanel Orientation="Horizontal" Height="218" Margin="-2,0,-41,-20">
-                        <CheckBox  Checked="Paranüsse2_Click" Height="59" Width="44" Unchecked="Paranüsse2_Clickuncheck"/>
+                        <CheckBox  Checked="Paranüsse2_Click" Height="1" Width="44" Unchecked="Paranüsse2_Clickuncheck"/>
                         <Image Source="/Bilder/Paranüsse (2).jpeg" Width="136" Height="183" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="45" Height="78" Width="307">Paranüsse</TextBlock>
-                        <Button Content="Mehr Informationen" Canvas.Left="1209" Canvas.Top="443" Height="40" Width="167" Click="Paranüsse_Click"/>
+                        <TextBlock Margin="10 0 0 0 " FontSize="40" Height="68" Width="307">Paranüsse</TextBlock>
+                        <Button Foreground="DimGray" Background="Gainsboro" Content="Mehr Informationen" Canvas.Left="1209" Canvas.Top="443" Height="40" Width="167" Click="Paranüsse_Click"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Width="796" Height="184" Background="FloralWhite" >
-                    <StackPanel Orientation="Horizontal" Height="218" Margin="-12,0,0,-28">
-                        <CheckBox  Checked="Rosinen2_Click" Height="59" Width="44" Unchecked="Rosinen2_Clickuncheck"/>
+                <ListViewItem Width="804" Height="228" Background="FloralWhite" >
+                    <StackPanel Orientation="Horizontal" Height="218" Margin="-2,0,0,-28">
+                        <CheckBox  Checked="Rosinen2_Click" Height="34" Width="44" Unchecked="Rosinen2_Clickuncheck"/>
                         <Image Source="/Bilder/Rosinen.jpeg" Width="168" Height="186" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="45" Height="78" Width="288">Rosinen</TextBlock>
-                        <Button Content="Mehr Informationen" Canvas.Left="1209" Canvas.Top="443" Height="40" Width="167" Click="Rosinen_Click"/>
+                        <TextBlock Margin="10 0 0 0 " FontSize="40" Height="66" Width="288">Rosinen</TextBlock>
+                        <Button Foreground="DimGray" Background="Gainsboro" Content="Mehr Informationen" Canvas.Left="1209" Canvas.Top="443" Height="40" Width="167" Click="Rosinen_Click"/>
                     </StackPanel>
                 </ListViewItem>
             </ListView>

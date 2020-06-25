@@ -188,6 +188,7 @@ namespace MyBread1
     */
 
             App app = (App)App.Current;
+           
 
             Ausgabebox5.Text = app.globalertext;
 

@@ -13,12 +13,12 @@
         <Canvas Margin="60,50,70,65">
             <TextBlock FontFamily="Times New Roman"  Margin="0,20,0,0" FontSize="50" Canvas.Top="-2" Height="64" Width="323" Canvas.Left="20">Mehl Auswahl</TextBlock>
             <TextBlock  FontSize="40" Margin="20" Canvas.Top="63" Height="81" Width="553"><Run Text="Bitte wähle deine Mehlsorten: "  /></TextBlock>
-            <Button FontSize="25" BorderBrush="Black" Foreground="Black" Background="LightGray" BorderThickness="4"  Height="80" Width="220" Content="weiter" Click="Navigiere_zuSeite2" Canvas.Left="1151" Canvas.Top="792"/>
+            <Button FontSize="25" BorderBrush="Black" Foreground="Black" Background="LightGray" BorderThickness="4"  Height="80" Width="220" Content="weiter" Click="Navigiere_zuSeite2" Canvas.Left="1136" Canvas.Top="779"/>
             <TextBlock Margin="753,633,0,0" Text="ListView" TextWrapping="Wrap" Height="223" Canvas.Left="753" Canvas.Top="429"/>
             <ListView   AllowDrop="True" 
                         Canvas.Left="10" Canvas.Top="165" Width="915" Height="462" x:Name="Flip1"
                         SelectionMode="None" RenderTransformOrigin="0.874,0.556"  >
-                <ListViewItem Width="920" Height="235" Background="FloralWhite">
+                <ListViewItem Width="920" Height="224" Background="FloralWhite">
                     <StackPanel x:Name="Stackpanel1" Orientation="Horizontal" Height="218" Margin="-2,0,6,0"  >
                         <CheckBox  Checked="Dinkel2_Click" Unchecked="Dinkel2_Clickuncheck" Width="52"/>
                         <Image Source="/Bilder/Weizenmehl.jpeg" Width="175" Height="173" RenderTransformOrigin="0.343,0.618"/>
@@ -26,8 +26,7 @@
                         <Button Content="Mehr Informationen" Foreground="DimGray" Background="Gainsboro" RenderTransformOrigin="0.5,0.5" Height="40" Width="180" Click="Dinkel_Click"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Width="916" Height="232" RenderTransformOrigin="0.5,0.5" Background="FloralWhite">
-
+                <ListViewItem Width="916" Height="216" RenderTransformOrigin="0.5,0.5" Background="FloralWhite">
                     <StackPanel Orientation="Horizontal" Height="218">
                         <CheckBox   Height="31" Width="60" Checked="Roggen2_Click" Unchecked="Roggen2_Clickuncheck"/>
                         <Image Source="/Bilder/Roggenmehl.jpeg" Width="175" Height="173" />
@@ -36,7 +35,7 @@
                     </StackPanel>
                 </ListViewItem>
 
-                <ListViewItem Width="914" Height="254" Background="FloralWhite">
+                <ListViewItem Width="926" Height="224" Background="FloralWhite">
                     <StackPanel Orientation="Horizontal" Height="218" x:Name="ListViewItem1" Margin="-2,0,3,-4">
                         <CheckBox  Checked="Kokos2_Click" Height="59" Width="44" Unchecked="Kokos2_Clickuncheck"/>
                         <Image Source="/Bilder/Kokosmehl.jpeg" Width="174" Height="172" />
@@ -44,7 +43,7 @@
                         <Button Content="Mehr Informationen" Foreground="DimGray" Background="Gainsboro"  Canvas.Left="1209" Canvas.Top="251" Height="40" Width="180" Click="Kokos_Click"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Width="906" Canvas.Left="883" Canvas.Top="368" x:Name="ListViewItem2" Background="FloralWhite">
+                <ListViewItem Width="916" Canvas.Left="883" Canvas.Top="368" x:Name="ListViewItem2" Background="FloralWhite" Height="227">
                     <StackPanel Orientation="Horizontal" Height="218">
                         <CheckBox  Checked="Kamut2_Click" Height="59" Width="44" Unchecked="Kamut2_Clickuncheck"/>
                         <Image Source="/Bilder/Kamutmehl.jpeg" Width="180" Height="186" />

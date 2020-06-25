@@ -10,7 +10,7 @@
 
     <Grid>
         <Canvas Margin="60,50,70,65">
-            <Button FontSize="25" BorderBrush="Black" Foreground="Black" Background="LightGray" BorderThickness="4"  Height="80" Width="220" Content="weiter"  Click="Navigiere_zuWarenkorb"   Canvas.Left="1090" Canvas.Top="765"/>
+            <Button FontSize="25" BorderBrush="Black" Foreground="Black" Background="LightGray" BorderThickness="4"  Height="80" Width="220" Content="weiter"  Click="Navigiere_zuWarenkorb"   Canvas.Left="1080" Canvas.Top="757"/>
             <TextBlock FontFamily="Times New Roman" Text="Bestelloptionen" TextWrapping="Wrap" Height="54" Width="290" FontSize="40" Canvas.Left="26" Canvas.Top="35"/>
 
             <StackPanel Width="443" Background="FloralWhite" Height="72" Canvas.Top="147" Canvas.Left="43"  >
