@@ -34,6 +34,7 @@ namespace MyBread1
         {
             this.Frame.Navigate(typeof(Seite1));
         }
+        
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
             var camera = new CameraCaptureUI();

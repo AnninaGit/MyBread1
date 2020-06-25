@@ -87,31 +87,55 @@ namespace MyBread1
 
         private void Körner2_Click(object sender, RoutedEventArgs e)
         {
-            Bestellung3.Text = "Topping: " + "Körnermix";
+            Bestellung3.Text += "- Körnermix \r\n";
+        }
+        private void Körner2_Clickuncheck(object sender, RoutedEventArgs e)
+        {
+            Bestellung3.Text = "";
         }
 
         private void Nuss2_Click(object sender, RoutedEventArgs e)
         {
-            Bestellung3.Text = "Topping: " + "Nussmix";
+            Bestellung3.Text += "- Nussmix \r\n";
+        }
+        private void Nuss2_Clickuncheck(object sender, RoutedEventArgs e)
+        {
+            Bestellung3.Text = "";
         }
 
         private void RöstZ2_Click(object sender, RoutedEventArgs e)
         {
-            Bestellung3.Text = "Topping: " + "Röstzwiebeln";
+            Bestellung3.Text += "- Röstzwiebeln \r\n";
+        }
+        private void RöstZ2_Clickuncheck(object sender, RoutedEventArgs e)
+        {
+            Bestellung3.Text = "";
         }
 
         private void Walnuss2_Click(object sender, RoutedEventArgs e)
         {
-            Bestellung3.Text = "Topping: " + "Walnuss";
+            Bestellung3.Text += "- Walnuss \r\n";
+        }
+        private void Walnuss2_Clickuncheck(object sender, RoutedEventArgs e)
+        {
+            Bestellung3.Text = "";
         }
 
         private void SonnenK2_Click(object sender, RoutedEventArgs e)
         {
-            Bestellung3.Text = "Topping: " + "Sonnenblumenkerne";
+            Bestellung3.Text += "- Sonnenblumenkerne \r\n";
+        }
+        private void SonnenK2_Clickuncheck(object sender, RoutedEventArgs e)
+        {
+            Bestellung3.Text = "";
         }
         private void Basilikum2_Click(object sender, RoutedEventArgs e)
         {
-            Bestellung3.Text = "Topping: " + "Basilikum";
+            Bestellung3.Text += "- Basilikum \r\n";
+        }
+        private void Basilikum2_Clickuncheck(object sender, RoutedEventArgs e)
+        {
+            Bestellung3.Text = "";
         }
     }
 }

@@ -90,34 +90,58 @@ namespace MyBread1
 
         private void Karotten2_Click(object sender, RoutedEventArgs e)
         {
-            Bestellung2.Text = "Teigzusatz: " + "Karotten";
+            Bestellung2.Text +=  "- Karotten \r\n" ;
+        }
+        private void Karotten2_Clickuncheck(object sender, RoutedEventArgs e)
+        {
+            Bestellung2.Text = "";
         }
 
         private void Speck2_Click(object sender, RoutedEventArgs e)
         {
-            Bestellung2.Text = "Teigzusatz: " + "Speck";
+            Bestellung2.Text += "- Speck \r\n";
+        }
+        private void Speck2_Clickuncheck(object sender, RoutedEventArgs e)
+        {
+            Bestellung2.Text = "";
         }
 
         private void Tomaten2_Click(object sender, RoutedEventArgs e)
         {
-            Bestellung2.Text = "Teigzusatz: " + "getrocknete Tomaten";
+            Bestellung2.Text += "- getrocknete Tomaten \r\n";
+        }
+        private void Tomaten2_Clickuncheck(object sender, RoutedEventArgs e)
+        {
+            Bestellung2.Text = "";
         }
 
         private void Cranberries2_Click(object sender, RoutedEventArgs e)
         {
-            Bestellung2.Text = "Teigzusatz: " + "Cranberries";
+            Bestellung2.Text += "- Cranberries \r\n";
+        }
+        private void Cranberries2_Clickuncheck(object sender, RoutedEventArgs e)
+        {
+            Bestellung2.Text = "";
         }
 
         private void Paranüsse2_Click(object sender, RoutedEventArgs e)
         {
-            Bestellung2.Text = "Teigzusatz: " + "Paranüsse";
+            Bestellung2.Text += "- Paranüsse \r\n";
+        }
+        private void Paranüsse2_Clickuncheck(object sender, RoutedEventArgs e)
+        {
+            Bestellung2.Text = "";
         }
 
         private void Rosinen2_Click(object sender, RoutedEventArgs e)
         {
-            Bestellung2.Text = "Teigzusatz: " + "Rosinen";
+            Bestellung2.Text += "- Rosinen \r\n";
         }
-       
+        private void Rosinen2_Clickuncheck(object sender, RoutedEventArgs e)
+        {
+            Bestellung2.Text = "";
+        }
 
+       
     }
 }

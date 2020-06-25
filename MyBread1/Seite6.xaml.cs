@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 
+
 // Die Elementvorlage "Leere Seite" wird unter https://go.microsoft.com/fwlink/?LinkId=234238 dokumentiert.
 
 namespace MyBread1
@@ -44,20 +45,13 @@ namespace MyBread1
         {
             this.Frame.Navigate(typeof(Warenkorb));
             App app = (App)App.Current;
-            app.Standort = Fürth.Text;
+            app.Standort = Bestellung4.Text;
+            app.Standort2 = Bestellung4.Text;
+            app.Standort3 = Bestellung4.Text;
         }
-        
-        public void DatePicker()
-        {
-            DatePicker datePickerFor2020 = new DatePicker();
-            InitializeComponent();
-            datePickerFor2020.SelectedDate = DateTime.Today;
-            CalendarEditingControl();
-            
+       
 
 
-
-        }
         public DateTime MinDate {
             get;
             set;
@@ -69,8 +63,34 @@ namespace MyBread1
             this.MinDate = DateTime.Today;
             this.MaxDate = DateTime.Today.AddYears(1);
         }
-      
-        
-        
+
+        private void Ansbach_Checked(object sender, RoutedEventArgs e)
+        {
+            Bestellung4.Text = "- Ansbach \r\n";
+        }
+
+        private void Ansbach_Unchecked(object sender, RoutedEventArgs e)
+        {
+            Bestellung4.Text = "";
+        }
+        private void Fürth_Checked(object sender, RoutedEventArgs e)
+        {
+            Bestellung4.Text = "- Fürth \r\n";
+        }
+
+        private void Fürth_Unchecked(object sender, RoutedEventArgs e)
+        {
+            Bestellung4.Text = "";
+        }
+        private void Nürnberg_Checked(object sender, RoutedEventArgs e)
+        {
+            Bestellung4.Text = "- Nürnberg \r\n";
+        }
+
+        private void Nürnberg_Unchecked(object sender, RoutedEventArgs e)
+        {
+            Bestellung4.Text = "";
+        }
     }
-}
+
+    }

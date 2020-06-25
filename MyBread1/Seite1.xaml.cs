@@ -77,23 +77,43 @@ namespace MyBread1
 
         private void Dinkel2_Click(object sender, RoutedEventArgs e)
         {
-            Bestellung.Text = "Mehl: " + " Dinkelmehl";
+            Bestellung.Text += "- Dinkelmehl \r\n";
            
+        }
+        private void Dinkel2_Clickuncheck(object sender, RoutedEventArgs e)
+        {
+            Bestellung.Text = "";
+
         }
 
         private void Roggen2_Click(object sender, RoutedEventArgs e)
         {
-            Bestellung.Text = "Mehl: " + " Roggenmehl";
+            Bestellung.Text +="- Roggenmehl \r\n";
         }
+        private void Roggen2_Clickuncheck(object sender, RoutedEventArgs e)
+        {
+            Bestellung.Text = "";
+        }
+
 
         private void Kokos2_Click(object sender, RoutedEventArgs e)
         {
-            Bestellung.Text = "Mehl: " + " Kokosmehl";
+         
+            Bestellung.Text +=  "- Kokosmehl \r\n";
+        }
+        private void Kokos2_Clickuncheck(object sender, RoutedEventArgs e)
+        {
+
+            Bestellung.Text ="";
         }
 
         private void Kamut2_Click(object sender, RoutedEventArgs e)
         {
-            Bestellung.Text ="Mehl: " + " Kamutmehl";
+            Bestellung.Text += "- Kamutmehl \r\n";
+        }
+        private void Kamut2_Clickuncheck(object sender, RoutedEventArgs e)
+        {
+            Bestellung.Text = "";
         }
     }
 }

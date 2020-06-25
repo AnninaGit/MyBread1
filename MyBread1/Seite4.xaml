@@ -8,19 +8,20 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Canvas Width="1000" Height="1000">
+    <Grid  Background="Gainsboro">
+        <Canvas Margin="60,50,70,65">
             <StackPanel  Orientation="Vertical"/>
 
-
-            <ToggleSwitch Canvas.Left="234" Canvas.Top="-113"   Width="393" Height="88" 
-              Name="TogSwitch" FontSize="30" Toggled="ToggleSwitch" OnContent="geschnitten" OffContent="nicht geschnitten"
-             BorderThickness="6" Margin="71,371,0,0" />
-            <TextBox x:Name="Ausgabetext" Canvas.Top="148" Text="Möchten sie ihr Brot geschnitten haben?" TextWrapping="Wrap" FontSize="30" Height="105" Width="500" Canvas.Left="234" />
-            <Button Content="weiter" Click="Navigiere_zuSeite5" Height="57" Width="290" Canvas.Left="710" Canvas.Top="829"/>
-            <ProgressBar Height="60"  Width="204" Maximum="8" Minimum="0" Value="4"  Background="AntiqueWhite"  Foreground="Black" Canvas.Left="400" Canvas.Top="733"/>
-            <TextBlock  Text="4/8" TextWrapping="Wrap" Height="31" Width="51" FontSize="25" Canvas.Left="482" Canvas.Top="695"/>
-            <TextBlock  FontSize="50" Canvas.Left="305" Canvas.Top="33"><Run Text="Spezifikationen"/></TextBlock>
+            <StackPanel Width="516" Background="FloralWhite" Height="205" Canvas.Left="397" Canvas.Top="126">
+                <TextBlock x:Name="Ausgabetext" Canvas.Top="148" Text="Möchten sie ihr Brot geschnitten haben?" TextWrapping="Wrap" FontSize="30" Height="105" Width="500" Canvas.Left="405" />
+                <ToggleSwitch   Width="312" Height="88" 
+              x:Name="TogSwitch" FontSize="30" Toggled="ToggleSwitch" OnContent="geschnitten" OffContent="nicht geschnitten"
+             BorderThickness="6" />
+            </StackPanel>
+            <ProgressBar Height="40" Width="150" Maximum="8" Minimum="0" Value="4"  Background="FloralWhite"  Foreground="Black" Canvas.Left="580" Canvas.Top="775"/>
+            <TextBlock  Text="4/8" TextWrapping="Wrap" Height="31" Width="51" FontSize="25" Canvas.Left="637" Canvas.Top="737"/>
+            <TextBlock FontFamily="Times New Roman" FontSize="50" Canvas.Left="487" Canvas.Top="10"><Run Text="Spezifikationen"/></TextBlock>
+            <Button FontSize="25" BorderBrush="Black" Foreground="Black" Background="LightGray" BorderThickness="4"  Height="80" Width="220" Content="weiter" Click="Navigiere_zuSeite5" Canvas.Left="1090" Canvas.Top="765"/>
         </Canvas>
 
     </Grid>

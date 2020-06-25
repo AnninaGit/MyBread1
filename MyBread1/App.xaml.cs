@@ -34,7 +34,9 @@ namespace MyBread1
         }
         public String allgemeinertext { get; set; }
         public String Standort { get; set; }
-        
+        public String Standort2 { get; set; }
+        public String Standort3 { get; set; }
+
         public String Mehl { get; set; }
 
         public String Roggen { get; set; }
@@ -52,6 +54,8 @@ namespace MyBread1
         public String Walnuss { get; set; }
         public String SonnenK { get; set; }
         public String Basilikum { get; set; }
+
+
 
 
         /// <summary>

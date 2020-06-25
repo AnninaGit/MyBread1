@@ -8,75 +8,139 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Canvas Margin="0,0,10,10">
-            <TextBlock Height="71" Canvas.Left="1068" Canvas.Top="443" x:Name="Ausgabetext" Text="Anzahl an Broten: 1"
+    <Grid Background="Gainsboro">
+
+        <Canvas Margin="60,50,70,65">
+
+            <TextBlock Height="71" Canvas.Left="922" Canvas.Top="423" x:Name="Ausgabetext" Text="Anzahl an Broten: 1"
+
             FontSize="30" Width="301"></TextBlock>
 
-            <RepeatButton Canvas.Left="1068" Canvas.Top="504"   Width="111" Height="121" Content="+"
+
+
+            <RepeatButton Canvas.Left="922" Canvas.Top="501"   Width="111" Height="121" Content="+"
+
             Click="Zaehler"  Name="RepButton" Foreground="Black" Delay="500" FontSize="60" 
-                    Background="OldLace" BorderThickness="6" BorderBrush="Black" ></RepeatButton>
 
-            <RepeatButton Canvas.Left="1224" Canvas.Top="504"   Width="111" Height="121" Content="-"
+                    Background="FloralWhite" BorderThickness="6" BorderBrush="Black" ></RepeatButton>
+
+
+
+            <RepeatButton Canvas.Left="1068" Canvas.Top="501"   Width="111" Height="121" Content="-"
+
             Click="Zaehler1"  Name="RepButton1" Foreground="Black" Delay="500" FontSize="60" 
-                    Background="OldLace" BorderThickness="6" BorderBrush="Black" ></RepeatButton>
 
-            <TextBlock Width="376" Height="75" Canvas.Left="122" Canvas.Top="117" x:Name="Überschrift1" Text="Ihre Bestellung:"
-            FontSize="40" ></TextBlock>
+                    Background="FloralWhite" BorderThickness="6" BorderBrush="Black" ></RepeatButton>
 
-            <TextBlock Width="260" Height="75" Canvas.Left="629" Canvas.Top="55" x:Name="Überschrift" Text="Warenkorb"
-            FontSize="50" ></TextBlock>
-            <TextBox  Text="Mehl: " FontSize="30" x:Name="Ausgabebox1" Height="107" Width="497" Background="AntiqueWhite"  Canvas.Left="122" Canvas.Top="202"/>
-            <TextBox Canvas.Left="122" x:Name="Ausgabebox2" Canvas.Top="300" Text="Teigzusätze: " FontSize="30" TextWrapping="Wrap" Height="98" Width="497" Background="AntiqueWhite"/>
-            <TextBox Canvas.Left="122" x:Name="Ausgabebox3" Canvas.Top="398" Text="Toppings: " FontSize="30" TextWrapping="Wrap" Height="106" Width="497" Background="AntiqueWhite"/>
-            <TextBox Canvas.Left="122" x:Name="Ausgabebox4" Canvas.Top="504" Text="Spezifikationen: " FontSize="30" TextWrapping="Wrap" Height="113" Width="497" Background="AntiqueWhite"/>
-            <TextBox Canvas.Left="122" x:Name="Ausgabebox5" Canvas.Top="617" Text="Extrawünsche: " FontSize="30" TextWrapping="Wrap" Height="118" Width="497" Background="AntiqueWhite"/>
-            <TextBox Canvas.Left="122" x:Name="Ausgabebox6" Canvas.Top="735" Text="Bestelldetails: " FontSize="30" TextWrapping="Wrap" Height="113" Width="497" Background="AntiqueWhite"/>
+            <TextBlock Width="260" Height="75" x:Name="Überschrift" Text="Warenkorb" FontSize="50" FontFamily="Times New Roman" Canvas.Left="37" Canvas.Top="35" />
 
-            <Button Content="Bestellung über 5€ abschicken" FontSize="30" Canvas.Left="929" Canvas.Top="152" Height="101" Width="435" Click="Bestellung_Ende"/>
-            <AppBarButton Icon="Edit" Click="Navigiere_zuSeite1" Canvas.Left="708" Canvas.Top="227" Background="AntiqueWhite" Height="51" Width="74"></AppBarButton>
-            <AppBarButton Icon="Edit" Click="Navigiere_zuSeite2" Canvas.Left="708" Canvas.Top="324" Background="AntiqueWhite" Height="51" Width="74"></AppBarButton>
-            <AppBarButton Icon="Edit" Click="Navigiere_zuSeite3" Canvas.Left="708" Canvas.Top="428" Background="AntiqueWhite" Height="51" Width="74"></AppBarButton>
-            <AppBarButton Icon="Edit" Click="Navigiere_zuSeite4" Canvas.Left="708" Canvas.Top="535" Background="AntiqueWhite" Height="51" Width="74"></AppBarButton>
-            <AppBarButton Icon="Edit" Click="Navigiere_zuSeite5" Canvas.Left="708" Canvas.Top="648" Background="AntiqueWhite" Height="51" Width="74"></AppBarButton>
-            <AppBarButton Icon="Edit" Click="Navigiere_zuSeite6" Canvas.Left="708" Canvas.Top="766" Background="AntiqueWhite" Height="51" Width="74"></AppBarButton>
-            
+            <StackPanel Width="549" Background="FloralWhite" Height="720" Canvas.Left="37" Canvas.Top="128" >
+
+
+                <TextBlock Width="503" Height="66" x:Name="Überschrift1" Text="Ihre Bestellung:" FontSize="40" />
+
+
+                <TextBlock  Text="Mehl: " FontSize="30" x:Name="Ausgabebox1" Height="107" Width="497"   Canvas.Left="122" Canvas.Top="202"/>
+
+                <TextBlock Canvas.Left="122" x:Name="Ausgabebox2" Canvas.Top="300" Text="Teigzusätze: " FontSize="30" TextWrapping="Wrap" Height="98" Width="497" />
+
+                <TextBlock Canvas.Left="122" x:Name="Ausgabebox3" Canvas.Top="398" Text="Toppings: " FontSize="30" TextWrapping="Wrap" Height="106" Width="497" />
+
+                <TextBlock Canvas.Left="122" x:Name="Ausgabebox4" Canvas.Top="504" Text="Spezifikationen: " FontSize="30" TextWrapping="Wrap" Height="113" Width="497" />
+
+                <TextBlock Canvas.Left="122" x:Name="Ausgabebox5" Canvas.Top="617" Text="Extrawünsche: " FontSize="30" TextWrapping="Wrap" Height="118" Width="497" />
+
+                <TextBlock Canvas.Left="122" x:Name="Ausgabebox6" Canvas.Top="735" Text="Bestelldetails: " FontSize="30" TextWrapping="Wrap" Height="113" Width="497" />
+
+            </StackPanel>
+
+
+            <Button FontSize="25" BorderBrush="Black" Foreground="Black" Background="LightGray" BorderThickness="4"  Height="80" Width="369" Content="Bestellung für 5€ abschicken"  Canvas.Left="866" Canvas.Top="228"  Click="Bestellung_Ende"/>
+
+            <AppBarButton Icon="Edit" Click="Navigiere_zuSeite1" Canvas.Left="708" Canvas.Top="222" Background="FloralWhite" Height="56" Width="74"></AppBarButton>
+
+            <AppBarButton Icon="Edit" Click="Navigiere_zuSeite2" Canvas.Left="708" Canvas.Top="324" Background="FloralWhite" Height="51" Width="74"></AppBarButton>
+
+            <AppBarButton Icon="Edit" Click="Navigiere_zuSeite3" Canvas.Left="708" Canvas.Top="428" Background="FloralWhite" Height="51" Width="74"></AppBarButton>
+
+            <AppBarButton Icon="Edit" Click="Navigiere_zuSeite4" Canvas.Left="708" Canvas.Top="535" Background="FloralWhite" Height="51" Width="74"></AppBarButton>
+
+            <AppBarButton Icon="Edit" Click="Navigiere_zuSeite5" Canvas.Left="708" Canvas.Top="648" Background="FloralWhite" Height="51" Width="74"></AppBarButton>
+
+            <AppBarButton Icon="Edit" Click="Navigiere_zuSeite6" Canvas.Left="708" Canvas.Top="766" Background="FloralWhite" Height="51" Width="74"></AppBarButton>
+
+
+
+
+
 
 
         </Canvas>
-        <ProgressBar HorizontalAlignment="Left" Height="60" Margin="1100,764,0,0" VerticalAlignment="Top" Width="204" x:Name="Progressbar" Maximum="8" Minimum="0" Value="7" Background="AntiqueWhite"  Foreground="Black"/>
-        <TextBlock HorizontalAlignment="Left" Margin="1184,726,0,0" Text="7/8" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="47" FontSize="25" RenderTransformOrigin="0.494,1.195"/>
+
+        <ProgressBar HorizontalAlignment="Left" Height="40" Width="150" Margin="1041,835,0,0" VerticalAlignment="Top"  x:Name="Progressbar" Maximum="8" Minimum="0" Value="7" Background="AntiqueWhite"  Foreground="Black"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="1098,797,0,0" Text="7/8" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="47" FontSize="25" RenderTransformOrigin="0.494,1.195"/>
+
+
 
     </Grid>
+
     <Page.BottomAppBar>
+
         <AppBar Padding="10">
+
             <Grid>
+
                 <Grid.ColumnDefinitions>
+
                     <ColumnDefinition></ColumnDefinition>
+
                     <ColumnDefinition></ColumnDefinition>
+
                 </Grid.ColumnDefinitions>
 
 
+
+
+
                 <StackPanel Grid.Column="0" HorizontalAlignment="Left" Margin="0,10,0,0">
-                    <AppBarButton Icon="Edit"></AppBarButton>
-                    <AppBarButton Icon="Camera"></AppBarButton>
-                    <AppBarButton Icon="Save"></AppBarButton>
-                    <AppBarButton Icon="Street"></AppBarButton>
+
+
+
+
                 </StackPanel>
+
             </Grid>
+
         </AppBar>
+
     </Page.BottomAppBar>
 
+
+
     <Page.TopAppBar>
+
         <AppBar Padding="10,0,0,0">
+
             <StackPanel HorizontalAlignment="Left" Margin="10,0,0,0" Orientation="Horizontal">
 
+
+
                 <AppBarButton Icon="Home"
+
                                   Label="Home" Click="Navigiere_zuStart"></AppBarButton>
+
                 <AppBarButton Icon="back"
+
                               Label="Zurück" Click="Navigiere_zuSeite6"></AppBarButton>
 
+                <AppBarButton Icon="Forward"
+                              Label="Weiter" Click="Navigiere_zuEnde"></AppBarButton>
+
+
             </StackPanel>
+
         </AppBar>
+
     </Page.TopAppBar>
 </Page>

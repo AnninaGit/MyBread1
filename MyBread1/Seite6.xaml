@@ -6,41 +6,59 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="Gainsboro">
 
     <Grid>
-        <Canvas Margin="73,39,57,104">
-            <Button Content="weiter"  Click="Navigiere_zuWarenkorb"  Height="57" Width="290" Canvas.Left="989" Canvas.Top="745"/>
-            <TextBlock  Text="Bestelloptionen" TextWrapping="Wrap" Height="76" Width="290" FontSize="40" Canvas.Left="548" Canvas.Top="35"/>
+        <Canvas Margin="60,50,70,65">
+            <Button FontSize="25" BorderBrush="Black" Foreground="Black" Background="LightGray" BorderThickness="4"  Height="80" Width="220" Content="weiter"  Click="Navigiere_zuWarenkorb"   Canvas.Left="1090" Canvas.Top="765"/>
+            <TextBlock FontFamily="Times New Roman" Text="Bestelloptionen" TextWrapping="Wrap" Height="54" Width="290" FontSize="40" Canvas.Left="26" Canvas.Top="35"/>
 
-            <TextBlock HorizontalAlignment="Left" Margin="90,184,0,0" Text="Wann möchten sie ihr Brot abholen?" TextWrapping="Wrap" VerticalAlignment="Top" Height="59" Width="432" FontSize="25"/>
-            <CalendarDatePicker Height="89" Width="401" Canvas.Top="247" Canvas.Left="90">
-                
-            </CalendarDatePicker>
-            <ProgressBar Height="60"  Width="204" x:Name="Progressbar" Maximum="8" Minimum="0" Value="6" Background="AntiqueWhite"  Foreground="Black" Canvas.Left="583" Canvas.Top="742"/>
-            <TextBlock  Text="6/8" TextWrapping="Wrap" Height="36" Width="50" FontSize="25" Canvas.Left="667" Canvas.Top="704"/>
+            <StackPanel Width="443" Background="FloralWhite" Height="72" Canvas.Top="147" Canvas.Left="43"  >
+                <TextBlock Text="Wann möchten sie ihr Brot abholen?" TextWrapping="Wrap" Height="59" Width="421" FontSize="25"/>
+            </StackPanel>
+            <ProgressBar Height="40" Width="150" x:Name="Progressbar" Maximum="8" Minimum="0" Value="6" Background="FloralWhite"  Foreground="Black" Canvas.Left="580" Canvas.Top="795"/>
+            <TextBlock  Text="6/8" TextWrapping="Wrap" Height="36" Width="50" FontSize="25" Canvas.Left="637" Canvas.Top="757"/>
+
+            <TextBlock  Text="Wähle deinen Abholort: " TextWrapping="Wrap" Width="478" FontSize="30" Height="51" Canvas.Left="655" Canvas.Top="58"/>
 
             <ListView CanReorderItems="False" CanDragItems="False" AllowDrop="True"
-                        Canvas.Left="-166" Canvas.Top="-78"
-                        SelectionMode="Multiple" RenderTransformOrigin="0.874,0.556" Margin="883,201,10,274">
-                <ListViewItem Width="580" Height="171" >
-                    <StackPanel Orientation="Horizontal" Height="218">
-                        <TextBlock FontSize="30" Height="90" Width="520">Ansbach, Residenzstraße 2-6, 91522</TextBlock>
+                        Canvas.Left="583" Canvas.Top="123"
+                        SelectionMode="None" RenderTransformOrigin="0.874,0.556" Width="786" >
+                <ListViewItem Width="649" Height="160" Background="FloralWhite">
+                    <StackPanel Orientation="Horizontal" Margin="-2,0,0,4">
+                        <CheckBox Checked="Ansbach_Checked" Width="65" Height="29" Unchecked="Ansbach_Unchecked"></CheckBox>
+                        <TextBlock FontSize="25" Height="40" Width="484">Ansbach, Residenzstraße 2-6, 91522</TextBlock>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Width="591" Canvas.Left="883" Canvas.Top="368" Height="168" >
-                    <StackPanel Orientation="Horizontal" Height="218">
-                        <TextBlock x:Name="Fürth" Margin="10 0 0 0 " FontSize="30" Height="94" Width="477">Fürth, Würzburgerstraße 446, 90768</TextBlock>
+                <ListViewItem Width="651" Canvas.Left="883" Canvas.Top="368" Height="183" Background="FloralWhite" >
+                    <StackPanel Orientation="Horizontal" Margin="-2,0,0,-7">
+                        <CheckBox Checked="Fürth_Checked" Width="65" Height="11" Unchecked="Fürth_Unchecked" RenderTransformOrigin="0.5,0.5">
+                            <CheckBox.RenderTransform>
+                                <CompositeTransform ScaleY="-1"/>
+                            </CheckBox.RenderTransform>
+                        </CheckBox>
+                        <TextBlock x:Name="Fürth" Margin="10 0 0 0 " FontSize="25" Height="40" Width="499">Fürth, Würzburgerstraße 446, 90768</TextBlock>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Width="595" Canvas.Left="883" Canvas.Top="368" Height="168" >
-                    <StackPanel Orientation="Horizontal" Height="218">
-                        <TextBlock Margin="10 0 0 0 " FontSize="30" Height="94" Width="759">Nürnberg, Lichtenfelserstraße 2a, 90427
+                <ListViewItem Width="652" Canvas.Left="883" Canvas.Top="368" Height="183" RenderTransformOrigin="0.5,0.5" Background="FloralWhite" >
+                    <StackPanel Orientation="Horizontal" Margin="-2,0,0,-5">
+                        <CheckBox Checked="Nürnberg_Checked" Width="65" Height="16" Unchecked="Nürnberg_Unchecked"></CheckBox>
+                        <TextBlock Margin="10 0 0 0 " FontSize="25" Height="42" Width="496">Nürnberg, Lichtenfelserstraße 2a, 90427
                         </TextBlock>
                     </StackPanel>
                 </ListViewItem>
-
             </ListView>
+
+            <StackPanel Width="400" Background="FloralWhite" Height="302" Canvas.Top="347" Canvas.Left="43">
+                <TextBlock Text="Bestellübersicht: " TextWrapping="Wrap" FontSize="20" Width="147" Height="38"/>
+                <TextBlock x:Name="Bestellung4" Canvas.Left="90" Canvas.Top="527"  TextWrapping="Wrap" Height="206" Width="359"/>
+            </StackPanel>
+
+            <CalendarDatePicker Canvas.Left="43" Canvas.Top="227" Height="54" Width="305"/>
+
+
+
+
         </Canvas>
 
     </Grid>

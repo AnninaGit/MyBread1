@@ -8,16 +8,16 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid  Background="Gainsboro">
 
-        <Canvas Margin="59,48,71,66">
-            <Button Content="Bestellvorgang starten" Click="Navigiere_zuSeite1" Height="100" Width="300" Canvas.Left="830" Canvas.Top="560" FontSize="25"/>
+        <Canvas Margin="60,50,70,65" Background="Gainsboro">
+            <Button BorderBrush="Black" Foreground="Black" Background="LightGray" BorderThickness="4" Content="Bestellvorgang starten" Click="Navigiere_zuSeite1" Height="100" Width="300" Canvas.Left="741" Canvas.Top="653" FontSize="25"/>
 
-            <TextBlock Canvas.Left="600" Canvas.Top="40" Text="MyBread " FontSize="50" Width="300"/>
-            <Button Content="Foto hinzufügen" Margin="510,270,0,0" Height="100" Width="300" Click="Button_Click" Canvas.Left="470" Canvas.Top="-23" FontSize="25"/>
-            <FlipView Height="300" Width="400"  VerticalAlignment="Top" HorizontalAlignment="Center" Canvas.Left="500" Canvas.Top="150">
+            <TextBlock FontFamily="Times New Roman"   Text="MyBread " Foreground="Black" FontSize="70" Canvas.Left="537" Canvas.Top="-3"/>
+            <Button BorderBrush="DimGray" Foreground="DimGray" Background="LightGray" BorderThickness="2" Content="Foto hinzufügen"  Height="65" Width="205" Click="Button_Click" Canvas.Left="938" Canvas.Top="300" FontSize="25"/>
+            <FlipView Height="500" Width="508" Canvas.Left="392" Canvas.Top="82">
                 <FlipViewItem Height="293" Width="407">
-                    <Image Source="/Bilder/Auswahl.jpeg" Margin="0,5,0,-3" />
+                    <Image Source="/Bilder/Auswahl.jpeg" Margin="0,2,0,0" />
                 </FlipViewItem>
                 <FlipViewItem>
                     <Image Source="/Bilder/Brotgeschn_seite.jpeg" Margin="0,0,0,1" />
@@ -26,9 +26,29 @@
                     <Image  x:Name="Bild" Margin="2,1,0,0" HorizontalAlignment="Left" Width="405" />
                 </FlipViewItem>
             </FlipView>
-            <Button Content="Mehr über MyBread" Canvas.Left="251" Canvas.Top="560" Height="100" Width="300" FontSize="25" Click="Navigiere_zuInfos"/>
+            <Button BorderBrush="Black" Foreground="Black" Background="LightGray" BorderThickness="4" Content="Mehr über MyBread" Canvas.Left="236" Canvas.Top="653" Height="100" Width="300" FontSize="25" Click="Navigiere_zuInfos"/>
         </Canvas>
 
 
     </Grid>
+    <Page.BottomAppBar >
+        <AppBar Padding="10,0,0,0" Visibility="Visible">
+            <StackPanel HorizontalAlignment="Left" Margin="10,0,0,0" Orientation="Horizontal">
+                <TextBlock Foreground="Black" Text="MyBread GmbH |"  HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                <TextBlock Text=" Kronenstraße 20 | 91522 Ansbach | info@my-bread.com" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+
+            </StackPanel>
+        </AppBar>
+    </Page.BottomAppBar>
+    <Page.TopAppBar>
+        <AppBar Padding="10,0,0,0">
+            <StackPanel HorizontalAlignment="Left" Margin="10,0,0,0" Orientation="Horizontal">
+                <AppBarButton Icon="Home"
+                                  Label="Home" ></AppBarButton>
+                <AppBarButton Icon="Forward"
+                              Label="Weiter" Click="Navigiere_zuSeite1"></AppBarButton>
+
+            </StackPanel>
+        </AppBar>
+    </Page.TopAppBar>
 </Page>
