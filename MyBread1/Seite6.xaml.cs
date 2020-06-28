@@ -4,11 +4,14 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.Devices.Geolocation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Foundation.Diagnostics;
+using Windows.Services.Maps;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Controls.Maps;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
@@ -43,14 +46,8 @@ namespace MyBread1
         }
         private void Navigiere_zuWarenkorb(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Warenkorb));
-            App app = (App)App.Current;
-            app.Standort = Bestellung4.Text;
-            app.Standort2 = Bestellung4.Text;
-            app.Standort3 = Bestellung4.Text;
+            this.Frame.Navigate(typeof(Warenkorb), Bestellung4.Text); 
         }
-       
-
 
         public DateTime MinDate {
             get;
@@ -63,40 +60,116 @@ namespace MyBread1
             this.MinDate = DateTime.Today;
             this.MaxDate = DateTime.Today.AddYears(1);
         }
-
-        private void Ansbach_Checked(object sender, RoutedEventArgs e)
+        public void AddSpaceNeedleIcon()
         {
-            Bestellung4.Text = "- Ansbach \r\n";
+            var MyLandmarks = new List<MapElement>();
+
+            BasicGeoposition snPosition = new BasicGeoposition 
+            { Latitude = 49.3007,
+                Longitude = 10.5692 };
+            Geopoint snPoint = new Geopoint(snPosition);
+
+            var spaceNeedleIcon = new MapIcon
+            {
+                Location = snPoint,
+                NormalizedAnchorPoint = new Point(0.5, 1.0),
+                ZIndex = 0,
+                Title = "Space Needle"
+            };
+
+            MyLandmarks.Add(spaceNeedleIcon);
+
+            var LandmarksLayer = new MapElementsLayer
+            {
+                ZIndex = 1,
+                MapElements = MyLandmarks
+            };
+
+            
+
         }
 
-        private void Ansbach_Unchecked(object sender, RoutedEventArgs e)
+        private void Ansbach_Click(object sender, RoutedEventArgs e)
         {
-            Bestellung4.Text = "";
+            MapService.ServiceToken = "abcdef-abcdefghijklmno";
+            Bestellung4.Text ="- Ansbach \r\n";
+           
+            Geopoint seattlePoint = new Geopoint
+            (new BasicGeoposition
+            {
+                Latitude = 49.3007,
+                Longitude = 10.5692
+            });
+
+            PlaceInfo spaceNeedlePlace = PlaceInfo.Create(seattlePoint);
+
+            FrameworkElement targetElement = (FrameworkElement)sender;
+
+            GeneralTransform generalTransform =
+                targetElement.TransformToVisual((FrameworkElement)targetElement.Parent);
+
+            Rect rectangle = generalTransform.TransformBounds(new Rect(new Point
+                (targetElement.Margin.Bottom, targetElement.Margin.Top), targetElement.RenderSize));
+
+            spaceNeedlePlace.Show(rectangle, Windows.UI.Popups.Placement.Below);
         }
-        private void Fürth_Checked(object sender, RoutedEventArgs e)
+
+ 
+        private void Fürth_Click(object sender, RoutedEventArgs e)
         {
+            MapService.ServiceToken = "abcdef-abcdefghijklmno";
             Bestellung4.Text = "- Fürth \r\n";
+          
+
+            Geopoint seattlePoint = new Geopoint
+           (new BasicGeoposition
+           {
+               Latitude = 49.4954,
+               Longitude = 10.9444
+           });
+
+            PlaceInfo spaceNeedlePlace = PlaceInfo.Create(seattlePoint);
+
+            FrameworkElement targetElement = (FrameworkElement)sender;
+
+            GeneralTransform generalTransform =
+                targetElement.TransformToVisual((FrameworkElement)targetElement.Parent);
+
+            Rect rectangle = generalTransform.TransformBounds(new Rect(new Point
+                (targetElement.Margin.Bottom, targetElement.Margin.Bottom), targetElement.RenderSize));
+
+            spaceNeedlePlace.Show(rectangle, Windows.UI.Popups.Placement.Below);
+
         }
 
-        private void Fürth_Unchecked(object sender, RoutedEventArgs e)
+        
+        private void Nürnberg_Click(object sender, RoutedEventArgs e)
         {
-            Bestellung4.Text = "";
-        }
-        private void Nürnberg_Checked(object sender, RoutedEventArgs e)
-        {
+            MapService.ServiceToken = "abcdef-abcdefghijklmno";
             Bestellung4.Text = "- Nürnberg \r\n";
+           
+
+            Geopoint seattlePoint = new Geopoint
+          (new BasicGeoposition
+          {
+              Latitude = 49.4741,
+              Longitude = 11.1296
+          });
+
+            PlaceInfo spaceNeedlePlace = PlaceInfo.Create(seattlePoint);
+
+            FrameworkElement targetElement = (FrameworkElement)sender;
+
+            GeneralTransform generalTransform =
+                targetElement.TransformToVisual((FrameworkElement)targetElement.Parent);
+
+            Rect rectangle = generalTransform.TransformBounds(new Rect(new Point
+                (targetElement.Margin.Top, targetElement.Margin.Top), targetElement.RenderSize));
+
+            spaceNeedlePlace.Show(rectangle, Windows.UI.Popups.Placement.Below); 
         }
 
-        private void Nürnberg_Unchecked(object sender, RoutedEventArgs e)
-        {
-            Bestellung4.Text = "";
-        }
-
-        private void textBox4_TextChanged_1(object sender, TextChangedEventArgs e)
-        {
-            DateTime date = DateTime.Now;
-            Bestellung4.Text = date.ToString();
-        }
+     
     }
 
     }

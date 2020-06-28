@@ -59,22 +59,10 @@ namespace MyBread1
 
         }
 
-
-
-        private void Navigiere_zuSeite6(object sender, RoutedEventArgs e)
-
-        {
-
-            this.Frame.Navigate(typeof(Seite6));
-
-        }
-
         private void Navigiere_zuStart(object sender, RoutedEventArgs e)
 
         {
-
             this.Frame.Navigate(typeof(Startseite));
-
         }
 
 
@@ -154,40 +142,28 @@ namespace MyBread1
             this.Frame.Navigate(typeof(Seite5));
 
         }
+        private void Navigiere_zuSeite6(object sender, RoutedEventArgs e)
+
+        {
+            this.Frame.Navigate(typeof(Seite6));
+        }
+
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
 
         {
-
-            //    string uebernahmedaten = e.Parameter as string;
-
-            //   if (!string.IsNullOrWhiteSpace(uebernahmedaten))
-
-            //   {
-
-            /*       Ausgabebox5.Text = "Extrawünsche: " + uebernahmedaten;
-
-                   Ausgabebox4.Text = "Spezifikationen: " + uebernahmedaten;
-
-
-
-               }
-
-               else
-
-               {
-
-                   Ausgabebox5.Text = "Bitte auf den Änderungsbutton klicken";
-
-                   Ausgabebox4.Text = "Bitte auf den Änderungsbutton klicken";
-
-               }
-
-             base.OnNavigatedTo(e);
-
-    */
+       
+            string uebernahmedaten = e.Parameter as string;
+            if (!string.IsNullOrWhiteSpace(uebernahmedaten))
+            {
+                Ausgabebox6.Text = "Standort: " + uebernahmedaten;
+            }
+           
+            base.OnNavigatedTo(e);
+        
 
             App app = (App)App.Current;
+
            
 
             Ausgabebox5.Text = app.globalertext;
@@ -225,6 +201,8 @@ namespace MyBread1
             Ausgabebox3.Text = app.SonnenK;
 
             Ausgabebox3.Text = app.Basilikum;
+
+           
 
            
 

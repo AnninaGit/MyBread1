@@ -56,7 +56,7 @@
 
 
 
-            <TextBlock  x:Name="Info"  TextWrapping="Wrap" Canvas.Top="656" Width="915" Height="106" FontSize="22" Canvas.Left="10"/>
+            <TextBlock  x:Name="Info"  TextWrapping="Wrap" Canvas.Top="632" Width="915" Height="152" FontSize="22" Canvas.Left="10"/>
             <StackPanel Width="400" Background="FloralWhite" Height="462" Canvas.Left="956" Canvas.Top="165">
                 <TextBlock Text="Bestellübersicht: " FontSize="25" TextWrapping="Wrap" Height="53" Width="187" />
                 <TextBlock Canvas.Left="980" Canvas.Top="217" FontSize="20" TextWrapping="Wrap" Height="361" Width="341" x:Name="Bestellung" />

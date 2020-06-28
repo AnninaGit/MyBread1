@@ -72,7 +72,7 @@
                 <TextBlock Text="Bestellübersicht: " FontSize="25" TextWrapping="Wrap" Height="53" Width="183"/>
                 <TextBlock Canvas.Left="907" Canvas.Top="217" FontSize="20" TextWrapping="Wrap" Height="361" Width="341" x:Name="Bestellung3"/>
             </StackPanel>
-            <TextBlock x:Name="Info3"  TextWrapping="Wrap" Canvas.Left="30" Canvas.Top="587" Width="962" Height="142" FontSize="22"/>
+            <TextBlock x:Name="Info3"  TextWrapping="Wrap" Canvas.Left="30" Canvas.Top="587" Width="819" Height="163" FontSize="22"/>
 
         </Canvas>
         <ProgressBar HorizontalAlignment="Center" Height="40" Width="150" Margin="0,828,0,0" VerticalAlignment="Top"  Maximum="8" Minimum="0" Value="3" Background="FloralWhite"  Foreground="Gray"/>

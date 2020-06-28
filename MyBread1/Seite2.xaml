@@ -71,7 +71,7 @@
                 </ListViewItem>
             </ListView>
 
-            <TextBlock x:Name="Info2"  TextWrapping="Wrap" Canvas.Left="10" Canvas.Top="587" Width="982" Height="142" FontSize="22" />
+            <TextBlock x:Name="Info2"  TextWrapping="Wrap" Canvas.Left="10" Canvas.Top="587" Width="803" Height="174" FontSize="22" />
             <StackPanel Width="400" Background="FloralWhite" Height="428" Canvas.Left="900" Canvas.Top="154">
                 <TextBlock Text="Bestellübersicht: " FontSize="25" TextWrapping="Wrap" Height="53" Width="189"/>
                 <TextBlock FontSize="20" TextWrapping="Wrap" Height="361" Width="341" x:Name="Bestellung2" />
