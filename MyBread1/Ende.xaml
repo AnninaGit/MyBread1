@@ -17,8 +17,8 @@
                 <TextBlock Text="Dein Brot kannst du in dem von dir ausgewählten Standort abholen und vor Ort bezahlen." TextWrapping="Wrap" Height="82" Width="877" FontSize="30" Canvas.Left="61" Canvas.Top="129"/>
             </StackPanel>
             <Button  Height="48" Width="188" Content="Hier Klicken!" FontSize="25" Click="BestellNummer" Canvas.Left="758" Canvas.Top="283"/>
-            <ProgressBar Height="40" Width="150" x:Name="Progressbar" Maximum="8" Minimum="0" Value="8" Background="AntiqueWhite"  Foreground="Black" Canvas.Left="577" Canvas.Top="785"/>
-            <TextBlock  Text="8/8" TextWrapping="Wrap" Height="52" Width="65" FontSize="25" Canvas.Left="637" Canvas.Top="747" RenderTransformOrigin="0.459,0.568"/>
+            <ProgressBar Height="40" Width="150" x:Name="Progressbar" Maximum="8" Minimum="0" Value="8" Background="AntiqueWhite"  Foreground="Gray" Canvas.Left="577" Canvas.Top="785"/>
+            <TextBlock  Text="8/8" TextWrapping="Wrap" Height="52" Width="65" FontSize="25" Canvas.Left="637" Canvas.Top="785" RenderTransformOrigin="0.459,0.568"/>
             <StackPanel Width="317" Background="FloralWhite" Height="112" Canvas.Top="251" Canvas.Left="305">
                 <TextBlock x:Name="Text_BNummer" Text="Ihre Bestellnummer:" FontSize="30" TextWrapping="Wrap" Height="95" Width="288"/>
             </StackPanel>

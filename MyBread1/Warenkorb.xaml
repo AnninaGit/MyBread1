@@ -77,9 +77,9 @@
 
         </Canvas>
 
-        <ProgressBar HorizontalAlignment="Left" Height="40" Width="150" Margin="929,855,0,0" VerticalAlignment="Top"  x:Name="Progressbar" Maximum="8" Minimum="0" Value="7" Background="AntiqueWhite"  Foreground="Black"/>
+        <ProgressBar HorizontalAlignment="Left" Height="40" Width="150" Margin="929,855,0,0" VerticalAlignment="Top"  x:Name="Progressbar" Maximum="8" Minimum="0" Value="7" Background="FloralWhite"  Foreground="Gray"/>
 
-        <TextBlock HorizontalAlignment="Left" Margin="986,817,0,0" Text="7/8" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="47" FontSize="25" RenderTransformOrigin="0.494,1.195"/>
+        <TextBlock HorizontalAlignment="Left" Margin="986,858,0,0" Text="7/8" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="47" FontSize="25" RenderTransformOrigin="0.494,1.195"/>
 
 
 

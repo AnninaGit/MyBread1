@@ -91,6 +91,12 @@ namespace MyBread1
         {
             Bestellung4.Text = "";
         }
+
+        private void textBox4_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+            DateTime date = DateTime.Now;
+            Bestellung4.Text = date.ToString();
+        }
     }
 
     }

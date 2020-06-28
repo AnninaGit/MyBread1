@@ -75,8 +75,8 @@
             <TextBlock x:Name="Info3"  TextWrapping="Wrap" Canvas.Left="30" Canvas.Top="587" Width="962" Height="142" FontSize="22"/>
 
         </Canvas>
-        <ProgressBar HorizontalAlignment="Center" Height="40" Width="150" Margin="0,828,0,0" VerticalAlignment="Top"  Maximum="8" Minimum="0" Value="3" Background="FloralWhite"  Foreground="Black"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,790,0,0" Text="3/8" TextWrapping="Wrap" VerticalAlignment="Top" Height="42" Width="48" FontSize="25"/>
+        <ProgressBar HorizontalAlignment="Center" Height="40" Width="150" Margin="0,828,0,0" VerticalAlignment="Top"  Maximum="8" Minimum="0" Value="3" Background="FloralWhite"  Foreground="Gray"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,828,0,0" Text="3/8" TextWrapping="Wrap" VerticalAlignment="Top" Height="42" Width="48" FontSize="25"/>
     </Grid>
     <Page.BottomAppBar>
         <AppBar Padding="10">

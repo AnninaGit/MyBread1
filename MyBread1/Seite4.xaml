@@ -18,8 +18,8 @@
               x:Name="TogSwitch" FontSize="30" Toggled="ToggleSwitch" OnContent="geschnitten" OffContent="nicht geschnitten"
              BorderThickness="6" />
             </StackPanel>
-            <ProgressBar Height="40" Width="150" Maximum="8" Minimum="0" Value="4"  Background="FloralWhite"  Foreground="Black" Canvas.Left="580" Canvas.Top="775"/>
-            <TextBlock  Text="4/8" TextWrapping="Wrap" Height="31" Width="51" FontSize="25" Canvas.Left="637" Canvas.Top="737"/>
+            <ProgressBar Height="40" Width="150" Maximum="8" Minimum="0" Value="4"  Background="FloralWhite"  Foreground="Gray" Canvas.Left="580" Canvas.Top="775"/>
+            <TextBlock  Text="4/8" TextWrapping="Wrap" Height="31" Width="51" FontSize="25" Canvas.Left="637" Canvas.Top="777"/>
             <TextBlock FontFamily="Times New Roman" FontSize="50" Canvas.Left="487" Canvas.Top="10"><Run Text="Spezifikationen"/></TextBlock>
             <Button FontSize="25" BorderBrush="Black" Foreground="Black" Background="LightGray" BorderThickness="4"  Height="80" Width="220" Content="weiter" Click="Navigiere_zuSeite5" Canvas.Left="1080" Canvas.Top="754"/>
         </Canvas>

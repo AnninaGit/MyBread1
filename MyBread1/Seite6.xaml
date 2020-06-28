@@ -16,8 +16,8 @@
             <StackPanel Width="443" Background="FloralWhite" Height="72" Canvas.Top="147" Canvas.Left="43"  >
                 <TextBlock Text="Wann möchten sie ihr Brot abholen?" TextWrapping="Wrap" Height="59" Width="421" FontSize="25"/>
             </StackPanel>
-            <ProgressBar Height="40" Width="150" x:Name="Progressbar" Maximum="8" Minimum="0" Value="6" Background="FloralWhite"  Foreground="Black" Canvas.Left="580" Canvas.Top="795"/>
-            <TextBlock  Text="6/8" TextWrapping="Wrap" Height="36" Width="50" FontSize="25" Canvas.Left="637" Canvas.Top="757"/>
+            <ProgressBar Height="40" Width="150" x:Name="Progressbar" Maximum="8" Minimum="0" Value="6" Background="FloralWhite"  Foreground="Gray" Canvas.Left="580" Canvas.Top="795"/>
+            <TextBlock  Text="6/8" TextWrapping="Wrap" Height="36" Width="50" FontSize="25" Canvas.Left="637" Canvas.Top="795"/>
 
             <TextBlock  Text="Wähle deinen Abholort: " TextWrapping="Wrap" Width="478" FontSize="30" Height="51" Canvas.Left="655" Canvas.Top="58"/>
 
