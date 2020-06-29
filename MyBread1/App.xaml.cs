@@ -34,6 +34,8 @@ namespace MyBread1
         }
         public String allgemeinertext { get; set; }
 
+        public String  Herz { get; set; }
+
         public String Mehl { get; set; }
 
         public String Roggen { get; set; }

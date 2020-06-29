@@ -31,7 +31,8 @@ namespace MyBread1
         {
             this.Frame.Navigate(typeof(Seite5));
             App app = (App)App.Current;
-            app.allgemeinertext = "Spezifikationen: " + Ausgabetext.Text;
+            app.allgemeinertext = "Spezifikationen: \r\n" + Ausgabetext.Text;
+            app.Herz = Bestellung4.Text;
         }
         private void Navigiere_zuStart(object sender, RoutedEventArgs e)
         {
@@ -49,14 +50,27 @@ namespace MyBread1
         {
             if ((bool)TogSwitch.IsOn)
             {
-                  Ausgabetext.Text = "Ihr Brot wird für sie geschnitten";
+                  Ausgabetext.Text = "Ihr Brot wird für sie geschnitten \r\n";
             }
             else
             {
-                  Ausgabetext.Text = "Ihr Brot bleibt ganz";
+                  Ausgabetext.Text = "Ihr Brot bleibt ganz \r\n";
             }
         }
-        
 
+        private void Herz_Click(object sender, RoutedEventArgs e)
+        {
+            Bestellung4.Text = "- Herzform \r\n";
+        }
+
+        private void Rund_Click(object sender, RoutedEventArgs e)
+        {
+            Bestellung4.Text = "- Rund \r\n";
+        }
+
+        private void Kasten_Click(object sender, RoutedEventArgs e)
+        {
+            Bestellung4.Text = "- Kasten \r\n";
+        }
     }
 }

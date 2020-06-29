@@ -20,22 +20,19 @@
 
             <RepeatButton Canvas.Left="1174" Canvas.Top="108"   Width="55" Height="50" 
 
-            Click="Zaehler"  Name="RepButton" Foreground="Black" Delay="500" FontSize="60" 
+            Click="Zaehler"  Name="RepButton" Foreground="Black" Delay="500" FontSize="20" 
 
-                    Background="FloralWhite" BorderThickness="6" BorderBrush="Black" >
-                <AppBarButton Icon="Remove" Height="37" Width="55" VerticalAlignment="Center" HorizontalAlignment="Center" >
-
-                </AppBarButton>
+                    Background="FloralWhite" BorderThickness="6" BorderBrush="Black" Content="+"  >
             </RepeatButton>
 
 
 
             <RepeatButton Canvas.Left="1072" Canvas.Top="108"   Width="55" Height="50" 
 
-            Click="Zaehler1"  Name="RepButton1" Foreground="Black" Delay="500" FontSize="60" 
+            Click="Zaehler1"  Name="RepButton1" Foreground="Black" Delay="500" FontSize="20" 
 
-                    Background="FloralWhite" BorderThickness="6" BorderBrush="Black" >
-                <AppBarButton Icon="Add" Height="37" Width="55" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    Background="FloralWhite" BorderThickness="6" BorderBrush="Black" Content="-" >
+                
             </RepeatButton>
 
             <TextBlock Width="260" Height="75" x:Name="Überschrift" Text="Warenkorb" FontSize="50" FontFamily="Times New Roman" Canvas.Left="37" Canvas.Top="35" />
@@ -75,6 +72,8 @@
 
             <AppBarButton Icon="Edit" Click="Navigiere_zuSeite6" Canvas.Left="512" Canvas.Top="751" Background="FloralWhite" Height="51" Width="74"></AppBarButton>
 
+            <TextBlock Canvas.Left="766" Canvas.Top="241" TextWrapping="Wrap" Height="81" Width="480" x:Name="Bezahlung" Text="Ihre Bestellung kostet: 5€" FontSize="30"/>
+
 
 
 
@@ -85,7 +84,7 @@
 
         <ProgressBar HorizontalAlignment="Center" Height="40" Width="150" Margin="0,895,0,0" VerticalAlignment="Top"  x:Name="Progressbar" Maximum="8" Minimum="0" Value="7" Background="FloralWhite"  Foreground="Gray"/>
 
-        <TextBlock HorizontalAlignment="Center" Margin="0,898,0,0" Text="7/8" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="47" FontSize="25" RenderTransformOrigin="0.494,1.195"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,895,0,0" Text="7/8" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="47" FontSize="25" RenderTransformOrigin="0.494,1.195"/>
 
 
 

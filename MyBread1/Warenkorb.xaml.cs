@@ -44,6 +44,7 @@ namespace MyBread1
         {
 
             Ausgabetext.Text = "Anzahl an Broten: " + (++anzahl).ToString();
+            Bezahlung.Text = "Ihre Bestellung kostet: " + (anzahl * 5).ToString() + "€";
 
         }
 
@@ -53,11 +54,15 @@ namespace MyBread1
 
             if (anzahl > 1)
 
-            { Ausgabetext.Text = "Anzahl an Broten: " + (--anzahl).ToString(); }
+            { Ausgabetext.Text = "Anzahl an Broten: " + (--anzahl).ToString();
+                Bezahlung.Text = "Ihre Bestellung kostet: " + (anzahl * 5).ToString() + "€";
+
+            }
 
 
 
         }
+
 
         private void Navigiere_zuStart(object sender, RoutedEventArgs e)
 
@@ -148,6 +153,7 @@ namespace MyBread1
             this.Frame.Navigate(typeof(Seite6));
         }
 
+        
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
 
@@ -156,19 +162,19 @@ namespace MyBread1
             string uebernahmedaten = e.Parameter as string;
             if (!string.IsNullOrWhiteSpace(uebernahmedaten))
             {
-                Ausgabebox6.Text = "Standort: " + uebernahmedaten;
+                Ausgabebox6.Text = "Standort: \r\n" + uebernahmedaten;
             }
            
             base.OnNavigatedTo(e);
-        
+
 
             App app = (App)App.Current;
 
            
+            
+            Ausgabebox5.Text = app.globalertext ;
 
-            Ausgabebox5.Text = app.globalertext;
-
-            Ausgabebox4.Text = app.allgemeinertext;
+            Ausgabebox4.Text = app.allgemeinertext + app.Herz;
 
             Ausgabebox1.Text = app.Mehl;
 
