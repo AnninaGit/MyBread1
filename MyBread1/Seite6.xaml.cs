@@ -55,39 +55,15 @@ namespace MyBread1
         }
         public DateTime MaxDate { set; get; }
 
+         
+
         public void CalendarEditingControl()
         {
+            
             this.MinDate = DateTime.Today;
             this.MaxDate = DateTime.Today.AddYears(1);
         }
-        public void AddSpaceNeedleIcon()
-        {
-            var MyLandmarks = new List<MapElement>();
-
-            BasicGeoposition snPosition = new BasicGeoposition 
-            { Latitude = 49.3007,
-                Longitude = 10.5692 };
-            Geopoint snPoint = new Geopoint(snPosition);
-
-            var spaceNeedleIcon = new MapIcon
-            {
-                Location = snPoint,
-                NormalizedAnchorPoint = new Point(0.5, 1.0),
-                ZIndex = 0,
-                Title = "Space Needle"
-            };
-
-            MyLandmarks.Add(spaceNeedleIcon);
-
-            var LandmarksLayer = new MapElementsLayer
-            {
-                ZIndex = 1,
-                MapElements = MyLandmarks
-            };
-
-            
-
-        }
+       
 
         private void Ansbach_Click(object sender, RoutedEventArgs e)
         {

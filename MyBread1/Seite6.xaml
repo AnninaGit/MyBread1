@@ -82,7 +82,7 @@
                 <TextBlock x:Name="Bestellung4" Canvas.Left="90" Canvas.Top="527"  TextWrapping="Wrap" Height="91" Width="231" />
             </StackPanel>
 
-            <CalendarDatePicker Canvas.Left="43" Canvas.Top="227" Height="54" Width="305"/>
+            <CalendarDatePicker Canvas.Left="43" Canvas.Top="227" Height="54" Width="305" x:Name="Calendar" />
 
 
 
