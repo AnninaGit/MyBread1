@@ -14,7 +14,7 @@
             <Button BorderBrush="Black" Foreground="Black" Background="LightGray" BorderThickness="4" Content="Bestellvorgang starten" Click="Navigiere_zuSeite1" Height="100" Width="300" Canvas.Left="741" Canvas.Top="653" FontSize="25"/>
 
             <TextBlock FontFamily="Times New Roman"   Text="MyBread " Foreground="Black" FontSize="70" Canvas.Left="537" Canvas.Top="-3"/>
-            <Button BorderBrush="DimGray" Foreground="DimGray" Background="LightGray" BorderThickness="2" Content="Foto hinzufügen"  Height="65" Width="205" Click="Button_Click" Canvas.Left="938" Canvas.Top="300" FontSize="25"/>
+            <Button BorderBrush="DimGray" Foreground="DimGray" Background="LightGray" BorderThickness="2" Content="Foto hinzufügen"  Height="65" Width="205" Click="Button_Click" Canvas.Left="958" Canvas.Top="300" FontSize="25"/>
             <FlipView Height="500" Width="508" Canvas.Left="392" Canvas.Top="82">
                 <FlipViewItem Height="293" Width="407">
                     <Image Source="/Bilder/Auswahl.jpeg" Margin="0,2,0,0" />
@@ -26,7 +26,7 @@
                     <Image  x:Name="Bild" Margin="2,1,0,0" HorizontalAlignment="Left" Width="405" />
                 </FlipViewItem>
             </FlipView>
-            <Button BorderBrush="Black" Foreground="Black" Background="LightGray" BorderThickness="4" Content="Mehr über MyBread" Canvas.Left="236" Canvas.Top="653" Height="100" Width="300" FontSize="25" Click="Navigiere_zuInfos"/>
+            <Button BorderBrush="Black" Foreground="Black" Background="LightGray" BorderThickness="4" Content="Mehr über MyBread" Canvas.Left="248" Canvas.Top="653" Height="100" Width="300" FontSize="25" Click="Navigiere_zuInfos"/>
         </Canvas>
 
 

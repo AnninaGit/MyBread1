@@ -27,6 +27,8 @@ namespace MyBread1
             this.InitializeComponent();
             this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
         }
+
+        //Navigation zur nächsten Seite und Übergabe der Daten mit Hilfe zweier globalen Variablen
         private void Navigiere_zuSeite5(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Seite5));
@@ -34,6 +36,7 @@ namespace MyBread1
             app.allgemeinertext = "Spezifikationen: \r\n" + Ausgabetext.Text;
             app.Herz = Bestellung4.Text;
         }
+
         private void Navigiere_zuStart(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Startseite));
@@ -46,6 +49,8 @@ namespace MyBread1
         {
             this.Frame.Navigate(typeof(Warenkorb));
         }
+
+        //if-else Abfrage 
         private void ToggleSwitch(object sender, RoutedEventArgs e)
         {
             if ((bool)TogSwitch.IsOn)
@@ -58,6 +63,7 @@ namespace MyBread1
             }
         }
 
+        //Festlegen der textuellen Ausgabe in der Bestellübersicht
         private void Herz_Click(object sender, RoutedEventArgs e)
         {
             Bestellung4.Text = "- Herzform \r\n";

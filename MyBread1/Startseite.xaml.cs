@@ -30,11 +30,18 @@ namespace MyBread1
             this.InitializeComponent();
             this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
         }
+
         private void Navigiere_zuSeite1(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Seite1));
         }
+
+        private void Navigiere_zuInfos(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Infos));
+        }
         
+        //Kamerafunktion für die Kundengallerie
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
             var camera = new CameraCaptureUI();
@@ -48,9 +55,6 @@ namespace MyBread1
             }
         }
 
-        private void Navigiere_zuInfos(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Infos));
-        }
+        
     }
 } 

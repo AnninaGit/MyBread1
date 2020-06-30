@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Windows.Input;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
@@ -32,27 +33,21 @@ namespace MyBread1
             this.InitializeComponent();
             this.Suspending += OnSuspending;
         }
+
+        //Festlegen der globalen Variablen
         public String allgemeinertext { get; set; }
 
         public String  Herz { get; set; }
 
         public String Mehl { get; set; }
 
-        public String Roggen { get; set; }
-        public String Kokos { get; set; }
-        public String Kamut { get; set; }
         public String  Karotten { get; set; }
-        public String Speck { get; set; }
-        public String Tomaten { get; set; }
-        public String Cranberries { get; set; }
-        public String Paranüsse { get; set; }
-        public String  Rosinen{ get; set; }
+       
         public String Körner { get; set; }
-        public String Nuss { get; set; }
-        public String Röst { get; set; }
-        public String Walnuss { get; set; }
-        public String SonnenK { get; set; }
-        public String Basilikum { get; set; }
+      
+        public static System.Windows.Input.RoutedUICommand Refresh { get; }
+
+      
 
 
 

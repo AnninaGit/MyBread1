@@ -27,30 +27,27 @@ namespace MyBread1
             this.InitializeComponent();
             this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
         }
+
+        //Navigation zur nächsten Seite und Übergabe der Daten mit Hilfe einer globalen Variable
         private void Navigiere_zuSeite2(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Seite2));
             App app = (App)App.Current;
             app.Mehl = Bestellung.Text;
-            app.Roggen = Bestellung.Text;
-            app.Kokos = Bestellung.Text;
-            app.Kamut = Bestellung.Text;
-            
-           
         }
   
         private void Navigiere_zuStart(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Startseite));
-          
         }
 
         private void Navigiere_zuWarenkorb(object sender, RoutedEventArgs e)
-        {
+        { 
             this.Frame.Navigate(typeof(Warenkorb));
         }
-       
-    private void Dinkel_Click(object sender, RoutedEventArgs e)
+
+        //// Informationen über einzelne Mehlsorten werden in der Infobox gespeichert
+        private void Dinkel_Click(object sender, RoutedEventArgs e)
         {
             Info.Text = "Dinkelnmehl: In keinem anderen Getreide stecken so viele gesunde Nährwerte wie im Dinkel."+
                 " Dinkel ist das Urkorn des Weizens. Dinkelmehl ist das gemahlene Produkt des Dinkelkorns, entweder wird es als ganzes Korn gemahlen oder Teile davon. ";
@@ -75,6 +72,7 @@ namespace MyBread1
          " Das Kamutmehl hat einen leicht süßlichen bis herzhaft-nussigen Geschmack und hat in der Ernährung eine besondere Qualität, weil es einen viel höheren Nährstoffgehalt als die bekannten Getreidearten aufweist. " ; 
         }
 
+        //Festlegen und gegebenenfalls löschen des Ausgabetexts 
         private void Dinkel2_Click(object sender, RoutedEventArgs e)
         {
             Bestellung.Text += "- Dinkelmehl \r\n";
@@ -83,7 +81,6 @@ namespace MyBread1
         private void Dinkel2_Clickuncheck(object sender, RoutedEventArgs e)
         {
             Bestellung.Text = "";
-
         }
 
         private void Roggen2_Click(object sender, RoutedEventArgs e)
@@ -95,12 +92,11 @@ namespace MyBread1
             Bestellung.Text = "";
         }
 
-
         private void Kokos2_Click(object sender, RoutedEventArgs e)
         {
-         
             Bestellung.Text +=  "- Kokosmehl \r\n";
         }
+
         private void Kokos2_Clickuncheck(object sender, RoutedEventArgs e)
         {
 
@@ -111,6 +107,7 @@ namespace MyBread1
         {
             Bestellung.Text += "- Kamutmehl \r\n";
         }
+
         private void Kamut2_Clickuncheck(object sender, RoutedEventArgs e)
         {
             Bestellung.Text = "";

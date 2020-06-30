@@ -12,13 +12,13 @@
 
         <Canvas Margin="60,50,70,65">
 
-            <TextBlock Height="41" Canvas.Left="749" Canvas.Top="108" x:Name="Ausgabetext" Text="Anzahl an Broten: 1"
+            <TextBlock Height="41" Canvas.Left="720" Canvas.Top="198" x:Name="Ausgabetext" Text="Anzahl an Broten: 1"
 
             FontSize="30" Width="301"></TextBlock>
 
 
 
-            <RepeatButton Canvas.Left="1174" Canvas.Top="108"   Width="55" Height="50" 
+            <RepeatButton Canvas.Left="1191" Canvas.Top="188"   Width="55" Height="50" 
 
             Click="Zaehler"  Name="RepButton" Foreground="Black" Delay="500" FontSize="20" 
 
@@ -27,17 +27,17 @@
 
 
 
-            <RepeatButton Canvas.Left="1072" Canvas.Top="108"   Width="55" Height="50" 
+            <RepeatButton Canvas.Left="1084" Canvas.Top="188"   Width="55" Height="50" 
 
             Click="Zaehler1"  Name="RepButton1" Foreground="Black" Delay="500" FontSize="20" 
 
                     Background="FloralWhite" BorderThickness="6" BorderBrush="Black" Content="-" >
-                
+
             </RepeatButton>
 
-            <TextBlock Width="260" Height="75" x:Name="Überschrift" Text="Warenkorb" FontSize="50" FontFamily="Times New Roman" Canvas.Left="37" Canvas.Top="35" />
+            <TextBlock Width="260" Height="51" x:Name="Überschrift" Text="Warenkorb" FontSize="50" FontFamily="Times New Roman" Canvas.Left="37" Canvas.Top="10" />
 
-            <StackPanel Width="549" Background="FloralWhite" Height="713" Canvas.Left="37" Canvas.Top="97" >
+            <StackPanel Width="549" Background="FloralWhite" Height="732" Canvas.Left="37" Canvas.Top="100" >
 
 
                 <TextBlock Width="503" Height="66" x:Name="Überschrift1" Text="Ihre Bestellung:" FontSize="40" />
@@ -58,7 +58,7 @@
             </StackPanel>
 
 
-            <Button FontSize="25" BorderBrush="Black" Foreground="Black" Background="LightGray" BorderThickness="4"  Height="80" Width="342" Content="Bestellung abschicken"  Canvas.Left="835" Canvas.Top="727"  Click="Bestellung_Ende"/>
+            <Button FontSize="25" BorderBrush="Black" Foreground="Black" Background="LightGray" BorderThickness="4"  Height="80" Width="342" Content="Bestellung abschicken"  Canvas.Left="806" Canvas.Top="580"  Click="Bestellung_Ende"/>
 
             <AppBarButton Icon="Edit" Click="Navigiere_zuSeite1" Canvas.Left="512" Canvas.Top="170" Background="FloralWhite" Height="56" Width="74"></AppBarButton>
 
@@ -72,7 +72,7 @@
 
             <AppBarButton Icon="Edit" Click="Navigiere_zuSeite6" Canvas.Left="512" Canvas.Top="751" Background="FloralWhite" Height="51" Width="74"></AppBarButton>
 
-            <TextBlock Canvas.Left="766" Canvas.Top="241" TextWrapping="Wrap" Height="81" Width="480" x:Name="Bezahlung" Text="Ihre Bestellung kostet: 5€" FontSize="30"/>
+            <TextBlock Canvas.Left="806" Canvas.Top="354" TextWrapping="Wrap" Height="81" Width="358" x:Name="Bezahlung" Text="Ihre Bestellung kostet: 5€" FontSize="30"/>
 
 
 
@@ -82,9 +82,9 @@
 
         </Canvas>
 
-        <ProgressBar HorizontalAlignment="Center" Height="40" Width="150" Margin="0,895,0,0" VerticalAlignment="Top"  x:Name="Progressbar" Maximum="8" Minimum="0" Value="7" Background="FloralWhite"  Foreground="Gray"/>
+        <ProgressBar HorizontalAlignment="Left" Height="40" Width="150" Margin="961,831,0,0" VerticalAlignment="Top"  x:Name="Progressbar" Maximum="8" Minimum="0" Value="7" Background="FloralWhite"  Foreground="Gray"/>
 
-        <TextBlock HorizontalAlignment="Center" Margin="0,895,0,0" Text="7/8" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="47" FontSize="25" RenderTransformOrigin="0.494,1.195"/>
+        <TextBlock HorizontalAlignment="Left" Margin="1018,831,0,0" Text="7/8" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="47" FontSize="25" RenderTransformOrigin="0.494,1.195"/>
 
 
 

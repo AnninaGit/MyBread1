@@ -26,31 +26,41 @@ namespace MyBread1
         public Ende()
         {
             this.InitializeComponent();
+            this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
         }
 
+        //Navigation zurück zur Startseite
+        //Setzen der globalen Variablen auf null
         private void Navigiere_zuStart(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Startseite));
+            App app = (App)App.Current;
+            app.allgemeinertext = null;
+            app.Körner = null;
+            app.Karotten = null;
+            app.Herz = null;
+            app.Mehl = null;
+
+            this.Frame.Navigate(typeof(Startseite)); 
         }
+       
         private void Navigiere_zuWarenkorb(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Warenkorb));
         }
         
+        //Initialisierung und Deklaration der Variable
         bool button1 = false;
-
+        //Sicherstellung des einmaligen klickens durch if-Abfrage
+        //Festlegung der Bestellnummer durch Next funktion in bestimmtem Zahlenraum
         private void BestellNummer(object sender, RoutedEventArgs e)
-        { 
-            if(button1 == false) { 
+        {
+            if (button1 == false)
+            {
                 button1 = true;
                 Random rnd = new Random();
                 Text_BNummer.Text = "Ihre Bestellnummer: " + rnd.Next(100, 999);
-              
-                
             }
-            
+
         }
-       
-        
     }
 }

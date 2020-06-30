@@ -13,13 +13,13 @@
             <TextBlock FontSize="40" Margin="0,72,0,0" Text="Bestellung abgeschlossen!" TextWrapping="Wrap" Height="65" Width="444" Canvas.Left="440" Canvas.Top="-36" FontFamily="Times New Roman"/>
             <Button FontSize="25" BorderBrush="Black" Foreground="Black" Background="LightGray" BorderThickness="4"  Height="80" Width="261" Content="Zurück zur Startseite"   Click="Navigiere_zuStart" Canvas.Left="1039" Canvas.Top="755"/>
 
-            <StackPanel Width="816" Background="FloralWhite" Height="108" Canvas.Top="107" Canvas.Left="247">
-                <TextBlock Text="Dein Brot kannst du in dem von dir ausgewählten Standort abholen und vor Ort bezahlen." TextWrapping="Wrap" Height="82" Width="877" FontSize="30" Canvas.Left="61" Canvas.Top="129"/>
+            <StackPanel Width="816" Background="FloralWhite" Height="136" Canvas.Top="121" Canvas.Left="244">
+                <TextBlock TextWrapping="Wrap" Height="144" Width="798" FontSize="30" Canvas.Left="61" Canvas.Top="129" ><Run Text="Dein Brot kannst du in dem von dir ausgewählten Standort abholen und vor Ort bezahlen. Unten klicken um deine Bestellnummer zu erhalten."/><LineBreak/><Run/></TextBlock>
             </StackPanel>
-            <Button  Height="48" Width="188" Content="Hier Klicken!" FontSize="25" Click="BestellNummer" Canvas.Left="758" Canvas.Top="283"/>
+            <Button  Height="48" Width="188" Content="Hier Klicken!" FontSize="25" Click="BestellNummer" Canvas.Left="716" Canvas.Top="331"/>
             <ProgressBar Height="40" Width="150" x:Name="Progressbar" Maximum="8" Minimum="0" Value="8" Background="AntiqueWhite"  Foreground="Gray" Canvas.Left="577" Canvas.Top="785"/>
-            <TextBlock  Text="8/8" TextWrapping="Wrap" Height="52" Width="65" FontSize="25" Canvas.Left="637" Canvas.Top="785" RenderTransformOrigin="0.459,0.568"/>
-            <StackPanel Width="317" Background="FloralWhite" Height="112" Canvas.Top="251" Canvas.Left="305">
+            <TextBlock  Text="8/8" TextWrapping="Wrap" Height="38" Width="44" FontSize="25" Canvas.Left="637" Canvas.Top="788" RenderTransformOrigin="0.459,0.568"/>
+            <StackPanel Width="317" Background="FloralWhite" Height="112" Canvas.Top="311" Canvas.Left="335">
                 <TextBlock x:Name="Text_BNummer" Text="Ihre Bestellnummer:" FontSize="30" TextWrapping="Wrap" Height="95" Width="288"/>
             </StackPanel>
         </Canvas>

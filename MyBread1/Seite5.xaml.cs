@@ -26,6 +26,14 @@ namespace MyBread1
         {
             this.InitializeComponent();
             this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
+        }
+
+        //Navigation zur nächsten Seite und Übergabe der Daten mit Hilfe zweier globalen Variablen
+        private void Navigiere_zuSeite6(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Seite6));
+            App app = (App)App.Current;
+            app.globalertext = "Extrawünsche: \r\n " + Eingabefeld.Text;
 
         }
     
@@ -38,18 +46,13 @@ namespace MyBread1
         {
             this.Frame.Navigate(typeof(Seite4));
         }
+
         private void Navigiere_zuWarenkorb(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Warenkorb));
         }
 
-        private void Navigiere_zuSeite6(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Seite6));
-            App app = (App)App.Current;
-            app.globalertext = "Extrawünsche: \r\n " + Eingabefeld.Text;
-
-        }
+       
       
     }
     }

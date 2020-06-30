@@ -34,37 +34,26 @@ namespace MyBread1
             this.InitializeComponent();
             this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
         }
+
+        //Navigation zur nächsten Seite und Übergabe der Daten 
+        private void Navigiere_zuWarenkorb(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Warenkorb), Bestellung4.Text); 
+        }
+
         private void Navigiere_zuStart(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Startseite));
-            
+            this.Frame.Navigate(typeof(Startseite)); 
         }
 
         private void Navigiere_zuSeite5(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Seite4));
         }
-        private void Navigiere_zuWarenkorb(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Warenkorb), Bestellung4.Text); 
-        }
 
-        public DateTime MinDate {
-            get;
-            set;
-        }
-        public DateTime MaxDate { set; get; }
-
-         
-
-        public void CalendarEditingControl()
-        {
-            
-            this.MinDate = DateTime.Today;
-            this.MaxDate = DateTime.Today.AddYears(1);
-        }
        
-
+        //Festlegen der Standorte und setzen der PlaceNeedles auf der Map mittls Langitude und Longitude
+        //Festlegen des zu Übergebenden Textes 
         private void Ansbach_Click(object sender, RoutedEventArgs e)
         {
             MapService.ServiceToken = "abcdef-abcdefghijklmno";

@@ -18,8 +18,8 @@
             <ListView CanReorderItems="False" CanDragItems="False" AllowDrop="True"
                         Canvas.Left="10" Canvas.Top="154" Width="852" Height="450"
                         SelectionMode="None" RenderTransformOrigin="0.874,0.556">
-                <ListViewItem Width="846" Height="230"  Background="FloralWhite" RenderTransformOrigin="0.5,0.5">
 
+                <ListViewItem Width="846" Height="230"  Background="FloralWhite" RenderTransformOrigin="0.5,0.5">
                     <StackPanel Orientation="Horizontal" Height="218" Margin="0,0,-29,0">
                         <CheckBox  Checked="Karotten2_Click" Height="20" Width="44" Unchecked="Karotten2_Clickuncheck"/>
                         <Image Source="/Bilder/Karotten.jpeg" Width="137" Height="187" RenderTransformOrigin="0.628,0.567"/>
@@ -27,9 +27,8 @@
                         <Button Foreground="DimGray" Background="Gainsboro" Content="Mehr Informationen" Height="40" Width="167" Click="Karotten_Click"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Width="847" Height="213" RenderTransformOrigin="0.5,0.5" Background="FloralWhite" >
 
-
+                <ListViewItem Width="846" Height="213" RenderTransformOrigin="0.5,0.5" Background="FloralWhite" >
                     <StackPanel Orientation="Horizontal" Height="218">
                         <CheckBox  Checked="Speck2_Click" Height="30" Width="44" Unchecked="Speck2_Clickuncheck"/>
                         <Image Source="/Bilder/Speck.jpeg" Width="152" Height="157" />
@@ -37,15 +36,17 @@
                         <Button Foreground="DimGray" Background="Gainsboro" Content="Mehr Informationen" Canvas.Left="492" Canvas.Top="443" Height="40" Width="167" Click="Speck_Click"/>
                     </StackPanel>
                 </ListViewItem>
+
                 <ListViewItem Width="846" Height="207" Background="FloralWhite" >
                     <StackPanel Orientation="Horizontal" Height="218">
                         <CheckBox  Checked="Tomaten2_Click" Height="20" Width="44" Unchecked="Tomaten2_Clickuncheck"/>
                         <Image Source="/Bilder/getr.Tomaten.jpeg" Width="158" Height="169" />
-                        <TextBlock Margin="10 0 0 0 " FontSize="40" Height="63" Width="309">getr. Tomaten</TextBlock>
+                        <TextBlock Margin="10 0 0 0 " FontSize="40" Height="63" Width="332">getr. Tomaten</TextBlock>
                         <Button Foreground="DimGray" Background="Gainsboro" Content="Mehr Informationen" Canvas.Left="1203" Canvas.Top="244" Height="40" Width="167" Click="Tomaten_Click"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Width="844" Height="219" Background="FloralWhite">
+
+                <ListViewItem Width="846" Height="219" Background="FloralWhite">
                     <StackPanel Orientation="Horizontal" Height="218"   >
                         <CheckBox Checked="Cranberries2_Click" Height="30" Width="44" Unchecked="Cranberries2_Clickuncheck"/>
                         <Image Source="/Bilder/Cranberries.jpeg" Width="147" Height="186" />
@@ -53,7 +54,8 @@
                         <Button Foreground="DimGray" Background="Gainsboro" Content="Mehr Informationen" Canvas.Left="1203" Canvas.Top="244" Height="40" Width="167" Click="Cranberries_Click"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Width="844" Height="216" RenderTransformOrigin="0.5,0.5" Background="FloralWhite">
+
+                <ListViewItem Width="846" Height="216" RenderTransformOrigin="0.5,0.5" Background="FloralWhite">
                     <StackPanel Orientation="Horizontal" Margin="-2,-12,-41,-20">
                         <CheckBox  Checked="Paranüsse2_Click" Height="1" Width="44" Unchecked="Paranüsse2_Clickuncheck"/>
                         <Image Source="/Bilder/Paranüsse (2).jpeg" Width="136" Height="183" />
@@ -61,7 +63,8 @@
                         <Button Foreground="DimGray" Background="Gainsboro" Content="Mehr Informationen" Canvas.Left="1209" Canvas.Top="443" Height="40" Width="167" Click="Paranüsse_Click"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Width="842" Height="207" Background="FloralWhite" >
+
+                <ListViewItem Width="846" Height="207" Background="FloralWhite" >
                     <StackPanel Orientation="Horizontal" Margin="-2,-30,0,-28">
                         <CheckBox  Checked="Rosinen2_Click" Height="34" Width="44" Unchecked="Rosinen2_Clickuncheck"/>
                         <Image Source="/Bilder/Rosinen.jpeg" Width="168" Height="186" />
@@ -71,36 +74,19 @@
                 </ListViewItem>
             </ListView>
 
-            <TextBlock x:Name="Info2"  TextWrapping="Wrap" Canvas.Left="10" Canvas.Top="587" Width="803" Height="174" FontSize="22" />
+            <TextBlock x:Name="Info2"  TextWrapping="Wrap" Canvas.Left="10" Canvas.Top="628" Width="848" Height="133" FontSize="22" />
             <StackPanel Width="385" Height="450" Background="FloralWhite" Canvas.Left="925" Canvas.Top="154">
                 <TextBlock Text="Bestellübersicht: " FontSize="25" TextWrapping="Wrap" Height="53" Width="189"/>
                 <TextBlock FontSize="20" TextWrapping="Wrap" Height="361" Width="341" x:Name="Bestellung2" />
             </StackPanel>
-            <ProgressBar Height="40" Width="150" Maximum="8" Minimum="0" Value="2" Background="FloralWhite"  Foreground="Gray" Canvas.Left="580" Canvas.Top="786"/>
-            <TextBlock  Text="2/8" TextWrapping="Wrap" Height="47" Width="56" FontSize="25" Canvas.Left="637" Canvas.Top="786"/>
+            <ProgressBar Height="40" Width="150" Maximum="8" Minimum="0" Value="2" Background="FloralWhite"  Foreground="Gray" Canvas.Left="580" Canvas.Top="775"/>
+            <TextBlock  Text="2/8" TextWrapping="Wrap" Height="47" Width="37" FontSize="25" Canvas.Left="637" Canvas.Top="778"/>
         </Canvas>
-
-
     </Grid>
-    <Page.BottomAppBar>
-        <AppBar Padding="10">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-
-
-
-            </Grid>
-        </AppBar>
-    </Page.BottomAppBar>
 
     <Page.TopAppBar>
         <AppBar Padding="10,0,0,0">
             <StackPanel HorizontalAlignment="Left" Margin="10,0,0,0" Orientation="Horizontal">
-                <AppBarButton Icon="Shop"
-                              Label="Warenkorb" Click="Navigiere_zuWarenkorb"></AppBarButton>
                 <AppBarButton Icon="Home"
                                   Label="Home" Click="Navigiere_zuStart"></AppBarButton>
                 <AppBarButton Icon="back"

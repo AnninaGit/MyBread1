@@ -19,18 +19,18 @@
              BorderThickness="6" />
             </StackPanel>
             <ProgressBar Height="40" Width="150" Maximum="8" Minimum="0" Value="4"  Background="FloralWhite"  Foreground="Gray" Canvas.Left="580" Canvas.Top="774"/>
-            <TextBlock  Text="4/8" TextWrapping="Wrap" Height="31" Width="51" FontSize="25" Canvas.Left="637" Canvas.Top="777"/>
+            <TextBlock  Text="4/8" TextWrapping="Wrap" Height="31" Width="42" FontSize="25" Canvas.Left="637" Canvas.Top="777"/>
             <TextBlock FontFamily="Times New Roman" FontSize="50" Canvas.Left="487" Canvas.Top="10"><Run Text="Spezifikationen"/></TextBlock>
             <Button FontSize="25" BorderBrush="Black" Foreground="Black" Background="LightGray" BorderThickness="4"  Height="80" Width="220" Content="weiter" Click="Navigiere_zuSeite5" Canvas.Left="1080" Canvas.Top="754"/>
 
-            <StackPanel Canvas.Left="397" Canvas.Top="328" Height="190" Width="516" Background="FloralWhite">
+            <StackPanel Canvas.Left="397" Canvas.Top="317" Height="212" Width="516" Background="FloralWhite">
                 <TextBlock Text="Welche Form soll ihr Brot haben?" FontSize="30" TextWrapping="Wrap" Height="60" Width="516"  Margin="10 0 0 0"/>
                 <RadioButton Content="Herz" Canvas.Left="435" Canvas.Top="563" Height="38" Width="188" Click="Herz_Click" Margin="10 10 0 0" FontSize="15"/>
                 <RadioButton Content="Rund" Canvas.Left="435" Canvas.Top="636" Margin="10 0 0 0" Height="39" Width="188" FontSize="15" Click="Rund_Click"/>
                 <RadioButton Content="Kastenform" Margin="10 0 0 0" Height="39" Width="188" FontSize="15" Click="Kasten_Click"/>
             </StackPanel>
 
-            <StackPanel Canvas.Left="397" Canvas.Top="545" Width="516" Height="187" Background="FloralWhite">
+            <StackPanel Canvas.Left="397" Canvas.Top="556" Width="516" Height="187" Background="FloralWhite">
                 <TextBlock Canvas.Left="537" Canvas.Top="541" Text="Bestellübersicht: " TextWrapping="Wrap" Height="48" Width="229" FontSize="30"/>
                 <TextBlock Canvas.Left="451" Canvas.Top="586" x:Name="Bestellung4"  TextWrapping="Wrap" Height="107" Width="436" FontSize="20"/>
             </StackPanel>

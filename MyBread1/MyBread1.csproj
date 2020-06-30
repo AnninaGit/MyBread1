@@ -150,6 +150,7 @@
     <Compile Include="Startseite.xaml.cs">
       <DependentUpon>Startseite.xaml</DependentUpon>
     </Compile>
+    <Compile Include="System\Windows\Input\RoutedUICommand.cs" />
     <Compile Include="Warenkorb.xaml.cs">
       <DependentUpon>Warenkorb.xaml</DependentUpon>
     </Compile>

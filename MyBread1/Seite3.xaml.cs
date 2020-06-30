@@ -27,30 +27,31 @@ namespace MyBread1
             this.InitializeComponent();
             this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
         }
+
+        //Navigation zur nächsten Seite und Übergabe der Daten mit Hilfe einer globalen Variable
         private void Navigiere_zuSeite4(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Seite4));
             App app = (App)App.Current;
             app.Körner = Bestellung3.Text;
-            app.Nuss = Bestellung3.Text;
-            app.Röst = Bestellung3.Text;
-            app.Walnuss = Bestellung3.Text;
-            app.SonnenK = Bestellung3.Text;
-            app.Basilikum = Bestellung3.Text;
+            
         }
         private void Navigiere_zuStart(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Startseite));
         }
+
         private void Navigiere_zuSeite2(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Seite2));
         }
+
         private void Navigiere_zuWarenkorb(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Warenkorb));
         }
 
+        // Informationen über einzelne Toppings werden in der Infobox3 gespeichert
         private void Körner_Click(object sender, RoutedEventArgs e)
         {
             Info3.Text = "Körner: Unser Körnermix setzt sich aus Sonnenblumenkernen und Kürbiskernen zusammen. "
@@ -85,6 +86,7 @@ namespace MyBread1
                 "Außerdem wirkt Basilikum entzündungshemmend und antioxidativ.";
         }
 
+        // Festlegen und gegebenenfalls löschen des Ausgabetexts 
         private void Körner2_Click(object sender, RoutedEventArgs e)
         {
             Bestellung3.Text += "- Körnermix \r\n";
@@ -98,6 +100,7 @@ namespace MyBread1
         {
             Bestellung3.Text += "- Nussmix \r\n";
         }
+
         private void Nuss2_Clickuncheck(object sender, RoutedEventArgs e)
         {
             Bestellung3.Text = "";
@@ -107,6 +110,7 @@ namespace MyBread1
         {
             Bestellung3.Text += "- Röstzwiebeln \r\n";
         }
+
         private void RöstZ2_Clickuncheck(object sender, RoutedEventArgs e)
         {
             Bestellung3.Text = "";
@@ -116,6 +120,7 @@ namespace MyBread1
         {
             Bestellung3.Text += "- Walnuss \r\n";
         }
+
         private void Walnuss2_Clickuncheck(object sender, RoutedEventArgs e)
         {
             Bestellung3.Text = "";
@@ -125,14 +130,17 @@ namespace MyBread1
         {
             Bestellung3.Text += "- Sonnenblumenkerne \r\n";
         }
+
         private void SonnenK2_Clickuncheck(object sender, RoutedEventArgs e)
         {
             Bestellung3.Text = "";
         }
+
         private void Basilikum2_Click(object sender, RoutedEventArgs e)
         {
             Bestellung3.Text += "- Basilikum \r\n";
         }
+
         private void Basilikum2_Clickuncheck(object sender, RoutedEventArgs e)
         {
             Bestellung3.Text = "";

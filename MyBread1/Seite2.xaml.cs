@@ -27,17 +27,14 @@ namespace MyBread1
             this.InitializeComponent();
             this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
         }
+
+        //Navigation zur nächsten Seite und Übergabe der Daten mit Hilfe einer globalen Variable
         private void Navigiere_zuSeite3(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Seite3));
             App app = (App)App.Current;
             app.Karotten = Bestellung2.Text;
-            app.Speck = Bestellung2.Text;
-            app.Tomaten = Bestellung2.Text;
-            app.Cranberries = Bestellung2.Text;
-            app.Paranüsse = Bestellung2.Text;
-            app.Rosinen = Bestellung2.Text;
-            app.SonnenK = Bestellung2.Text;
+            
         }
         private void Navigiere_zuStart(object sender, RoutedEventArgs e)
         {
@@ -52,6 +49,7 @@ namespace MyBread1
             this.Frame.Navigate(typeof(Warenkorb));
         }
 
+        // Informationen über einzelne Teigzusätze werden in der Infobox2 gespeichert
         private void Karotten_Click(object sender, RoutedEventArgs e)
         {
             Info2.Text = "Da Karotten überdies zu den Spitzenreitern der Carotinoidlieferanten zählen, sind sie ausserdem extrem gesund – insbesondere für die Augen, die Haut und das Herz. " +
@@ -88,6 +86,7 @@ namespace MyBread1
                 + "Im Brot verleiht die Paranuss diesen typisch intensiven nussigen Geschmack. ";
         }
 
+        // Festlegen und gegebenenfalls löschen des Ausgabetexts 
         private void Karotten2_Click(object sender, RoutedEventArgs e)
         {
             Bestellung2.Text +=  "- Karotten \r\n" ;

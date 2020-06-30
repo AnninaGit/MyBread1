@@ -72,28 +72,16 @@
                 <TextBlock Text="Bestellübersicht: " FontSize="25" TextWrapping="Wrap" Height="53" Width="183"/>
                 <TextBlock Canvas.Left="907" Canvas.Top="217" FontSize="20" TextWrapping="Wrap" Height="361" Width="341" x:Name="Bestellung3"/>
             </StackPanel>
-            <TextBlock x:Name="Info3"  TextWrapping="Wrap" Canvas.Left="30" Canvas.Top="587" Width="819" Height="163" FontSize="22"/>
+            <TextBlock x:Name="Info3"  TextWrapping="Wrap" Canvas.Left="10" Canvas.Top="643" Width="839" Height="120" FontSize="22"/>
 
         </Canvas>
         <ProgressBar HorizontalAlignment="Center" Height="40" Width="150" Margin="0,828,0,0" VerticalAlignment="Top"  Maximum="8" Minimum="0" Value="3" Background="FloralWhite"  Foreground="Gray"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,828,0,0" Text="3/8" TextWrapping="Wrap" VerticalAlignment="Top" Height="42" Width="48" FontSize="25"/>
+        <TextBlock HorizontalAlignment="Left" Margin="702,828,0,0" Text="3/8" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="46" FontSize="25"/>
     </Grid>
-    <Page.BottomAppBar>
-        <AppBar Padding="10">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-            </Grid>
-        </AppBar>
-    </Page.BottomAppBar>
 
     <Page.TopAppBar>
         <AppBar Padding="10,0,0,0">
             <StackPanel HorizontalAlignment="Left" Margin="10,0,0,0" Orientation="Horizontal">
-                <AppBarButton Icon="Shop"
-                              Label="Warenkorb" Click="Navigiere_zuWarenkorb"></AppBarButton>
                 <AppBarButton Icon="Home"
                                   Label="Home" Click="Navigiere_zuStart"></AppBarButton>
                 <AppBarButton Icon="back"

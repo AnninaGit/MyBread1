@@ -9,20 +9,6 @@
     mc:Ignorable="d"
     Background="Gainsboro">
 
-    <Page.BottomAppBar>
-        <AppBar Padding="10">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-
-
-
-            </Grid>
-        </AppBar>
-    </Page.BottomAppBar>
-
     <Page.TopAppBar>
         <AppBar Padding="10,0,0,0">
             <StackPanel HorizontalAlignment="Left" Margin="10,0,0,0" Orientation="Horizontal">
@@ -42,15 +28,14 @@
     <Grid>
         <Canvas Margin="60,50,70,65">
             <Button FontSize="25" BorderBrush="Black" Foreground="Black" Background="LightGray" BorderThickness="4"  Height="80" Width="220" Content="weiter"  Click="Navigiere_zuWarenkorb"   Canvas.Left="1080" Canvas.Top="757"/>
-            <TextBlock FontFamily="Times New Roman" Text="Bestelloptionen" TextWrapping="Wrap" Height="54" Width="290" FontSize="40" Canvas.Left="26" Canvas.Top="35"/>
+            <TextBlock FontFamily="Times New Roman" Text="Bestelloptionen" TextWrapping="Wrap" Height="54" Width="290" FontSize="40" Canvas.Left="43" Canvas.Top="22"/>
 
-
-
-            <StackPanel Width="443" Background="FloralWhite" Height="72" Canvas.Top="147" Canvas.Left="43"  >
+            <StackPanel Width="443" Background="FloralWhite" Height="72" Canvas.Top="123" Canvas.Left="43"  >
                 <TextBlock Text="Wann möchten sie ihr Brot abholen?" TextWrapping="Wrap" Height="59" Width="421" FontSize="25"/>
             </StackPanel>
-            <ProgressBar Height="40" Width="150" x:Name="Progressbar" Maximum="8" Minimum="0" Value="6" Background="FloralWhite"  Foreground="Gray" Canvas.Left="580" Canvas.Top="795"/>
-            <TextBlock  Text="6/8" TextWrapping="Wrap" Height="36" Width="50" FontSize="25" Canvas.Left="637" Canvas.Top="795"/>
+
+            <ProgressBar Height="40" Width="150" x:Name="Progressbar" Maximum="8" Minimum="0" Value="6" Background="FloralWhite"  Foreground="Gray" Canvas.Left="580" Canvas.Top="777"/>
+            <TextBlock  Text="6/8" TextWrapping="Wrap" Height="36" Width="39" FontSize="25" Canvas.Left="637" Canvas.Top="777"/>
 
             <TextBlock  Text="Wähle deinen Abholort: " TextWrapping="Wrap" Width="478" FontSize="30" Height="51" Canvas.Left="655" Canvas.Top="58"/>
 
@@ -77,19 +62,12 @@
                 </ListViewItem>
             </ListView>
 
-            <StackPanel Width="305" Background="FloralWhite" Height="308" Canvas.Top="341" Canvas.Left="43">
+            <StackPanel Width="305" Background="FloralWhite" Height="308" Canvas.Top="341" Canvas.Left="112">
                 <TextBlock Text="Bestellübersicht: " TextWrapping="Wrap" FontSize="20" Width="147" Height="38"/>
                 <TextBlock x:Name="Bestellung4" Canvas.Left="90" Canvas.Top="527"  TextWrapping="Wrap" Height="91" Width="231" />
             </StackPanel>
 
-            <CalendarDatePicker Canvas.Left="43" Canvas.Top="227" Height="54" Width="305" x:Name="Calendar" />
-
-
-
-
-
-
-
+            <CalendarDatePicker Canvas.Left="43" Canvas.Top="223" Height="54" Width="443" x:Name="Calendar" />
 
         </Canvas>
 
