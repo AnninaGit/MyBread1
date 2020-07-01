@@ -68,7 +68,7 @@ namespace MyBread1
 
         private void Nuss_Click(object sender, RoutedEventArgs e)
         {
-            Info3.Text = "Nüsse: Unser Nussmix setzt sich aus Cashewnüssen, Walnüssen, Mandeln und Walnüssen zusammen"+
+            Info3.Text = "Nüsse: Unser Nussmix setzt sich aus Cashewnüssen, Mandeln und Walnüssen zusammen"+
                 "Neben den gesunden Fetten enthalten Nüsse auch hochwertiges Eiweiß, Ballaststoffe, sekundäre Pflanzenstoffe und sind eine gute Quelle für Vitamine und Mineralstoffe.";
         }
 

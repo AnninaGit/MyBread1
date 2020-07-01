@@ -27,8 +27,6 @@
             <StackPanel HorizontalAlignment="Left" Margin="10,0,0,0" Orientation="Horizontal">
                 <AppBarButton Icon="Home"
                                   Label="Home" Click="Navigiere_zuStart"></AppBarButton>
-                <AppBarButton Icon="back"
-                              Label="Zurück" Click="Navigiere_zuSeite4"></AppBarButton>
                 <AppBarButton Icon="Forward"
                               Label="Weiter" Click="Navigiere_zuWarenkorb"></AppBarButton>
 

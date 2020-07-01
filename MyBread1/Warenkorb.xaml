@@ -94,13 +94,6 @@
 
                                   Label="Home" Click="Navigiere_zuStart"></AppBarButton>
 
-                <AppBarButton Icon="back"
-
-                              Label="Zurück" Click="Navigiere_zuSeite6"></AppBarButton>
-
-                <AppBarButton Icon="Forward"
-                              Label="Weiter" Click="Navigiere_zuEnde"></AppBarButton>
-
 
             </StackPanel>
 

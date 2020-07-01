@@ -30,6 +30,7 @@ namespace MyBread1
         }
 
         //Navigation zur nächsten Seite und Übergabe der Daten mit Hilfe einer globalen Variable
+        //checkboxen und Textblock wird wieder auf null gesetzt
         private void Navigiere_zuSeite2(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Seite2));

@@ -58,37 +58,37 @@ namespace MyBread1
         // Informationen über einzelne Teigzusätze werden in der Infobox2 gespeichert
         private void Karotten_Click(object sender, RoutedEventArgs e)
         {
-            Info2.Text = "Karotten: Da Karotten überdies zu den Spitzenreitern der Carotinoidlieferanten zählen, sind sie ausserdem extrem gesund – insbesondere für die Augen, die Haut und das Herz. " +
-                "Die leckeren Möhrchen sind trotz ihrer natürlichen Süsse also sehr kalorienarm.";
+            Info2.Text = "Karotten: Da Karotten überdies zu den Spitzenreitern der Carotinoidlieferanten zählen, sind sie außerdem extrem gesund – insbesondere für die Augen, die Haut und das Herz. " +
+                "Die leckeren Möhrchen sind trotz ihrer natürlichen Süße also sehr kalorienarm.";
         }
 
         private void Speck_Click(object sender, RoutedEventArgs e)
         {
-            Info2.Text = "Speck: Speck gilt als ergiebige Eiweisquelle. Verleiht dem Brot eine würzig, rauchige Note, und macht des Brot nebenbei noch unglaublich saftig. " +
+            Info2.Text = "Speck: Speck gilt als ergiebige Eiweisquelle. Verleiht dem Brot eine würzige, rauchige Note und macht das Brot nebenbei noch unglaublich saftig. " +
                 "Unser Speck kommt natürlich von glücklichen Kuhs aus biologischer Viehzucht.";
         }
 
         private void Tomaten_Click(object sender, RoutedEventArgs e)
         {
-            Info2.Text = "getrocknete Tomaten: Die ganzen getrockneten Tomaten besitzen einen hocharomatischen und fruchtigen Tomatengeschmack, der sofort mediterranes Flair aufkommen lässt." +
+            Info2.Text = "getrocknete Tomaten: Die ganzen getrockneten Tomaten besitzen einen hocharomatischen und fruchtigen Tomatengeschmack, der sofort mediteranes Flair aufkommen lässt." +
                 "Für unsere getrockneten Tomaten wird nur etwas Salz verwendet, wir fügen keinerlei künstliche Geschmacksverstärker, Aromen oder Farbstoffe hinzu.";
         }
 
         private void Cranberries_Click(object sender, RoutedEventArgs e)
         {
-            Info2.Text = "Cranberries: Cranberries sind ideal für eine Low Carb orientierte Diät, da sie eine Menge Nährstoffen, Ballaststoffe, und Antioxidantien  beinhalten. " +
+            Info2.Text = "Cranberries: Cranberries sind ideal für eine Low Carb orientierte Diät, da sie eine Menge Nährstoffe, Ballaststoffe, und Antioxidantien  beinhalten. " +
                 "Sie verleihen dem Brot außerdem eine süßliche Note, welche eine sehr intensive Geschmackskomposition kreiert. ";
         }
 
         private void Rosinen_Click(object sender, RoutedEventArgs e)
         {
-            Info2.Text = "Rosinen: Rosinen sind ebenso wie die Cranberries eher ungewöhnlich in deftigem Brot, doch glauben sie uns wenn wir sagen das süß und deftig in diesem Fall eine gute Idee ist. "
+            Info2.Text = "Rosinen: Rosinen sind ebenso wie die Cranberries eher ungewöhnlich in deftigem Brot, doch glauben sie uns wenn wir sagen, dass süß und deftig in diesem Fall eine gute Idee ist. "
                 + "Gesund macht sie außerdem ihr hoher Mineralstoffgehalt.";
         }
 
         private void Paranüsse_Click(object sender, RoutedEventArgs e)
         {
-            Info2.Text = "Paranüsse: Eine Paranuss deckt bereits ihren Selen Bedarf für diesen Tag, Selen braucht ihr Körper um Schwermetalle zu binden und schützt somit vor Herz-Kreislauf-Erkrankungen."
+            Info2.Text = "Paranüsse: Eine Paranuss deckt bereits ihren Selen Bedarf für diesen Tag. Selen braucht ihr Körper um Schwermetalle zu binden und schützt somit vor Herz-Kreislauf-Erkrankungen."
                 + "Im Brot verleiht die Paranuss diesen typisch intensiven nussigen Geschmack. ";
         }
 
