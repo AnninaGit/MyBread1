@@ -34,7 +34,14 @@ namespace MyBread1
             this.Frame.Navigate(typeof(Seite4));
             App app = (App)App.Current;
             app.Körner = Bestellung3.Text;
-            
+            checkbox1.IsChecked = false;
+            checkbox2.IsChecked = false;
+            checkbox3.IsChecked = false;
+            checkbox4.IsChecked = false;
+            checkbox5.IsChecked = false;
+            checkbox6.IsChecked = false;
+            Bestellung3.Text = "";
+
         }
         private void Navigiere_zuStart(object sender, RoutedEventArgs e)
         {

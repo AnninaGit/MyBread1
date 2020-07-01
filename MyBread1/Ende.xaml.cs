@@ -34,13 +34,10 @@ namespace MyBread1
         private void Navigiere_zuStart(object sender, RoutedEventArgs e)
         {
             App app = (App)App.Current;
-            app.allgemeinertext = null;
-            app.Körner = null;
-            app.Karotten = null;
-            app.Herz = null;
-            app.Mehl = null;
-
-            this.Frame.Navigate(typeof(Startseite)); 
+           
+            this.Frame.Navigate(typeof(Startseite));
+            button1 = false;
+            Text_BNummer.Text = "";
         }
        
         private void Navigiere_zuWarenkorb(object sender, RoutedEventArgs e)

@@ -34,25 +34,6 @@ namespace MyBread1
             this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
         }
 
-        //Initialisieren und deklarieren der Variable
-        int anzahl = 1;
-        //Inkrementierung der Anzahl
-        //Berechnung des Preises Simultan zur Inkrementierung
-        private void Zaehler(object Sender, RoutedEventArgs e)
-        {
-            Ausgabetext.Text = "Anzahl an Broten: " + (++anzahl).ToString();
-            Bezahlung.Text = "Ihre Bestellung kostet: " + (anzahl * 5).ToString() + "€";
-        }
-
-        //Dekrementierung der Anzahl  
-        //Berechnung des Preises Simultan zur Reduktion
-        private void Zaehler1(object Sender, RoutedEventArgs e)
-        {
-            if (anzahl > 1)
-            { Ausgabetext.Text = "Anzahl an Broten: " + (--anzahl).ToString();
-                Bezahlung.Text = "Ihre Bestellung kostet: " + (anzahl * 5).ToString() + "€";
-            }
-        }
 
 
         private void Navigiere_zuStart(object sender, RoutedEventArgs e)
@@ -63,6 +44,16 @@ namespace MyBread1
         private void Navigiere_zuEnde(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Ende));
+            Ausgabebox1.Text = "";
+            Ausgabebox2.Text = "";
+            Ausgabebox3.Text = "";
+            Ausgabebox4.Text = "";
+            Ausgabebox5.Text = "";
+            Ausgabebox6.Text = "";
+            anzahl = 1;
+            Bezahlung.Text = "Anzahl an Broten: 1";
+            Ausgabetext.Text = "Ihre Bestellung kostet: 5€";
+            
         }
 
         //Navigiert zum Ende der Bestellung und ruft das Dialogfenster auf
@@ -78,6 +69,28 @@ namespace MyBread1
             var title = "Ihre Bestellung wurde erfolgreich übermittelt.";
             var Dialogfenster = new Windows.UI.Popups.MessageDialog(title, Meldung);
             await Dialogfenster.ShowAsync();
+        }
+
+
+        //Initialisieren und deklarieren der Variable
+        int anzahl = 1;
+        //Inkrementierung der Anzahl
+        //Berechnung des Preises Simultan zur Inkrementierung
+        private void Zaehler(object Sender, RoutedEventArgs e)
+        {
+            Ausgabetext.Text = "Anzahl an Broten: " + (++anzahl).ToString();
+            Bezahlung.Text = "Ihre Bestellung kostet: " + (anzahl * 5).ToString() + "€";
+        }
+
+        //Dekrementierung der Anzahl  
+        //Berechnung des Preises Simultan zur Reduktion
+        private void Zaehler1(object Sender, RoutedEventArgs e)
+        {
+            if (anzahl > 1)
+            {
+                Ausgabetext.Text = "Anzahl an Broten: " + (--anzahl).ToString();
+                Bezahlung.Text = "Ihre Bestellung kostet: " + (anzahl * 5).ToString() + "€";
+            }
         }
 
         private void Navigiere_zuSeite1(object sender, RoutedEventArgs e)
@@ -120,6 +133,7 @@ namespace MyBread1
             {
                 Ausgabebox6.Text = "Standort: \r\n" + uebernahmedaten;
             }
+            else { Ausgabebox6.Text = ""; }
            
             base.OnNavigatedTo(e);
 
@@ -134,6 +148,7 @@ namespace MyBread1
             Ausgabebox2.Text = app.Karotten;
 
             Ausgabebox3.Text = app.Körner;
+
 
             
 

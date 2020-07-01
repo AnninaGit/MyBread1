@@ -44,8 +44,9 @@ namespace MyBread1
         public String  Karotten { get; set; }
        
         public String Körner { get; set; }
+       
       
-        public static System.Windows.Input.RoutedUICommand Refresh { get; }
+        
 
       
 

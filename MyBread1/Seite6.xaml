@@ -4,26 +4,13 @@
     xmlns:local="using:MyBread1"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    
     xmlns:Custom="using:Windows.UI.Xaml.Controls.Maps"
     x:Class="MyBread1.Seite6"
     mc:Ignorable="d"
     Background="Gainsboro">
 
-    <Page.TopAppBar>
-        <AppBar Padding="10,0,0,0">
-            <StackPanel HorizontalAlignment="Left" Margin="10,0,0,0" Orientation="Horizontal">
-                <AppBarButton Icon="Shop"
-                              Label="Warenkorb" Click="Navigiere_zuWarenkorb"/>
-                <AppBarButton Icon="Home"
-                                  Label="Home" Click="Navigiere_zuStart"/>
-                <AppBarButton Icon="back"
-                              Label="Zurück" Click="Navigiere_zuSeite5"/>
-                <AppBarButton Icon="Forward"
-                              Label="Weiter" Click="Navigiere_zuWarenkorb"/>
 
-            </StackPanel>
-        </AppBar>
-    </Page.TopAppBar>
 
     <Grid>
         <Canvas Margin="60,50,70,65">
@@ -50,7 +37,7 @@
                 </ListViewItem>
                 <ListViewItem Width="651" Canvas.Left="883" Canvas.Top="368" Height="183" Background="FloralWhite" >
                     <StackPanel Orientation="Horizontal" Margin="-2,0,0,-7">
-                        <Button x:Name="Fürth2" Click="Fürth_Click" Content="Fürth" FontSize="25" Width="130" Height="60"/>
+                        <Button x:Name="Fürth2" Click="Fürth_Click" Content="Fürth" FontSize="25" Width="130" Height="60" />
                         <TextBlock x:Name="Fürth" Margin="10 0 0 0 " FontSize="25" Height="40" Width="499"><Run Text="Rezatstraße ,90768"/></TextBlock>
                     </StackPanel>
                 </ListViewItem>
@@ -67,10 +54,25 @@
                 <TextBlock x:Name="Bestellung4" Canvas.Left="90" Canvas.Top="527"  TextWrapping="Wrap" Height="91" Width="231" />
             </StackPanel>
 
-            <CalendarDatePicker Canvas.Left="43" Canvas.Top="223" Height="54" Width="443" x:Name="Calendar" />
-
+            <StackPanel/>
+            <CalendarDatePicker  Height="54" Width="443" x:Name="Calendar"  DateFormat="{}{day.integer} {month.full} {year.full}" Canvas.Left="43" Canvas.Top="229" />
+            
         </Canvas>
 
     </Grid>
+
+    <Page.TopAppBar>
+        <AppBar Padding="10,0,0,0">
+            <StackPanel HorizontalAlignment="Left" Margin="10,0,0,0" Orientation="Horizontal">
+                <AppBarButton Icon="Home"
+                                  Label="Home" Click="Navigiere_zuStart"/>
+                <AppBarButton Icon="back"
+                              Label="Zurück" Click="Navigiere_zuSeite5"/>
+                <AppBarButton Icon="Forward"
+                              Label="Weiter" Click="Navigiere_zuWarenkorb"/>
+
+            </StackPanel>
+        </AppBar>
+    </Page.TopAppBar>
 
 </Page>

@@ -34,6 +34,7 @@ namespace MyBread1
             this.Frame.Navigate(typeof(Seite6));
             App app = (App)App.Current;
             app.globalertext = "Extrawünsche: \r\n " + Eingabefeld.Text;
+            Eingabefeld.Text = "";
 
         }
     

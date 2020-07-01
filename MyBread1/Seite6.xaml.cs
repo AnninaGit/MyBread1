@@ -38,7 +38,10 @@ namespace MyBread1
         //Navigation zur nächsten Seite und Übergabe der Daten 
         private void Navigiere_zuWarenkorb(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Warenkorb), Bestellung4.Text); 
+            this.Frame.Navigate(typeof(Warenkorb),Bestellung4.Text);
+           
+            Bestellung4.Text = "";
+          
         }
 
         private void Navigiere_zuStart(object sender, RoutedEventArgs e)

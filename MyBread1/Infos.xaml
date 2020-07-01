@@ -15,30 +15,11 @@
             <TextBlock TextWrapping="Wrap" Height="527" Width="1244" FontSize="30"><Run Text="Wir bei MyBread glauben daran das Brot nicht langweilig sein muss!                                         Deswegen kamen wir auf das Konzept von individueller Brotzusammenstellung, sodass jeder ein Brot zugeschnitten auf seine persönlichen individuellen Wünsche bekommt.                         Wir machen alles mit einer großen Portion Liebe und natürlich alles mit handverlesenen BIO-Zutaten.                                                                                                                                                                                           VIELFALT AUF ALLEN EBENEN Nicht nur unsere Produkte sind vielfältig, sondern genauso auch unsere Mitarbeiter, Kampagnen und natürlich auch Brotfreunde. Wir sind bunt, international,  begegnen unserer MyBread-Familie auf Augenhöhe, sind offen gegenüber Neuem und unterstützen die Vielfalt auf allen Ebenen. Wir sind die ganze Woche für sie da."/><Run Text="  Wir finden außerdem das gesundes Essen nicht teuer sein sollte, wesegen wir uns auf einen Einheitspreis von 5€ geeinigt haben."/><LineBreak/><Run/></TextBlock>
         </StackPanel>
     </Grid>
-    <Page.BottomAppBar>
-        <AppBar Padding="10">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-
-
-                <StackPanel Grid.Column="0" HorizontalAlignment="Left" Margin="0,10,0,0">
-                    <AppBarButton Icon="Edit"></AppBarButton>
-                    <AppBarButton Icon="Camera"></AppBarButton>
-                    <AppBarButton Icon="Save"></AppBarButton>
-                    <AppBarButton Icon="Street"></AppBarButton>
-                </StackPanel>
-            </Grid>
-        </AppBar>
-    </Page.BottomAppBar>
+   
 
     <Page.TopAppBar>
         <AppBar Padding="10,0,0,0">
             <StackPanel HorizontalAlignment="Left" Margin="10,0,0,0" Orientation="Horizontal">
-                <AppBarButton Icon="Shop"
-                              Label="Warenkorb" Click="Navigiere_zuWarenkorb"></AppBarButton>
                 <AppBarButton Icon="Home"
                                   Label="Home" Click="Navigiere_zuStart"></AppBarButton>
                 <AppBarButton Icon="back"

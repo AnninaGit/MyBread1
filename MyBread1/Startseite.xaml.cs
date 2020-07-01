@@ -15,14 +15,20 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
+using Windows.Storage.Pickers;
+using Windows.Storage.Streams;
+using Windows.Graphics.Imaging;
+using System.Threading.Tasks;
+using Windows.Graphics.Display;
+using System.Xml.Linq;
+using Windows.Storage.Pickers.Provider;
+
+
 
 // Die Elementvorlage "Leere Seite" wird unter https://go.microsoft.com/fwlink/?LinkId=234238 dokumentiert.
 
 namespace MyBread1
 {
-    /// <summary>
-    /// Eine leere Seite, die eigenständig verwendet oder zu der innerhalb eines Rahmens navigiert werden kann.
-    /// </summary>
     public sealed partial class Startseite : Page
     {
         public Startseite()
@@ -46,15 +52,25 @@ namespace MyBread1
         {
             var camera = new CameraCaptureUI();
             var storageFile = await camera.CaptureFileAsync(CameraCaptureUIMode.Photo);
-            if (storageFile == null) return;
-            using (var stream = await storageFile.OpenAsync(FileAccessMode.Read))
+
+            if (storageFile == null) 
+                return;
+            using (var stream = await storageFile.OpenAsync(FileAccessMode.ReadWrite))
             {
                 var bitmap = new BitmapImage();
                 bitmap.SetSource(stream);
                 Bild.Source = bitmap;
-            }
-        }
+                
 
-        
+            }
+           
+           
+        }
+       
+
+
+
+
+
     }
 } 

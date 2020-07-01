@@ -75,11 +75,6 @@
             <TextBlock Canvas.Left="806" Canvas.Top="354" TextWrapping="Wrap" Height="81" Width="358" x:Name="Bezahlung" Text="Ihre Bestellung kostet: 5€" FontSize="30"/>
 
 
-
-
-
-
-
         </Canvas>
 
         <ProgressBar HorizontalAlignment="Left" Height="40" Width="150" Margin="961,831,0,0" VerticalAlignment="Top"  x:Name="Progressbar" Maximum="8" Minimum="0" Value="7" Background="FloralWhite"  Foreground="Gray"/>
@@ -90,47 +85,11 @@
 
     </Grid>
 
-    <Page.BottomAppBar>
-
-        <AppBar Padding="10">
-
-            <Grid>
-
-                <Grid.ColumnDefinitions>
-
-                    <ColumnDefinition></ColumnDefinition>
-
-                    <ColumnDefinition></ColumnDefinition>
-
-                </Grid.ColumnDefinitions>
-
-
-
-
-
-                <StackPanel Grid.Column="0" HorizontalAlignment="Left" Margin="0,10,0,0">
-
-
-
-
-                </StackPanel>
-
-            </Grid>
-
-        </AppBar>
-
-    </Page.BottomAppBar>
-
-
-
     <Page.TopAppBar>
 
         <AppBar Padding="10,0,0,0">
 
             <StackPanel HorizontalAlignment="Left" Margin="10,0,0,0" Orientation="Horizontal">
-
-
-
                 <AppBarButton Icon="Home"
 
                                   Label="Home" Click="Navigiere_zuStart"></AppBarButton>

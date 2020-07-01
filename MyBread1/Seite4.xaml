@@ -25,9 +25,9 @@
 
             <StackPanel Canvas.Left="397" Canvas.Top="317" Height="212" Width="516" Background="FloralWhite">
                 <TextBlock Text="Welche Form soll ihr Brot haben?" FontSize="30" TextWrapping="Wrap" Height="60" Width="516"  Margin="10 0 0 0"/>
-                <RadioButton Content="Herz" Canvas.Left="435" Canvas.Top="563" Height="38" Width="188" Click="Herz_Click" Margin="10 10 0 0" FontSize="15"/>
-                <RadioButton Content="Rund" Canvas.Left="435" Canvas.Top="636" Margin="10 0 0 0" Height="39" Width="188" FontSize="15" Click="Rund_Click"/>
-                <RadioButton Content="Kastenform" Margin="10 0 0 0" Height="39" Width="188" FontSize="15" Click="Kasten_Click"/>
+                <RadioButton Content="Herz" Canvas.Left="435" Canvas.Top="563" Height="38" Width="188" Click="Herz_Click" Margin="10 10 0 0" FontSize="15" x:Name="radio1"/>
+                <RadioButton Content="Rund" Canvas.Left="435" Canvas.Top="636" Margin="10 0 0 0" Height="39" Width="188" FontSize="15" Click="Rund_Click" x:Name="radio2"/>
+                <RadioButton Content="Kastenform" Margin="10 0 0 0" Height="39" Width="188" FontSize="15" Click="Kasten_Click" x:Name="radio3"/>
             </StackPanel>
 
             <StackPanel Canvas.Left="397" Canvas.Top="556" Width="516" Height="187" Background="FloralWhite">
@@ -37,26 +37,11 @@
         </Canvas>
 
     </Grid>
-    <Page.BottomAppBar>
-        <AppBar Padding="10">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-
-
-
-
-            </Grid>
-        </AppBar>
-    </Page.BottomAppBar>
+   
 
     <Page.TopAppBar>
         <AppBar Padding="10,0,0,0">
             <StackPanel HorizontalAlignment="Left" Margin="10,0,0,0" Orientation="Horizontal">
-                <AppBarButton Icon="Shop"
-                              Label="Warenkorb" Click="Navigiere_zuWarenkorb"></AppBarButton>
                 <AppBarButton Icon="Home"
                                   Label="Home" Click="Navigiere_zuStart"></AppBarButton>
                 <AppBarButton Icon="back"

@@ -21,7 +21,7 @@
 
                 <ListViewItem Width="846" Height="230"  Background="FloralWhite" RenderTransformOrigin="0.5,0.5">
                     <StackPanel Orientation="Horizontal" Height="218" Margin="0,0,-29,0">
-                        <CheckBox  Checked="Karotten2_Click" Height="20" Width="44" Unchecked="Karotten2_Clickuncheck"/>
+                        <CheckBox x:Name="checkbox1"  Checked="Karotten2_Click" Height="20" Width="44" Unchecked="Karotten2_Clickuncheck"/>
                         <Image Source="/Bilder/Karotten.jpeg" Width="137" Height="187" RenderTransformOrigin="0.628,0.567"/>
                         <TextBlock Margin="10 0 0 0 " FontSize="40" Height="57" Width="350"><Run Text="Karotten"/></TextBlock>
                         <Button Foreground="DimGray" Background="Gainsboro" Content="Mehr Informationen" Height="40" Width="167" Click="Karotten_Click"/>
@@ -30,7 +30,7 @@
 
                 <ListViewItem Width="846" Height="213" RenderTransformOrigin="0.5,0.5" Background="FloralWhite" >
                     <StackPanel Orientation="Horizontal" Height="218">
-                        <CheckBox  Checked="Speck2_Click" Height="30" Width="44" Unchecked="Speck2_Clickuncheck"/>
+                        <CheckBox x:Name="checkbox2"  Checked="Speck2_Click" Height="30" Width="44" Unchecked="Speck2_Clickuncheck"/>
                         <Image Source="/Bilder/Speck.jpeg" Width="152" Height="157" />
                         <TextBlock Margin="10 0 0 0 " FontSize="40" Height="64" Width="337">Speck</TextBlock>
                         <Button Foreground="DimGray" Background="Gainsboro" Content="Mehr Informationen" Canvas.Left="492" Canvas.Top="443" Height="40" Width="167" Click="Speck_Click"/>
@@ -39,7 +39,7 @@
 
                 <ListViewItem Width="846" Height="207" Background="FloralWhite" >
                     <StackPanel Orientation="Horizontal" Height="218">
-                        <CheckBox  Checked="Tomaten2_Click" Height="20" Width="44" Unchecked="Tomaten2_Clickuncheck"/>
+                        <CheckBox x:Name="checkbox3"  Checked="Tomaten2_Click" Height="20" Width="44" Unchecked="Tomaten2_Clickuncheck"/>
                         <Image Source="/Bilder/getr.Tomaten.jpeg" Width="158" Height="169" />
                         <TextBlock Margin="10 0 0 0 " FontSize="40" Height="63" Width="332">getr. Tomaten</TextBlock>
                         <Button Foreground="DimGray" Background="Gainsboro" Content="Mehr Informationen" Canvas.Left="1203" Canvas.Top="244" Height="40" Width="167" Click="Tomaten_Click"/>
@@ -48,7 +48,7 @@
 
                 <ListViewItem Width="846" Height="219" Background="FloralWhite">
                     <StackPanel Orientation="Horizontal" Height="218"   >
-                        <CheckBox Checked="Cranberries2_Click" Height="30" Width="44" Unchecked="Cranberries2_Clickuncheck"/>
+                        <CheckBox x:Name="checkbox4" Checked="Cranberries2_Click" Height="30" Width="44" Unchecked="Cranberries2_Clickuncheck"/>
                         <Image Source="/Bilder/Cranberries.jpeg" Width="147" Height="186" />
                         <TextBlock Margin="10 0 0 0 " FontSize="40" Height="66" Width="342">Cranberries</TextBlock>
                         <Button Foreground="DimGray" Background="Gainsboro" Content="Mehr Informationen" Canvas.Left="1203" Canvas.Top="244" Height="40" Width="167" Click="Cranberries_Click"/>
@@ -57,7 +57,7 @@
 
                 <ListViewItem Width="846" Height="216" RenderTransformOrigin="0.5,0.5" Background="FloralWhite">
                     <StackPanel Orientation="Horizontal" Margin="-2,-12,-41,-20">
-                        <CheckBox  Checked="Paranüsse2_Click" Height="1" Width="44" Unchecked="Paranüsse2_Clickuncheck"/>
+                        <CheckBox x:Name="checkbox5"  Checked="Paranüsse2_Click" Height="1" Width="44" Unchecked="Paranüsse2_Clickuncheck"/>
                         <Image Source="/Bilder/Paranüsse (2).jpeg" Width="136" Height="183" />
                         <TextBlock Margin="10 0 0 0 " FontSize="40" Height="68" Width="359">Paranüsse</TextBlock>
                         <Button Foreground="DimGray" Background="Gainsboro" Content="Mehr Informationen" Canvas.Left="1209" Canvas.Top="443" Height="40" Width="167" Click="Paranüsse_Click"/>
@@ -66,7 +66,7 @@
 
                 <ListViewItem Width="846" Height="207" Background="FloralWhite" >
                     <StackPanel Orientation="Horizontal" Margin="-2,-30,0,-28">
-                        <CheckBox  Checked="Rosinen2_Click" Height="34" Width="44" Unchecked="Rosinen2_Clickuncheck"/>
+                        <CheckBox x:Name="checkbox6"  Checked="Rosinen2_Click" Height="34" Width="44" Unchecked="Rosinen2_Clickuncheck"/>
                         <Image Source="/Bilder/Rosinen.jpeg" Width="168" Height="186" />
                         <TextBlock Margin="10 0 0 0 " FontSize="40" Height="66" Width="330">Rosinen</TextBlock>
                         <Button Foreground="DimGray" Background="Gainsboro" Content="Mehr Informationen" Canvas.Left="1209" Canvas.Top="443" Height="40" Width="167" Click="Rosinen_Click"/>

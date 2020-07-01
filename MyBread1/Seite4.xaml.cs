@@ -35,6 +35,11 @@ namespace MyBread1
             App app = (App)App.Current;
             app.allgemeinertext = "Spezifikationen: \r\n" + Ausgabetext.Text;
             app.Herz = Bestellung4.Text;
+            TogSwitch.IsOn = false;
+            radio1.IsChecked= false;
+            radio2.IsChecked = false;
+            radio3.IsChecked = false;
+            Bestellung4.Text = "";
         }
 
         private void Navigiere_zuStart(object sender, RoutedEventArgs e)
